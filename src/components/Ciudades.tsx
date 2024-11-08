@@ -3,6 +3,7 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import icon_mapa from "../assets/images/btn-icon.svg";
 import jalisco_logo from "../assets/images/ciudades/logo_jalisco.svg";
 import gdl_logo from "../assets/images/ciudades/gdl_ico.svg";
 import tepa_logo from "../assets/images/ciudades/tepa_logo.png";
@@ -87,10 +88,15 @@ const Card = ({
   url: string;
 }) => {
   return (
-    <div className="bg-yellow-200 shadow-xl w-32 rounded-xl p-10">
+    <div className="bg-yellow-200 shadow-xl w-64 h-96 rounded-xl p-10">
       <Image src={logo} alt={`logo_${titulo}`} />
-      <h3>{titulo}</h3>
-      <a href={`#${url}`}></a>
+      <a
+        href={`#${url}`}
+        className="bg-green-500 rounded-full py-2 px-7 text-white flex "
+      >
+        <Image src={icon_mapa} alt="icon-mapa" width={20} />
+        Ver el mapa
+      </a>
     </div>
   );
 };

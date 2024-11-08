@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53.209" height="68.299" viewBox="0 0 53.209 68.299">
+  <defs>
+    <filter id="Icon_material-location-on" x="0" y="0" width="53.209" height="68.299" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_15454" data-name="Group 15454" transform="translate(-5.263 -0.341)">
+    <g transform="matrix(1, 0, 0, 1, 5.26, 0.34)" filter="url(#Icon_material-location-on)">
+      <path id="Icon_material-location-on-2" data-name="Icon material-location-on" d="M25.1,3A17.592,17.592,0,0,0,7.5,20.6C7.5,33.808,25.1,53.3,25.1,53.3s17.6-19.491,17.6-32.694A17.592,17.592,0,0,0,25.1,3Zm0,23.892A6.287,6.287,0,1,1,31.392,20.6,6.29,6.29,0,0,1,25.1,26.892Z" transform="translate(1.5 3)" fill="#4ecbb6"/>
+    </g>
+  </g>
+</svg>

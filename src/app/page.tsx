@@ -1,3 +1,9 @@
+import { Badge } from "@/components/Badge";
+
 export default function Home() {
-  return <div>Main content</div>;
+  return (
+    <>
+      <Badge />
+    </>
+  );
 }

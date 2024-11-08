@@ -16,6 +16,7 @@ import {
   CursorArrowRaysIcon,
   FingerPrintIcon,
   SquaresPlusIcon,
+  
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import logo from "../assets/images/logo_visor_header.png";
@@ -60,7 +61,7 @@ const callsToAction = [
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-t from-green-600 to-green-400 text-white fixed">
+    <header className="bg-gradient-to-t from-green-600 to-green-400 text-white">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -112,7 +113,10 @@ export default function Header() {
                       />
                     </div>
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold ">
+                      <a
+                        href={item.href}
+                        className="block font-semibold "
+                      >
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>

@@ -1,5 +1,6 @@
 import { Badge } from "@/components/Badge";
 import { Ciudades } from "@/components/Ciudades";
+import { PorQueSerParte } from "@/components/PorQueSerParte";
 import { QuienesSomos } from "@/components/QuienesSomos";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Badge />
       <QuienesSomos />
       <Ciudades />
+      <PorQueSerParte />
     </>
   );
 }

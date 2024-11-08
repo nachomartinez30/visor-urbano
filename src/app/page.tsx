@@ -1,4 +1,5 @@
 import { Badge } from "@/components/Badge";
+import { Ciudades } from "@/components/Ciudades";
 import { QuienesSomos } from "@/components/QuienesSomos";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Badge />
       <QuienesSomos />
+      <Ciudades />
     </>
   );
 }

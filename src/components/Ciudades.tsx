@@ -61,7 +61,7 @@ const ciudades = [
 export const Ciudades = () => {
   return (
     <section id="ciudades" className="h-svh">
-      <h3 className="text-blue-500">
+      <h3 className="text-center main-title">
         Explora Visor Urbano en distintas Ciudades
       </h3>
       <Carousel responsive={responsive} className="w-1/2 p-5 bg-green-200">

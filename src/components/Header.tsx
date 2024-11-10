@@ -5,18 +5,13 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import {
   ArrowPathIcon,
   ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
   SquaresPlusIcon,
-  
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import logo from "../assets/images/logo_visor_header.png";
@@ -61,12 +56,12 @@ const callsToAction = [
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-t from-green-600 to-green-400 text-white">
+    <header className="bg-gradient-to-t from-dark to-primary text-white">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 gap-2 flex-auto">
           <a href="#">
             <Image
               alt="logo"
@@ -88,12 +83,8 @@ export default function Header() {
             Explora Visor Urbano
           </a>
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold ">
-              Product
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="h-5 w-5 flex-none text-gray-400"
-              />
+            <PopoverButton className="btn-primary">
+              Quiero Implementar Visor Urbano
             </PopoverButton>
 
             <PopoverPanel
@@ -113,10 +104,7 @@ export default function Header() {
                       />
                     </div>
                     <div className="flex-auto">
-                      <a
-                        href={item.href}
-                        className="block font-semibold "
-                      >
+                      <a href={item.href} className="block font-semibold ">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
@@ -143,6 +131,9 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
         </PopoverGroup>
+        <a href="#" className="btn-primary">
+          ¿Necesitas ayuda? Contáctanos
+        </a>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm/6 font-semibold ">
             Log in <span aria-hidden="true">&rarr;</span>

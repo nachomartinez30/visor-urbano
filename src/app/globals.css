@@ -10,6 +10,6 @@ body {
 
 @layer components{
   .btn-primary{
-    @apply flex items-center gap-x-1 text-sm/6 font-semibold bg-gradient-to-t from-blueDark to-bluePrimary px-7 py-2 rounded-full border-r-[40]
+    @apply flex items-center gap-x-1 text-sm/6 font-semibold bg-gradient-to-t from-blueDark to-bluePrimary px-7 py-2 rounded-full border-r-[40] text-white
   }
 }

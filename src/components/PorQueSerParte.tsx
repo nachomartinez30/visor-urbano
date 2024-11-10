@@ -45,10 +45,10 @@ export const PorQueSerParte = () => {
         <Item key={index} {...feature} />
       ))}
 
-      <button className="bg-blue-500 rounded-full py-3 px-5 text-white">
+      <button className="btn-primary">
         Quiero implementar Visor Urbano
       </button>
-      <button className="bg-blue-500 rounded-full py-3 px-5 text-white">
+      <button className="btn-primary">
         ¿Necesitas ayuda? Contáctanos
       </button>
     </section>

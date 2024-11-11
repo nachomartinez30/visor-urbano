@@ -79,3 +79,7 @@ body {
   color: var(--AzulBase);
   font-size: 54px;
 }
+.somos__Video{
+  width: 70%;
+  border-radius: 45px;
+}

@@ -15,8 +15,21 @@ export default {
         dark: "#53AF4D",
         bluePrimary: "#4682FF",
         blueDark: "#1D4ABE",
+        NegroBase: "#161617",
+        BlancoBase: "#FFFFFF",
+        GrisClaro: "#F6FAFA",
+        VerdeBase: "#4DA847",
+        VerdeBaseClaro: "#6ABF4D",
+        VerdeTextos: "#65C65D",
+        VerdeFondosIconos: "#BCE2AF",
+        AzulBase: "#2151C6",
       },
     },
+    fontFamily: {
+      GRegular: 'Geologica',
+      GBold: 'Geologica-Bold',
+      GLight: 'Geologica-Light',
+    }
   },
   plugins: [],
 } satisfies Config;

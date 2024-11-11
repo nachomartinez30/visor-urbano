@@ -15,6 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import logo from "../assets/images/logo_visor_header.png";
+import idioma from "../assets/images/idioma.svg";
 
 /* TODO: quitar products por las options  */
 const products = [
@@ -59,31 +60,29 @@ export default function Header() {
     <header className="bg-gradient-to-t from-dark to-primary text-white">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex justify-between items-center p-6 navVisor"
       >
-        <div className="flex lg:flex-1 gap-2 flex-auto">
+        <div className="flex">
           <a href="#">
             <Image
               alt="logo"
               className="h-14 w-auto"
               src={logo}
-              width={300}
-              height={300}
             />
           </a>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm/6 font-semibold ">
+        <PopoverGroup className="flex items-center">
+          <a href="#" className="text-sm/6 GRegular navVisor__link">
             Historia
           </a>
-          <a href="#" className="text-sm/6 font-semibold ">
+          <a href="#" className="text-sm/6 GRegular navVisor__link">
             Noticias
           </a>
-          <a href="#" className="text-sm/6 font-semibold ">
+          <a href="#" className="text-sm/6 GRegular navVisor__link">
             Explora Visor Urbano
           </a>
           <Popover className="relative">
-            <PopoverButton className="btn-primary">
+            <PopoverButton className="btn-primary navVisor__link">
               Quiero Implementar Visor Urbano
             </PopoverButton>
 
@@ -130,15 +129,13 @@ export default function Header() {
               </div>
             </PopoverPanel>
           </Popover>
-        </PopoverGroup>
-        <a href="#" className="btn-primary">
-          ¿Necesitas ayuda? Contáctanos
-        </a>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold ">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a href="#" className="btn-primary navVisor__link">
+            ¿Necesitas ayuda? Contáctanos
           </a>
-        </div>
+          <button className="flex items-center rounded-full">
+            <Image src={idioma} alt="idiomas" />
+          </button>
+        </PopoverGroup>
       </nav>
     </header>
   );

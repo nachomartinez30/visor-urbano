@@ -2,10 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --NegroBase: #161617;
+  --BlancoBase: #FFFFFF;
+  --GrisClaro: #F6FAFA;
+  --VerdeBase: #4DA847;
+  --VerdeBaseClaro: #6ABF4D
+  --VerdeTextos: #65C65D;
+  --VerdeFondosIconos: #BCE2AF;
+  --AzulBase: #2151C6;
+  --GRegular: 'Geologica';
+  --GBold: 'Geologica-Bold';
+  --GLight: 'Geologica-Light';
+}
+@layer base {
+  @font-face {
+    font-family: 'Geologica';
+    src: url('../assets/fonts/geologica/Geologica-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Geologica-Bold';
+    src: url('../assets/fonts/geologica/Geologica-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Geologica-Light';
+    src: url('../assets/fonts/geologica/Geologica-Light.ttf');
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Geologica, sans-serif;
 }
 
 @layer components{
@@ -15,4 +43,39 @@ body {
   .main-title{
     @apply text-[#2151C6] text-[50px] font-bold
   }
+}
+
+.navVisor{
+  width: 95%;
+}
+.navVisor__link{
+  margin: 0 1.4rem;
+  font-family: var(--GLight)!important;
+  font-weight: 400!important;
+}
+.badgeBackground{
+  background: no-repeat url("../assets/images/header.svg");
+}
+.badge__Container{
+  padding: 15% 10% 0 15%;
+  box-sizing: border-box;
+}
+.badge__Titulo{
+  color: var(--BlancoBase);
+  font-size: 54px;
+}
+.badge__Contenido{
+  width: 50%;
+  padding-top: 1.8rem;
+  color: var(--BlancoBase);
+  font-family: var(--GLight) !important;
+  text-align: justify;
+  font-size: 26px;
+}
+.somosBackground{
+  background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.png");
+}
+.somos__Titulo {
+  color: var(--AzulBase);
+  font-size: 54px;
 }

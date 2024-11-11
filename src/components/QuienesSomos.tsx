@@ -1,4 +1,5 @@
-import video from "../assets/images/youtubePortada.png";
+"use client";
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 export const QuienesSomos = () => {
   return (

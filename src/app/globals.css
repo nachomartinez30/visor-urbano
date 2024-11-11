@@ -118,3 +118,13 @@ body {
   background-size: cover;
   background-position: initial;
 }
+
+.nuestraHistoriaBackground{
+    background-image: url("../assets/images/story_movil.svg");
+    width: auto;
+    height: auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 60px;
+}

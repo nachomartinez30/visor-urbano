@@ -18,7 +18,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 4,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -60,20 +60,22 @@ const ciudades = [
 
 export const Ciudades = () => {
   return (
-    <section id="ciudades" className="h-svh">
-      <h3 className="text-center main-title">
+    <section id="ciudades" className="lg:h-screen sm:h-1/4 ciudades__Background">
+      <h2 className="text-center ciudades__Titulo pt-9 mb-9">
         Explora Visor Urbano en distintas Ciudades
-      </h3>
-      <Carousel responsive={responsive} className="w-1/2 p-5 bg-green-200">
-        {ciudades.map((ciudad) => (
-          <Card
-            key={ciudad.url}
-            titulo={ciudad.title}
-            logo={ciudad.img}
-            url={ciudad.url}
-          />
-        ))}
-      </Carousel>
+      </h2>
+      <div className="flex justify-center">
+        <Carousel responsive={responsive} className="p-5 ciudades__carousel">
+          {ciudades.map((ciudad) => (
+            <Card
+              key={ciudad.url}
+              titulo={ciudad.title}
+              logo={ciudad.img}
+              url={ciudad.url}
+            />
+          ))}
+        </Carousel>
+      </div>
     </section>
   );
 };
@@ -88,14 +90,16 @@ const Card = ({
   url: string;
 }) => {
   return (
-    <div className="bg-yellow-200 shadow-xl w-64 h-96 rounded-xl p-10">
-      <Image src={logo} alt={`logo_${titulo}`} />
+    <div className="shadow-xl rounded-xl py-10 grid grid-cols-1 content-around card__cards">
+      <Image src={logo} alt={`logo_${titulo}`} className="cards__City"/>
       <a
         href={`#${url}`}
-        className="bg-green-500 rounded-full py-2 px-7 text-white flex "
+        className="rounded-full bg-gradient-to-t from-VerdeBase to-VerdeBaseClaro cards__Button"
       >
-        <Image src={icon_mapa} alt="icon-mapa" width={20} />
-        Ver el mapa
+        <div className='flex justify-center'>
+          <Image src={icon_mapa} alt="icon-mapa"/>
+          <p className="pl-4">Ver el mapa</p>
+        </div>
       </a>
     </div>
   );

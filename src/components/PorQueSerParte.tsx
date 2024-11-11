@@ -39,7 +39,7 @@ const features = [
 
 export const PorQueSerParte = () => {
   return (
-    <section id="por_que_ser_parte" className="bg-yellow-300 h-svh">
+    <section id="por_que_ser_parte" className="lg:h-screen sm:h-1/4 porQueBackground">
       <h3 className="text-center main-title">¿Por qué ser parte de Visor Urbano?</h3>
       {features.map((feature, index) => (
         <Item key={index} {...feature} />

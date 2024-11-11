@@ -75,11 +75,46 @@ body {
 .somosBackground{
   background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.png");
 }
-.somos__Titulo {
+.somos__Titulo, .ciudades__Titulo {
   color: var(--AzulBase);
+  font-family: var(--GRegular);
+  font-weight: 600;
   font-size: 54px;
 }
 .somos__Video{
   width: 70%;
   border-radius: 45px;
+}
+.ciudades__Background {
+  background: var(--GrisClaro)
+}
+.ciudades__carousel {
+  width: 85%;
+  padding-bottom: 5rem;
+}
+.card__cards{
+  background: var(--BlancoBase);
+  width: 95%;
+  min-height: 529px;
+  box-sizing: border-box;
+}
+.cards__City{
+  min-width: 100%;
+  max-width: 254px;
+  max-height: 254px;
+}
+.cards__Button{
+  color: var(--BlancoBase);
+  font-family: var(--GRegular);
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  width: 75%;
+}
+.porQueBackground {
+  background: no-repeat url("../assets/images/story_new.svg");
+  background-size: cover;
+  background-position: initial;
 }

@@ -141,6 +141,7 @@ body {
 }
 .nuestraHistoria__Section{
   padding: 10% 0;
+  overflow: hidden;
 }
 .historia__Grid {
   padding: 0 7%;

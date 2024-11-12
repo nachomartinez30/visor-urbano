@@ -55,7 +55,7 @@ const callsToAction = [
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
-export default function Header() {
+export const Header = () => {
   return (
     <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 w-full z-50">
       <nav
@@ -64,11 +64,7 @@ export default function Header() {
       >
         <div className="flex">
           <a href="#">
-            <Image
-              alt="logo"
-              className="h-14 w-auto"
-              src={logo}
-            />
+            <Image alt="logo" className="h-14 w-auto" src={logo} />
           </a>
         </div>
         <PopoverGroup className="flex items-center">
@@ -139,4 +135,4 @@ export default function Header() {
       </nav>
     </header>
   );
-}
+};

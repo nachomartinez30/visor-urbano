@@ -1,6 +1,7 @@
 "use client";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import "./globals.css";
-import Header from "@/components/Header";
 
 export default function RootLayout({
   children,
@@ -12,6 +13,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

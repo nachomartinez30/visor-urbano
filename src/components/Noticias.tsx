@@ -55,6 +55,8 @@ export const Noticias = () => {
             <Articulo key={post.id} {...post} />
           ))}
         </div>
+
+        <button className="btn-primary">Ver todas las noticias</button>
       </div>
     </div>
   );
@@ -75,7 +77,6 @@ const Articulo = (post: ArticuloProps) => {
           alt={title}
           src={imageUrl}
         />
-        
       </div>
       <div className="max-w-xl p-5">
         <div className="group relative">

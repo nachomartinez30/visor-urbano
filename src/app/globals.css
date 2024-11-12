@@ -83,7 +83,9 @@ body {
 }
 .somos__Video{
   width: 70%;
+  min-width: 1200px!important;
   border-radius: 45px;
+  background-image: url("../assets/images/youtubePortada.png")!important;
 }
 .ciudades__Background {
   background: var(--GrisClaro)

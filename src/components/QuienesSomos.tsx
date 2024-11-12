@@ -10,9 +10,8 @@ export const QuienesSomos = () => {
       <h2 className="somos__Titulo text-center mb-8">¿Qué es Visor Urbano?</h2>
       <div className="flex justify-center">
         <YouTubeEmbed
-          style="width: 100vw;" /* aqui le vale madre */
+          class='somos__Video'
           videoid="CR6C86CtG1w"
-          width={1200}
         />
       </div>
     </section>

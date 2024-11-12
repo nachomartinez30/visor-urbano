@@ -51,7 +51,7 @@ const equipo = [
 
 export const EquipoVisor = () => {
   return (
-    <section id="equipo_visor" className="flex justify-center align-middle">
+    <section id="equipo_visor" className="lg:h-screen sm:h-1/4">
       <h2 className="main-title">Equipo Visor</h2>
       <ul
         role="list"

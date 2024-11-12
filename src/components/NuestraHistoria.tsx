@@ -10,9 +10,7 @@ import timeline_8 from "../assets/images/timeline_8.svg";
 
 export const NuestraHistoria = () => {
   return (
-    <section id="nuestra_historia" className="nuestraHistoriaBackground h-svh">
-      {" "}
-      {/* TODO: cambiar background */}
+    <section id="nuestra_historia" className="nuestraHistoriaBackground">
       <div className="pb-[250px]">
         <h2 className="text-white text-2xl">Nuestra Historia</h2>
 

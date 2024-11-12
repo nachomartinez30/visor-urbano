@@ -1,56 +1,145 @@
 import Image from "next/image";
-import clock from "../assets/images/features/ico_licencias_negocio_2.png";
-import list from "../assets/images/features/ico_licencias_negocio.png";
-import map from "../assets/images/features/ico_licencias_negocio_3.png";
-import mail from "../assets/images/features/ico_licencias_negocio_4.png";
-import like from "../assets/images/features/ico_licencias_negocio_5.png";
-import speaker from "../assets/images/features/ico_licencias_negocio_6.png";
+import clock from "../assets/images/features/ico_licencias_negocio_2.svg";
+import list from "../assets/images/features/ico_licencias_negocio.svg";
+import map from "../assets/images/features/ico_licencias_negocio_3.svg";
+import mail from "../assets/images/features/ico_licencias_negocio_4.svg";
+import like from "../assets/images/features/ico_licencias_negocio_5.svg";
+import speaker from "../assets/images/features/ico_licencias_negocio_6.svg";
+
+import timeline from "../assets/images/timeline.svg";
+import timeline_1 from "../assets/images/timeline_1.svg";
+import timeline_2 from "../assets/images/timeline_2.svg";
+import timeline_3 from "../assets/images/timeline_3.svg";
+import timeline_4 from "../assets/images/timeline_4.svg";
+import timeline_5 from "../assets/images/timeline_5.svg";
+import timeline_6 from "../assets/images/timeline_6.svg";
+import timeline_7 from "../assets/images/timeline_7.svg";
+import timeline_8 from "../assets/images/timeline_8.svg";
 
 const features = [
   {
-    content: "Promueve trámites ágiles y transparentes",
+    content: "Promueve trámites ágiles y transparentes.",
     image: clock,
   },
   {
-    content: "Permite la apertura y georreferenciación de la información",
+    content: "Acelera tiempos y reduce costos de los trámites.",
     image: list,
   },
   {
-    content: "Propicia la colaboración entre entidades gubernamentales",
+    content: "Permite la apertura y georreferenciación de la información.",
     image: map,
   },
   {
-    content: "Acelera tiempos y reduce costos de los trámites",
+    content: "Propicia la colaboración entre entidades gubernamentales.",
     image: mail,
   },
   {
-    content: "Fomenta una relación más cercana entre gobierno y ciudadanía",
+    content: "Fomenta una relación más cercana entre gobierno y ciudadanía.",
     image: like,
   },
   {
-    content: "Fomenta una relación más cercana entre gobierno y ciudadanía",
+    content: "Facilita el aumento en la recaudación.",
     image: speaker,
-  },
-  {
-    content: "Fomenta una relación más cercana entre gobierno y ciudadanía",
-    image: clock,
-  },
+  }
 ];
 
 export const PorQueSerParte = () => {
   return (
-    <section id="por_que_ser_parte" className="lg:h-screen sm:h-1/4 porQueBackground">
-      <h3 className="text-center main-title">¿Por qué ser parte de Visor Urbano?</h3>
+    <section id="por_que_ser_parte" className="mt-10 porQueBackground">
+      <h3 className="text-center porQue__Titulo">¿Por qué ser parte de Visor Urbano?</h3>
+
+      <div className="grid grid-cols-3 grid-rows-2 grid-flow-col flex justify-center porQue__Grid">
       {features.map((feature, index) => (
         <Item key={index} {...feature} />
       ))}
+      </div>
 
-      <button className="btn-primary">
-        Quiero implementar Visor Urbano
-      </button>
-      <button className="btn-primary">
-        ¿Necesitas ayuda? Contáctanos
-      </button>
+      <div className="grid grid-cols-2 grid-flow-col flex justify-center porQue__Botones">
+        <button className="mx-4 btn-primary justify-center porQue__Botones--Boton">
+            Quiero implementar Visor Urbano
+          </button>
+        <button className="mx-4 btn-primary justify-center porQue__Botones--Boton">
+            ¿Necesitas ayuda? Contáctanos
+        </button>
+      </div>
+
+      {/* <!----> */}
+      <section id="nuestra_historia" className="">
+        <div className="nuestraHistoria__Section">
+          <div className="historia__Grid">
+            <h2 className="mb-8 historia__Titulo">Nuestra Historia</h2>
+          </div>
+          <div className="grid grid-cols-9 flex justify-items-center historia__Grid historia__Grid--left">
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_1" src={timeline_1} />
+              <h2 className="year historia__Anios">2016</h2>
+              <p className="text historia__Contenido">
+                Guadalajara gana el Premio “Mayors Challenge” de Bloomberg
+                Philanthropies
+              </p>
+            </div>
+
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_2" src={timeline_2} />
+              <h2 className="year historia__Anios">2018</h2>
+              <p className="text historia__Contenido">
+                Visor Urbano Guadalajara gana el Premio Nacional de Innovación en
+                Transparencia
+              </p>
+            </div>
+
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_3" src={timeline_3} />
+              <h2 className="year historia__Anios">2020</h2>
+              <p className="text historia__Contenido">
+                Ganador del Future Cities Award de los Emiratos Árabes Unidos
+              </p>
+            </div>
+
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_4" src={timeline_4} />
+              <h2 className="year historia__Anios">2022</h2>
+              <p className="text historia__Contenido">Lanzamiento de Visor Urbano en Hidalgo</p>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <Image src={timeline} alt="icon" className="historia_TimeLine" />
+          </div>
+
+          <div className="grid grid-cols-9 flex justify-items-center historia__Grid historia__Grid--right">
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_5" src={timeline_5} />
+              <h2 className="year historia__Anios">2017</h2>
+              <p className="text historia__Contenido">
+                Lanzamiento de primera versión de Visor Urbano en Guadalajara, Jalisco
+              </p>
+            </div>
+
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_6" src={timeline_6} />
+              <h2 className="year historia__Anios">2019</h2>
+              <p className="text historia__Contenido">
+                Primera réplica de Visor Urbano, en San Pedro Garza García, Nuevo León
+              </p>
+            </div>
+
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_7" src={timeline_7} />
+              <h2 className="year historia__Anios">2021</h2>
+              <p className="text historia__Contenido">
+                Consolidación de Visor Urbano en 33 municipios de Jalisco
+              </p>
+            </div>
+
+            <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
+              <Image className="porQue_Imagenes" alt="timeline_8" src={timeline_8} />
+              <h2 className="year historia__Anios">2023</h2>
+              <p className="text historia__Contenido">Meta de expansión a más de 50 ciudades en México</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 };
@@ -65,9 +154,9 @@ const Item = ({
   image: StaticImageData;
 }) => {
   return (
-    <div className="flex flex-col items-center">
-      <Image src={image} alt="icon" width={35} height={35} />
-      <p>{content}</p>
+    <div className="col-span-1 mx-4 my-6 flex justify-around flex-col items-center">
+      <Image src={image} alt="icon" className="porQue_Imagenes"/>
+      <p className="text-center porQue_Textos">{content}</p>
     </div>
   );
 };

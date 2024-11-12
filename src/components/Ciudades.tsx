@@ -8,7 +8,7 @@ import jalisco_logo from "../assets/images/ciudades/logo_jalisco.svg";
 import gdl_logo from "../assets/images/ciudades/gdl_ico.svg";
 import tepa_logo from "../assets/images/ciudades/tepa_logo.png";
 import san_pedro_logo from "../assets/images/ciudades/san_pedro.svg";
-import hidalgo_logo from "../assets/images/ciudades/hidalgo.png";
+import hidalgo_logo from "../assets/images/ciudades/hidalgo.svg";
 
 const responsive = {
   superLargeDesktop: {

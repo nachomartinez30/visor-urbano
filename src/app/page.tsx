@@ -12,7 +12,7 @@ export default function Home() {
       <QuienesSomos />
       <Ciudades />
       <PorQueSerParte />
-      <NuestraHistoria /> {/* TODO: revisar background */}
+      {/* <NuestraHistoria /> */} {/* TODO: revisar background */}
       <EquipoVisor />
     </>
   );

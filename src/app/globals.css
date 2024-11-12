@@ -11,6 +11,7 @@
   --VerdeTextos: #65C65D;
   --VerdeFondosIconos: #BCE2AF;
   --AzulBase: #2151C6;
+  --TitulosGeneral: 3rem;
   --GRegular: 'Geologica';
   --GBold: 'Geologica-Bold';
   --GLight: 'Geologica-Light';
@@ -48,7 +49,7 @@ body {
 .navVisor{
   width: 95%;
 }
-.navVisor__link{
+.navVisor__link, .porQue__Botones--Boton{
   margin: 0 1.4rem;
   font-family: var(--GLight)!important;
   font-weight: 400!important;
@@ -62,7 +63,7 @@ body {
 }
 .badge__Titulo{
   color: var(--BlancoBase);
-  font-size: 54px;
+  font-size: var(--TitulosGeneral);
 }
 .badge__Contenido{
   width: 50%;
@@ -70,16 +71,16 @@ body {
   color: var(--BlancoBase);
   font-family: var(--GLight) !important;
   text-align: justify;
-  font-size: 26px;
+  font-size: 1.5rem;
 }
 .somosBackground{
-  background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.png");
+  background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
 }
-.somos__Titulo, .ciudades__Titulo {
+.somos__Titulo, .ciudades__Titulo, .porQue__Titulo {
   color: var(--AzulBase);
   font-family: var(--GRegular);
   font-weight: 600;
-  font-size: 54px;
+  font-size: var(--TitulosGeneral);
 }
 /* .somos__Video{
   width: 70%;
@@ -104,6 +105,7 @@ body {
   min-width: 100%;
   max-width: 254px;
   max-height: 254px;
+  min-height: auto;
 }
 .cards__Button{
   color: var(--BlancoBase);
@@ -118,15 +120,71 @@ body {
 .porQueBackground {
   background: no-repeat url("../assets/images/story_new.svg");
   background-size: cover;
-  background-position: initial;
+  background-position: left top;
+}
+.porQue__Grid{
+  padding: 5% 20%;
+  box-sizing: border-box;
+}
+.porQue__Botones{
+  padding: 0 20% 5% 20%;
+  box-sizing: border-box;
+}
+.porQue_Imagenes{
+  width: 100%;
+  max-width: 160px;
+}
+.porQue_Textos{
+  font-family: var(--GRegular);
+  font-weight: 400;
+  font-size: 16px;
+}
+.nuestraHistoria__Section{
+  padding: 10% 0;
+}
+.historia__Grid {
+  padding: 0 7%;
+  box-sizing: border-box;
+}
+.historia__Grid--left{
+  margin-left: -4.5%;
+}
+.historia__Grid--right {
+  margin-right: -1%;
+  position: relative;
+  left: 4%;
+}
+.historiaGrid__Element{
+  width: 85%;
+  margin: 0;
+}
+.historia__Titulo {
+  color: var(--BlancoBase);
+  font-size: var(--TitulosGeneral);
+}
+.historia__Anios{
+  color: var(--BlancoBase);
+  font-size: 2.7rem;
+  font-family: var(--GBold);
+}
+.historia__Contenido{
+  color: var(--BlancoBase);
+  font-family: var(--GLight);
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+.historia_TimeLine{
+  width: 100%;
+  overflow: hidden;
+  box-sizing: content-box;
 }
 
 .nuestraHistoriaBackground{
-    background-image: url("../assets/images/story_movil.svg");
-    width: auto;
-    height: auto;
-      background-size: cover;
-      background-repeat: no-repeat;
-    text-align: center;
-    padding-bottom: 60px;
+  background: no-repeat url("../assets/images/story2.svg");
+  background-size: cover;
+  background-position: bottom left;
+  margin-top: -2%;
+  padding-top: 3%;
+  text-align: center;
+  padding-bottom: 60px;
 }

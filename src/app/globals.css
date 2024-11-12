@@ -39,7 +39,7 @@ body {
 
 @layer components{
   .btn-primary{
-    @apply flex items-center gap-x-1 text-sm/6 font-semibold bg-gradient-to-t from-blueDark to-bluePrimary px-7 py-2 rounded-full border-r-[40] text-white hover:from-[#224FC2] hover:to-[#224FC2]
+    @apply flex items-center gap-x-1 text-sm/6 font-semibold bg-gradient-to-t from-blueDark to-bluePrimary px-7 py-2 rounded-full border-r-[40] text-white hover:from-[#224FC2] hover:to-[#224FC2] hover:shadow-gray-400 hover:shadow-lg
   }
   .main-title{
     @apply text-[#2151C6] text-[50px] font-bold

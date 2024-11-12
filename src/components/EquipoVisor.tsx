@@ -71,17 +71,17 @@ const AvatarCard = ({ person }: AvatarProps) => {
     <li>
       <div>
         <Image
-          className="origin-center hover:scale-110 transform transition duration-300 ease-in-out rounded-full"
+          className="origin-center hover:scale-110 transform transition duration-700 ease-in-out rounded-full"
           alt={nombre}
           src={imageUrl}
           width={224}
           height={224}
         />
       </div>
-      <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">
+      <h3 className="mt-6 text-base/7 font-semibold ">
         {nombre}
       </h3>
-      <p className="text-sm/6 text-gray-600">{rol}</p>
+      <p className="font-bold text-sm/6 text-VerdeTextos">{rol}</p>
     </li>
   );
 };

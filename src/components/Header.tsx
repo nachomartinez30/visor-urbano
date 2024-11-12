@@ -57,7 +57,7 @@ const callsToAction = [
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-t from-dark to-primary text-white">
+    <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 w-full z-50">
       <nav
         aria-label="Global"
         className="mx-auto flex justify-between items-center p-6 navVisor"

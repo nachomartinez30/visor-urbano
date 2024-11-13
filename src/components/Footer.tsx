@@ -57,7 +57,7 @@ export const Footer = () => {
         </div>
         <div className="">
           <h3
-            className="text-VerdeTextos text-center"
+            className="text-VerdeTextos text-center cursor-pointer"
             onClick={() => setOpenModal(true)}
           >
             AVISO DE PRIVACIDAD

@@ -14,11 +14,12 @@ import {
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import { FormEvent, useState } from "react";
+import { useContext } from "react";
 import logo from "../assets/images/logo_visor_header.png";
 import { ModalContacto } from "./Modales/ModalContacto";
 import { ModalSuccess } from "./Modales/ModalSuccess";
 import { IdiomasIcon } from "./icons/IdiomasIcon";
+import { ModalContext } from "./context/ContextModal";
 
 /* TODO: quitar products por las options  */
 const products = [
@@ -59,23 +60,12 @@ const callsToAction = [
 ];
 
 export const Header = () => {
-  const [openContactoModal, setOpenContactoModal] = useState(false);
-  const [openSuccessModal, setSuccessModal] = useState(false);
-
-  const handleOnSubmit = (ev: FormEvent<HTMLFormElement>) => {
-    ev.preventDefault();
-    setOpenContactoModal(false);
-    setSuccessModal(true);
-  };
+  const modalCtx = useContext(ModalContext);
 
   return (
     <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 w-full z-10">
-      <ModalContacto
-        handleSubmit={handleOnSubmit}
-        open={openContactoModal}
-        setOpen={setOpenContactoModal}
-      />
-      <ModalSuccess open={openSuccessModal} setOpen={setSuccessModal} />
+      <ModalContacto />
+      <ModalSuccess />
       <nav
         aria-label="Global"
         className="mx-auto flex justify-between items-center p-6 navVisor"
@@ -147,7 +137,7 @@ export const Header = () => {
             </PopoverPanel>
           </Popover>
           <button
-            onClick={() => setOpenContactoModal(true)}
+            onClick={() => modalCtx?.openModalContacto()}
             className="btn-primary navVisor__link"
           >
             Solicitar ayuda para implementar

@@ -4,16 +4,24 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 import contacto_img from "../../assets/images/contacto-bg.png";
-import { ModalProps } from "../types/modal.interface";
-import { FormEvent } from "react";
 
-interface ModalContactoProps extends ModalProps {
-  handleSubmit: (ev: FormEvent<HTMLFormElement>) => void;
-}
+import { useContext } from "react";
+import { ModalContext } from "../context/ContextModal";
 
-export const ModalContacto = ({ open, setOpen,handleSubmit }: ModalContactoProps) => {
+export const ModalContacto = () => {
+  const modalCtx = useContext(ModalContext);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    modalCtx?.openModalSuccess();
+    modalCtx?.closeModalContacto();
+  };
   return (
-    <Dialog open={open} onClose={setOpen} className="relative z-10">
+    <Dialog
+      open={modalCtx?.isOpenContacto}
+      onClose={() => modalCtx?.closeModalContacto()}
+      className="relative z-10"
+    >
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-gray-500/75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
@@ -27,7 +35,7 @@ export const ModalContacto = ({ open, setOpen,handleSubmit }: ModalContactoProps
             <div className="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
               <button
                 type="button"
-                onClick={() => setOpen(false)}
+                onClick={() => modalCtx?.closeModalContacto()}
                 /* TODO: Cambiar a text-white cuando este alineado */
                 className="rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
@@ -45,7 +53,10 @@ export const ModalContacto = ({ open, setOpen,handleSubmit }: ModalContactoProps
 
                 {/* FORM */}
                 <div className="justify-self-center modalContacto__Izquierda">
-                  <form className="grid grid-cols-12 gap-4" onSubmit={handleSubmit}>
+                  <form
+                    className="grid grid-cols-12 gap-4"
+                    onSubmit={handleSubmit}
+                  >
                     {/* NOMBRE COMPLETO */}
                     <div className="sm:col-span-12 mt-10">
                       <label

@@ -2,6 +2,7 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import "./globals.css";
+import { ModalProvider } from "@/components/context/ContextModal";
 
 export default function RootLayout({
   children,
@@ -11,9 +12,11 @@ export default function RootLayout({
   return (
     <html lang="es-MX">
       <body className="antialiased">
-        <Header />
-        {children}
-        <Footer />
+        <ModalProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ModalProvider>
       </body>
     </html>
   );

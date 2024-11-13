@@ -15,12 +15,12 @@ interface ArticuloProps {
 const posts = [
   {
     id: 1,
-    title: "Titulo de la noticia",
+    title: "Capacitación sobre Visor Urbano Morelos",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "La CEMER Hidalgo y el equipo de Visor Urbano capacitan a 36 municipios del estado sobre el uso de la plataform...",
     imageUrl: img_noticia_1,
-    date: "17 Enero, 2020",
+    date: "28 febrero, 2024",
   },
   {
     id: 2,

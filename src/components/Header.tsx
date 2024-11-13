@@ -64,7 +64,7 @@ export const Header = () => {
   return (
     <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 w-full z-10">
       <ModalContacto open={openContactoModal} setOpen={setOpenContactoModal} />
-      <ModalSuccess open={!openSuccessModal} setOpen={setSuccessModal} />
+      <ModalSuccess open={openSuccessModal} setOpen={setSuccessModal} />
       <nav
         aria-label="Global"
         className="mx-auto flex justify-between items-center p-6 navVisor"

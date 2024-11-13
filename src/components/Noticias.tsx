@@ -71,7 +71,9 @@ export const Noticias = async () => {
 const Articulo = (post: ArticuloProps) => {
   const { id, title, href, description, imageUrl, date } = post;
   return (
-    <article
+    <a
+      href={href}
+      target="_blank"
       key={id}
       className="flex flex-col items-start justify-between shadow-gray-200 shadow-md rounded-2xl"
     >
@@ -84,11 +86,9 @@ const Articulo = (post: ArticuloProps) => {
       </div>
       <div className="max-w-xl p-5">
         <div className="group relative">
-          <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-            <a href={href} className="noticias__Titulo">
-              {title}
-            </a>
-          </h3>
+          <h2 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+            <span className="noticias__Titulo">{title}</span>
+          </h2>
           <div className="my-5">
             <time className="text-VerdeTextos noticias__Fecha">{date}</time>
           </div>
@@ -97,6 +97,6 @@ const Articulo = (post: ArticuloProps) => {
           </p>
         </div>
       </div>
-    </article>
+    </a>
   );
 };

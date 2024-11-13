@@ -34,27 +34,27 @@ const ciudades = [
   {
     title: "Jalisco",
     img: jalisco_logo,
-    url: "/jalisco",
+    url: "https://visorurbano.jalisco.gob.mx/inicio",
   },
   {
     title: "Guadalajara",
     img: gdl_logo,
-    url: "/guadalajara",
+    url: "https://visorurbano.guadalajara.gob.mx/",
   },
   {
     title: "Tepatitlan",
     img: tepa_logo,
-    url: "/tepatitlan",
+    url: "https://tepatitlan.visorurbano.com/inicio",
   },
   {
     title: "San Pedro Garza Garcia",
     img: san_pedro_logo,
-    url: "/san_pedro_garza_garcia",
+    url: "https://visorurbano.sanpedro.gob.mx/",
   },
   {
     title: "Hidalgo",
     img: hidalgo_logo,
-    url: "/hidalgo",
+    url: "https://visorurbano.hidalgo.gob.mx/inicio",
   },
 ];
 
@@ -90,17 +90,17 @@ const Card = ({
   url: string;
 }) => {
   return (
-    <div className="hover:shadow-xl rounded-3xl py-10 grid grid-cols-1 content-around card__cards">
+    <a href={`${url}`} target="_blank" className="hover:shadow-xl rounded-3xl py-10 grid grid-cols-1 content-around card__cards">
       <Image src={logo} alt={`logo_${titulo}`} className="cards__City"/>
-      <a
-        href={`#${url}`}
+      <div
+        
         className="rounded-full bg-gradient-to-t from-VerdeBase to-VerdeBaseClaro cards__Button"
       >
         <div className='flex justify-center'>
           <Image className="hover:scale-150 transform transition duration-700 ease-in-out" src={icon_mapa} alt="icon-mapa"/>
           <p className="pl-4">Ver el mapa</p>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   );
 };

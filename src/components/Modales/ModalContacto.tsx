@@ -1,15 +1,12 @@
+'use client'
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
-import contacto_img from "../assets/images/contacto-bg.png";
+import contacto_img from "../../assets/images/contacto-bg.png";
+import { ModalProps } from "./modal.interface";
 
-interface ModalContactoProps {
-  open: boolean;
-  setOpen: (open: boolean) => void;
-}
-
-export const ModalContacto = ({ open, setOpen }: ModalContactoProps) => {
+export const ModalContacto = ({ open, setOpen }: ModalProps) => {
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop

@@ -14,7 +14,10 @@
   --TitulosGeneral: 3rem;
   --GRegular: 'Geologica';
   --GBold: 'Geologica-Bold';
+  --GSeBold: 'Geologica-SemiBold';
+  --GExBold: 'Geologica-ExtraBold';
   --GLight: 'Geologica-Light';
+  --GExLight: 'Geologica-ExtraLight';
 }
 @layer base {
   @font-face {
@@ -26,8 +29,20 @@
     src: url('../assets/fonts/geologica/Geologica-Bold.ttf');
   }
   @font-face {
+    font-family: 'Geologica-SemiBold';
+    src: url('../assets/fonts/geologica/Geologica-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Geologica-SemiBold';
+    src: url('../assets/fonts/geologica/Geologica-SemiBold.ttf');
+  }
+  @font-face {
     font-family: 'Geologica-Light';
     src: url('../assets/fonts/geologica/Geologica-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Geologica-ExtraLight';
+    src: url('../assets/fonts/geologica/Geologica-ExtraLight.ttf');
   }
 }
 
@@ -56,6 +71,8 @@ body {
 }
 .badgeBackground{
   background: no-repeat url("../assets/images/header.svg");
+  background-size: cover;
+  padding-bottom: 20%;
 }
 .badge__Container{
   padding: 15% 10% 0 15%;
@@ -76,18 +93,43 @@ body {
 .somosBackground{
   background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
 }
-.somos__Titulo, .ciudades__Titulo, .porQue__Titulo {
+.somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .equipo__Titulo {
   color: var(--AzulBase);
   font-family: var(--GRegular);
   font-weight: 600;
   font-size: var(--TitulosGeneral);
 }
-/* .somos__Video{
-  width: 70%;
-  min-width: 1200px!important;
-  border-radius: 45px;
-  background-image: url("../assets/images/youtubePortada.png")!important;
-} */
+.contactoModal__Bloque{
+  width: 75%;
+}
+.modalContacto__Titulo{
+  color: var(--AzulBase);
+  font-family: var(--GRegular);
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+.modalContacto__Izquierda{
+  width: 80%;
+}
+.izquierda__Labels{
+  font-family: var(--GExLight);
+}
+.modalContacto__Boton{
+  width: 80%;
+  padding: 1em;
+  font-family: var(--GExLight);
+  font-size: 1.1rem;
+}
+.modalDerecha__Gradiente{
+  height: 100%;
+}
+.modalDerecha__Texto{
+  padding: 0 15%;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 10%;
+}
 .ciudades__Background {
   background: var(--GrisClaro)
 }
@@ -179,7 +221,6 @@ body {
   overflow: hidden;
   box-sizing: content-box;
 }
-
 .nuestraHistoriaBackground{
   background: no-repeat url("../assets/images/story2.svg");
   background-size: cover;
@@ -189,10 +230,85 @@ body {
   text-align: center;
   padding-bottom: 60px;
 }
+.equipo__Grid {
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+.equipo__Person{
+  width: 75%;
+}
+.equipo__Image, .equipoModal__Image{
+  width: 95%;
+  max-width: 300px;
+  height: auto;
+  max-height: 300px;
+  border-radius: 50%;
+}
+.equipoModal_Bloque{
+  width: 85%;
+}
+.equipoModal{
+  padding: 8% 0% 3% 0%;
+  box-sizing: border-box;
+}
+.imageModal__Correo{
+  font-family: var(--GSeBold);
+  font-weight: 500;
+}
+.equipoModal__Nombre{
+  font-size: 2.5rem;
+}
+.equipoModal__Puesto {
+  font-size: 1.2rem;
+}
+.equipoModal__Contenido{
+  font-family: var(--GExLight);
+  text-align: justify;
+  font-size: 1.1rem;
+  padding-right: 6%;
+}
+.equipoModal__Redes{
+  width: 3rem;
+}
+.noticias__Image{
+  width: 100%;
+  min-height: 30vh;
+}
+.noticias__Titulo{
+  font-size: 1.6rem;
+}
+.noticias__Fecha{
+  font-size: .9rem;
+}
+.noticias__Descripcion{
+  font-size: 1.1rem;
+  font-family: var(--GLight);
+}
+.noticias__Boton{
+  width: 33%;
+  padding: 1em;
+  font-family: var(--GExLight);
+  font-size: 1.1rem;
+}
+
 .footerBg{
   background: no-repeat url("../assets/images/footerImg.svg");
   background-size: cover;
   background-position: bottom;
+}
+.footer__Bloque{
+  width: 80%;
+}
+.footer__Logos{
+  width: 35%;
+}
+.footer__Redes{
+  width: 30%;
+}
+.redes__Iconos{
+  width: 100%;
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .contacto__Background{

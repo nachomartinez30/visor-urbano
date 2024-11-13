@@ -60,8 +60,8 @@ const ciudades = [
 
 export const Ciudades = () => {
   return (
-    <section id="ciudades" className="lg:h-screen sm:h-1/4 ciudades__Background">
-      <h2 className="text-center ciudades__Titulo pt-9 mb-9">
+    <section id="ciudades" className="ciudades__Background pb-20">
+      <h2 className="text-center pt-9 mb-9 ciudades__Titulo">
         Explora Visor Urbano en distintas Ciudades
       </h2>
       <div className="flex justify-center">

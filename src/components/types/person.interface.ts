@@ -5,7 +5,8 @@ export interface Person {
   rol: string;
   correo: string;
   imageUrl: StaticImageData;
-  descripcion: string;
+  descripcion1: string;
+  descripcion2: string;
   redes: {
     instagram: string;
     linkedin: string;

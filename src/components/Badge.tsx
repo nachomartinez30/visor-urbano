@@ -1,6 +1,6 @@
 export const Badge = () => {
   return (
-    <section id="home" className="lg:h-screen sm:h-1/4 badgeBackground">
+    <section id="home" className="badgeBackground">
       <div className="grid grid-cols-3 grid-flow-col">
         <div className="col-span-2 badge__Container">
           <h2 className="badge__Titulo">

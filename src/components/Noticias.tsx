@@ -55,8 +55,9 @@ export const Noticias = () => {
             <Articulo key={post.id} {...post} />
           ))}
         </div>
-
-        <button className="btn-primary">Ver todas las noticias</button>
+        <div className="flex flex-col items-center mt-10">
+          <button className="btn-primary text-center flex-col items-center noticias__Boton">Ver todas las noticias</button>
+        </div>
       </div>
     </div>
   );
@@ -71,9 +72,7 @@ const Articulo = (post: ArticuloProps) => {
     >
       <div className="relative w-full hover:scale-105 transition-transform duration-300">
         <Image
-          height={300}
-          width={380}
-          className="aspect-[16/9] w-full rounded-t-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2] "
+          className="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2] noticias__Image"
           alt={title}
           src={imageUrl}
         />
@@ -81,13 +80,14 @@ const Articulo = (post: ArticuloProps) => {
       <div className="max-w-xl p-5">
         <div className="group relative">
           <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-            <a href={href}>
-              <span className="absolute inset-0" />
+            <a href={href} className="noticias__Titulo">
               {title}
             </a>
           </h3>
-          <time className="text-VerdeTextos">{date}</time>
-          <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+          <div className="my-5">
+            <time className="text-VerdeTextos noticias__Fecha">{date}</time>
+          </div>
+          <p className="line-clamp-3 text-sm/6 text-gray-600 noticias__Descripcion">
             {description}
           </p>
         </div>

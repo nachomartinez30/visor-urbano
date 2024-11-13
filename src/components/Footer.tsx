@@ -10,8 +10,8 @@ import linkedin_logo from "../assets/images/linkedin.png";
 
 export const Footer = () => {
   return (
-    <div className="footerBg h-[323.03px]">
-      <div className="grid grid-cols-3 gap-4">
+    <div className="flex flex-col items-center footerBg h-[323.03px]">
+      <div className="grid grid-cols-3 gap-4 flex-col items-center footer__Bloque">
         <Image
           className="mx-auto mt-11"
           src={visor_urbano_logo}
@@ -20,47 +20,39 @@ export const Footer = () => {
           height={99.48}
         />
         <Image
-          className="mx-auto mt-11"
+          className="mx-auto mt-11 footer__Logos"
           src={boomergang_logo}
           alt="boomergang_logo"
-          width={222}
-          height={99.48}
         />
         <Image
-          className="mx-auto mt-11"
+          className="mx-auto mt-11 footer__Logos"
           src={jalisco_logo}
           alt="jalisco_logo"
-          width={222}
-          height={99.48}
         />
-        <div className="grid grid-flow-col">
+        <div className="grid grid-flow-col flex-col items-center text-center justify-self-center footer__Redes">
           <Image
             alt="facebook_logo_logo"
             src={facebook_logo}
-            width={18.45}
-            height={18.45}
+            className="justify-self-center redes__Iconos"
           />
           <Image
             alt="twitter_logo"
             src={twitter_logo}
-            width={18.45}
-            height={18.45}
+            className="justify-self-center redes__Iconos"
           />
           <Image
             alt="instagram_logo"
             src={instagram_logo}
-            width={18.45}
-            height={18.45}
+            className="justify-self-center redes__Iconos"
           />
           <Image
             alt="linkedin_logo"
             src={linkedin_logo}
-            width={18.45}
-            height={18.45}
+            className="justify-self-center redes__Iconos"
           />
         </div>
         <div className="">
-          <h3 className="text-VerdeTextos">AVISO DE PRIVACIDAD</h3>
+          <h3 className="text-VerdeTextos text-center">AVISO DE PRIVACIDAD</h3>
         </div>
       </div>
     </div>

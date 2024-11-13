@@ -3,6 +3,9 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { ModalProps } from "../types/modal.interface";
 import { Person } from "../types/person.interface";
+import iconoCorreo from "../../assets/images/email_icon.svg"
+import iconoInsta from "../../assets/images/instagram.svg"
+import iconoLinkedIn from "../../assets/images/linkedin.png"
 
 interface ModalEquipoProps extends ModalProps {
   selectedPerson: Person;
@@ -23,7 +26,7 @@ export const ModalEquipo = ({
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
           <DialogPanel
             transition
-            className="h-[557px] w-[1212px] relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+            className="relative transform rounded-lg bg-white shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95 equipoModal_Bloque"
           >
             <div className="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
               <button
@@ -31,23 +34,50 @@ export const ModalEquipo = ({
                 onClick={() => setOpen(false)}
                 className="rounded-md text-[#CFD4D6] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
-                <span className="sr-only">Close</span>
+                <span className="sr-only">Cerrar</span>
                 <XMarkIcon aria-hidden="true" className="size-8" />
               </button>
             </div>
-            <div className="flex flex-col justify-center items-center w-1/2">
-              <Image
-                alt={selectedPerson.nombre}
-                className="rounded-full w-48 h-48"
-                src={selectedPerson.imageUrl}
-                height={300}
-                width={300}
-              />
-              <div className="font-bold">{selectedPerson.nombre}</div>
-              <div className="text-VerdeTextos">{selectedPerson.rol}</div>
-              <p>{selectedPerson.descripcion}</p>
-              <div>{selectedPerson.redes.instagram}</div>
-              <div>{selectedPerson.redes.linkedin}</div>
+            <div className="flex flex-col grid grid-cols-12 justify-between equipoModal">
+              <div className="col-start-2 col-span-3 flex flex-col items-center text-center">
+                <Image
+                  alt={selectedPerson.nombre}
+                  className="equipoModal__Image"
+                  src={selectedPerson.imageUrl}
+                />
+                <div className="mt-5 flex flex-row items-center">
+                  <Image
+                    alt='icono de correo'
+                    className="mr-2"
+                    src={iconoCorreo}
+                  />
+                  <a href={`mailto:${selectedPerson.correo}`} className="imageModal__Correo">{selectedPerson.correo}</a>
+                </div>
+              </div>
+              <div className="col-start-6 col-span-6 flex flex-col text-left">
+                <div className="font-bold equipoModal__Nombre">{selectedPerson.nombre}</div>
+                <div className="text-VerdeTextos mb-10 equipoModal__Puesto">{selectedPerson.rol}</div>
+                <div className="mb-10 equipoModal__Contenido">
+                  <p className="mb-10">{selectedPerson.descripcion1}</p>
+                  <p>{selectedPerson.descripcion2}</p>
+                </div>
+                <div className="mt-5 flex flex-row items-center">
+                  <a href={selectedPerson.redes.instagram}>
+                    <Image
+                      alt='icono de correo'
+                      className="equipoModal__Redes mr-2"
+                      src={iconoInsta}
+                    />
+                  </a>
+                  <a href={selectedPerson.redes.linkedin}>
+                    <Image
+                      alt='icono de correo'
+                      className="equipoModal__Redes"
+                      src={iconoLinkedIn}
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </DialogPanel>
         </div>

@@ -14,7 +14,7 @@ import {
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import logo from "../assets/images/logo_visor_header.png";
 import { ModalContacto } from "./Modales/ModalContacto";
 import { ModalSuccess } from "./Modales/ModalSuccess";
@@ -61,9 +61,20 @@ const callsToAction = [
 export const Header = () => {
   const [openContactoModal, setOpenContactoModal] = useState(false);
   const [openSuccessModal, setSuccessModal] = useState(false);
+
+  const handleOnSubmit = (ev: FormEvent<HTMLFormElement>) => {
+    ev.preventDefault();
+    setOpenContactoModal(false);
+    setSuccessModal(true);
+  };
+
   return (
     <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 w-full z-10">
-      <ModalContacto open={openContactoModal} setOpen={setOpenContactoModal} />
+      <ModalContacto
+        handleSubmit={handleOnSubmit}
+        open={openContactoModal}
+        setOpen={setOpenContactoModal}
+      />
       <ModalSuccess open={openSuccessModal} setOpen={setSuccessModal} />
       <nav
         aria-label="Global"
@@ -75,13 +86,16 @@ export const Header = () => {
           </a>
         </div>
         <PopoverGroup className="flex items-center">
-          <a href="#" className="text-sm/6 GRegular navVisor__link">
+          <a
+            href="#nuestra_historia"
+            className="text-sm/6 GRegular navVisor__link"
+          >
             Historia
           </a>
-          <a href="#" className="text-sm/6 GRegular navVisor__link">
+          <a href="#noticias" className="text-sm/6 GRegular navVisor__link">
             Noticias
           </a>
-          <a href="#" className="text-sm/6 GRegular navVisor__link">
+          <a href="#ciudades" className="text-sm/6 GRegular navVisor__link">
             Explora Visor Urbano
           </a>
           <Popover className="relative">

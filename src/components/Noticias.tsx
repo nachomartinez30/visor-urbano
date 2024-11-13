@@ -45,7 +45,7 @@ const posts = [
 
 export const Noticias = () => {
   return (
-    <div className="py-24 sm:py-32">
+    <section id="noticias" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="main-title">Ló último de Visor Urbano</h2>
@@ -59,7 +59,7 @@ export const Noticias = () => {
           <button className="btn-primary text-center flex-col items-center noticias__Boton">Ver todas las noticias</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

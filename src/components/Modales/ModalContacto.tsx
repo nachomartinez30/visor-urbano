@@ -5,8 +5,13 @@ import Image from "next/image";
 
 import contacto_img from "../../assets/images/contacto-bg.png";
 import { ModalProps } from "../types/modal.interface";
+import { FormEvent } from "react";
 
-export const ModalContacto = ({ open, setOpen }: ModalProps) => {
+interface ModalContactoProps extends ModalProps {
+  handleSubmit: (ev: FormEvent<HTMLFormElement>) => void;
+}
+
+export const ModalContacto = ({ open, setOpen,handleSubmit }: ModalContactoProps) => {
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop
@@ -34,12 +39,13 @@ export const ModalContacto = ({ open, setOpen }: ModalProps) => {
               <div className="grid col-span-7 flex flex-col items-center text-center py-10">
                 {/* TITULO */}
                 <h2 className="modalContacto__Titulo">
-                  Contáctanos para obtener <br/>Visor Urbano en tu ciudad
+                  Contáctanos para obtener <br />
+                  Visor Urbano en tu ciudad
                 </h2>
 
                 {/* FORM */}
                 <div className="justify-self-center modalContacto__Izquierda">
-                  <form className="grid grid-cols-12 gap-4">
+                  <form className="grid grid-cols-12 gap-4" onSubmit={handleSubmit}>
                     {/* NOMBRE COMPLETO */}
                     <div className="sm:col-span-12 mt-10">
                       <label
@@ -167,7 +173,9 @@ export const ModalContacto = ({ open, setOpen }: ModalProps) => {
                       </div>
                     </div>
                     <div className="sm:col-span-12 flex flex-col items-center mt-10">
-                      <button className="btn-primary text-center flex-col items-center modalContacto__Boton">Enviar</button>
+                      <button className="btn-primary text-center flex-col items-center modalContacto__Boton">
+                        Enviar
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -176,8 +184,8 @@ export const ModalContacto = ({ open, setOpen }: ModalProps) => {
                 {/* INFO LATERAL */}
                 <div className="bg-gradient-to-t from-dark to-primary content-center modalDerecha__Gradiente">
                   <p className="flex flex-row text-white justify-center text-center modalDerecha__Texto">
-                    Replicar Visor Urbano es un proceso sencillo ya que, además de
-                    ser una plataforma intuitiva y fácil de usar, puede ser
+                    Replicar Visor Urbano es un proceso sencillo ya que, además
+                    de ser una plataforma intuitiva y fácil de usar, puede ser
                     adaptada de acuerdo a las necesidades, retos y contexto de
                     cualquier ciudad
                   </p>

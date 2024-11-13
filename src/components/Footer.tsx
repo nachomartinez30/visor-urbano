@@ -7,10 +7,14 @@ import facebook_logo from "../assets/images/facebook.svg";
 import twitter_logo from "../assets/images/twitter.svg";
 import instagram_logo from "../assets/images/instagram.svg";
 import linkedin_logo from "../assets/images/linkedin.png";
+import { ModalAvisoPrivacidad } from "./Modales/ModalAvisoPrivacidad";
+import { useState } from "react";
 
 export const Footer = () => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className="flex flex-col items-center footerBg h-[323.03px]">
+      <ModalAvisoPrivacidad open={openModal} setOpen={setOpenModal} />
       <div className="grid grid-cols-3 gap-4 flex-col items-center footer__Bloque">
         <Image
           className="mx-auto mt-11"
@@ -52,7 +56,12 @@ export const Footer = () => {
           />
         </div>
         <div className="">
-          <h3 className="text-VerdeTextos text-center">AVISO DE PRIVACIDAD</h3>
+          <h3
+            className="text-VerdeTextos text-center"
+            onClick={() => setOpenModal(true)}
+          >
+            AVISO DE PRIVACIDAD
+          </h3>
         </div>
       </div>
     </div>

@@ -1,9 +1,8 @@
-import React from "react";
-import { ModalProps } from "./modal.interface";
-import { XMarkIcon } from "@heroicons/react/20/solid";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
-import { Person } from "../types/person.interface";
+import { XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { ModalProps } from "../types/modal.interface";
+import { Person } from "../types/person.interface";
 
 interface ModalEquipoProps extends ModalProps {
   selectedPerson: Person;

@@ -1,10 +1,9 @@
-import React from "react";
-import { ModalProps } from "./modal.interface";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
+import { ModalProps } from "../types/modal.interface";
 
-import success_pic from "../../assets/images/successModalPic.svg";
 import Image from "next/image";
+import success_pic from "../../assets/images/successModalPic.svg";
 
 export const ModalSuccess = ({ open, setOpen }: ModalProps) => {
   return (

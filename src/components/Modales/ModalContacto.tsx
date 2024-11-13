@@ -4,7 +4,7 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 import contacto_img from "../../assets/images/contacto-bg.png";
-import { ModalProps } from "./modal.interface";
+import { ModalProps } from "../types/modal.interface";
 
 export const ModalContacto = ({ open, setOpen }: ModalProps) => {
   return (

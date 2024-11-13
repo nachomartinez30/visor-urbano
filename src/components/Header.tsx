@@ -16,6 +16,8 @@ import {
 import Image from "next/image";
 import logo from "../assets/images/logo_visor_header.png";
 import idioma from "../assets/images/idioma.svg";
+import { ModalContacto } from "./ModalContacto";
+import { useState } from "react";
 
 /* TODO: quitar products por las options  */
 const products = [
@@ -56,8 +58,10 @@ const callsToAction = [
 ];
 
 export const Header = () => {
+  const [openContactoModal, setOpenContactoModal] = useState(false);
   return (
-    <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 w-full z-50">
+    <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 w-full z-10">
+      <ModalContacto open={openContactoModal} setOpen={setOpenContactoModal} />
       <nav
         aria-label="Global"
         className="mx-auto flex justify-between items-center p-6 navVisor"
@@ -125,9 +129,12 @@ export const Header = () => {
               </div>
             </PopoverPanel>
           </Popover>
-          <a href="#" className="btn-primary navVisor__link">
+          <button
+            onClick={() => setOpenContactoModal(true)}
+            className="btn-primary navVisor__link"
+          >
             ¿Necesitas ayuda? Contáctanos
-          </a>
+          </button>
           <button className="flex items-center rounded-full">
             <Image src={idioma} alt="idiomas" />
           </button>

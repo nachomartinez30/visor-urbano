@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tw_forms from "@tailwindcss/forms";
 
 export default {
   content: [
@@ -26,10 +27,10 @@ export default {
       },
     },
     fontFamily: {
-      GRegular: 'Geologica',
-      GBold: 'Geologica-Bold',
-      GLight: 'Geologica-Light',
-    }
+      GRegular: "Geologica",
+      GBold: "Geologica-Bold",
+      GLight: "Geologica-Light",
+    },
   },
-  plugins: [],
+  plugins: [tw_forms],
 } satisfies Config;

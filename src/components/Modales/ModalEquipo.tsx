@@ -3,9 +3,9 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { ModalProps } from "../types/modal.interface";
 import { Person } from "../types/person.interface";
-import iconoCorreo from "../../assets/images/email_icon.svg"
-import iconoInsta from "../../assets/images/instagram.svg"
-import iconoLinkedIn from "../../assets/images/linkedin.png"
+import iconoCorreo from "../../assets/images/email_icon.svg";
+import iconoInsta from "../../assets/images/instagram.svg";
+import iconoLinkedIn from "../../assets/images/linkedin.png";
 
 interface ModalEquipoProps extends ModalProps {
   selectedPerson: Person;
@@ -47,36 +47,47 @@ export const ModalEquipo = ({
                 />
                 <div className="mt-5 flex flex-row items-center">
                   <Image
-                    alt='icono de correo'
+                    alt="icono de correo"
                     className="mr-2"
                     src={iconoCorreo}
                   />
-                  <a href={`mailto:${selectedPerson.correo}`} className="imageModal__Correo">{selectedPerson.correo}</a>
+                  <a
+                    href={`mailto:${selectedPerson.correo}`}
+                    className="imageModal__Correo"
+                  >
+                    {selectedPerson.correo}
+                  </a>
                 </div>
               </div>
               <div className="col-start-6 col-span-6 flex flex-col text-left">
-                <div className="font-bold equipoModal__Nombre">{selectedPerson.nombre}</div>
-                <div className="text-VerdeTextos mb-10 equipoModal__Puesto">{selectedPerson.rol}</div>
+                <div className="font-bold equipoModal__Nombre">
+                  {selectedPerson.nombre}
+                </div>
+                <div className="text-VerdeTextos mb-10 equipoModal__Puesto">
+                  {selectedPerson.rol}
+                </div>
                 <div className="mb-10 equipoModal__Contenido">
                   <p className="mb-10">{selectedPerson.descripcion1}</p>
                   <p>{selectedPerson.descripcion2}</p>
                 </div>
-                <div className="mt-5 flex flex-row items-center">
-                  <a href={selectedPerson.redes.instagram}>
-                    <Image
-                      alt='icono de correo'
-                      className="equipoModal__Redes mr-2"
-                      src={iconoInsta}
-                    />
-                  </a>
-                  <a href={selectedPerson.redes.linkedin}>
-                    <Image
-                      alt='icono de correo'
-                      className="equipoModal__Redes"
-                      src={iconoLinkedIn}
-                    />
-                  </a>
-                </div>
+                {selectedPerson.redes && (
+                  <div className="mt-5 flex flex-row items-center">
+                    <a href={selectedPerson.redes.instagram}>
+                      <Image
+                        alt="icono de correo"
+                        className="equipoModal__Redes mr-2"
+                        src={iconoInsta}
+                      />
+                    </a>
+                    <a href={selectedPerson.redes.linkedin}>
+                      <Image
+                        alt="icono de correo"
+                        className="equipoModal__Redes"
+                        src={iconoLinkedIn}
+                      />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </DialogPanel>

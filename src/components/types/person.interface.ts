@@ -7,8 +7,8 @@ export interface Person {
   imageUrl: StaticImageData;
   descripcion1: string;
   descripcion2: string;
-  redes: {
-    instagram: string;
-    linkedin: string;
+  redes?: {
+    instagram?: string;
+    linkedin?: string;
   };
 }

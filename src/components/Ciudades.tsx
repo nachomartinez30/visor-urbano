@@ -90,14 +90,14 @@ const Card = ({
   url: string;
 }) => {
   return (
-    <div className="shadow-xl rounded-xl py-10 grid grid-cols-1 content-around card__cards">
+    <div className="hover:shadow-xl rounded-3xl py-10 grid grid-cols-1 content-around card__cards">
       <Image src={logo} alt={`logo_${titulo}`} className="cards__City"/>
       <a
         href={`#${url}`}
         className="rounded-full bg-gradient-to-t from-VerdeBase to-VerdeBaseClaro cards__Button"
       >
         <div className='flex justify-center'>
-          <Image src={icon_mapa} alt="icon-mapa"/>
+          <Image className="hover:scale-150 transform transition duration-700 ease-in-out" src={icon_mapa} alt="icon-mapa"/>
           <p className="pl-4">Ver el mapa</p>
         </div>
       </a>

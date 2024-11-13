@@ -14,11 +14,11 @@ import {
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import logo from "../assets/images/logo_visor_header.png";
-import idioma from "../assets/images/idioma.svg";
-import { ModalContacto } from "./Modales/ModalContacto";
 import { useState } from "react";
+import logo from "../assets/images/logo_visor_header.png";
+import { ModalContacto } from "./Modales/ModalContacto";
 import { ModalSuccess } from "./Modales/ModalSuccess";
+import { IdiomasIcon } from "./icons/IdiomasIcon";
 
 /* TODO: quitar products por las options  */
 const products = [
@@ -86,7 +86,7 @@ export const Header = () => {
           </a>
           <Popover className="relative">
             <PopoverButton className="btn-primary navVisor__link">
-              Quiero Implementar Visor Urbano
+              Implementar por mi cuenta
             </PopoverButton>
 
             <PopoverPanel
@@ -136,10 +136,10 @@ export const Header = () => {
             onClick={() => setOpenContactoModal(true)}
             className="btn-primary navVisor__link"
           >
-            ¿Necesitas ayuda? Contáctanos
+            Solicitar ayuda para implementar
           </button>
           <button className="flex items-center rounded-full">
-            <Image src={idioma} alt="idiomas" />
+            <IdiomasIcon />
           </button>
         </PopoverGroup>
       </nav>

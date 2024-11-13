@@ -27,7 +27,7 @@ export const ModalContacto = ({ open, setOpen }: ModalProps) => {
                 className="rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 <span className="sr-only">Cerrar</span>
-                <XMarkIcon aria-hidden="true" className="size-8" />
+                <XMarkIcon aria-hidden="true" className="size-8 text-white" />
               </button>
             </div>
             <div className="flex flex-col grid grid-cols-12 justify-between">

@@ -1,6 +1,5 @@
 "use client";
 import { YouTubeEmbed } from "@next/third-parties/google";
-import idioma from "../assets/images/youtubePortada.png";
 
 export const QuienesSomos = () => {
   return (

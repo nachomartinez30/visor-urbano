@@ -79,7 +79,7 @@ export const Header = () => {
     <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 fullWidth z-10">
       <ModalContacto />
       <ModalSuccess />
-      <Disclosure as="nav" className='mx-auto flex justify-between p-6 md:p-4 sm:p-4 navVisor'>
+      <Disclosure as="nav" className='mx-auto flex justify-between p-2 sm:p-6 navVisor'>
         <div className="flex items-center navVisor__Display">
           <div className="relative flex h-16 items-center justify-self-start">
             <div className="flex flex-1 items-center justify-self-start sm:items-stretch sm:justify-start">
@@ -124,7 +124,7 @@ export const Header = () => {
           </div>
 
           <DisclosurePanel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-6 sm:px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.name}

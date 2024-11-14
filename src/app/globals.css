@@ -354,12 +354,12 @@ lite-youtube{
   .navVisor__Control--idioma {
     position: absolute!important;
     right: 2%;
-    top: 32px;
+    top: 20px;
   }
   .navVisor__Control--nav {
     position: absolute!important;
     left: 2%;
-    top: 32px;
+    top: 20px;
   }
   .badgeBackground{
     background: no-repeat url("../assets/images/story3.svg");
@@ -389,5 +389,30 @@ lite-youtube{
   .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .equipo__Titulo {
     font-weight: 600;
     font-size: var(--TitulosGeneral--Movil);
+  }
+  .ciudades__carousel {
+    width: 95%;
+    padding-bottom: 1rem;
+  }
+  .card__cards{
+    background: var(--BlancoBase);
+    width: 90%;
+    min-height: 340px;
+  }
+  .cards__City{
+    min-width: 100%;
+    max-width: 220px;
+    max-height: 220px;
+    min-height: auto;
+  }
+  .cards__Button{
+    color: var(--BlancoBase);
+    font-family: var(--GRegular);
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+    position: fixed;
+    bottom: 5%;
+    left: 10%;
+    width: 75%;
   }
 }

@@ -60,8 +60,8 @@ const ciudades = [
 
 export const Ciudades = () => {
   return (
-    <section id="ciudades" className="ciudades__Background pb-20">
-      <h2 className="text-center pt-9 mb-9 ciudades__Titulo">
+    <section id="ciudades" className="ciudades__Background pb-10 sm:pb-20">
+      <h2 className="text-center pt-9 mb-4 sm:mb-9 ciudades__Titulo">
         Explora Visor Urbano en distintas Ciudades
       </h2>
       <div className="flex justify-center">
@@ -90,7 +90,7 @@ const Card = ({
   url: string;
 }) => {
   return (
-    <a href={`${url}`} target="_blank" className="hover:shadow-xl rounded-3xl py-10 grid grid-cols-1 content-around card__cards">
+    <a href={`${url}`} target="_blank" className="hover:shadow-xl rounded-3xl py-5 sm:py-10 grid grid-cols-1 content-around card__cards">
       <Image src={logo} alt={`logo_${titulo}`} className="cards__City"/>
       <div
         

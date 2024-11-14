@@ -41,7 +41,6 @@ export const Noticias = async () => {
   });
   const { data } = await res.json();
   const posts = postsDTO(data.data); /* asi esta el API de visor urbano */
-  console.log(posts);
 
   return (
     <section id="noticias" className="py-24 sm:py-32">

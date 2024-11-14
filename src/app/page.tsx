@@ -1,19 +1,6 @@
-import { Badge } from "@/components/Badge";
-import { Ciudades } from "@/components/Ciudades";
-import { EquipoVisor } from "@/components/EquipoVisor";
-import { Noticias } from "@/components/Noticias";
-import { PorQueSerParte } from "@/components/PorQueSerParte";
-import { QuienesSomos } from "@/components/QuienesSomos";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <>
-      <Badge />
-      <QuienesSomos />
-      <Ciudades />
-      <PorQueSerParte />
-      <EquipoVisor />
-      <Noticias />
-    </>
-  );
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect("/es");
 }

@@ -36,12 +36,11 @@ export const NuestraHistoria = () => {
 
         <Image alt="timeline_4" src={timeline_4} />
         <h2 className="year">2022</h2>
-        <p className="text">Lanzamiento de Visor Urbano en Hidalgo</p>
-        <Image
-          alt="
-        timeline_5"
-          src={timeline_5}
-        />
+        <p className="text">
+          Lanzamiento de Visor Urbano en Hidalgo
+        </p>
+
+        <Image alt=" timeline_5" src={timeline_5}/>
         <h2 className="year">2017</h2>
         <p className="text">
           Lanzamiento de primera versión de Visor Urbano en Guadalajara, Jalisco

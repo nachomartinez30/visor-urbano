@@ -44,12 +44,12 @@ export const Noticias = async () => {
   console.log(posts);
 
   return (
-    <section id="noticias" className="py-24 sm:py-32">
+    <section id="noticias" className="py-10 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="main-title">Ló último de Visor Urbano</h2>
+          <h2 className="noticiasBloque__Titulo">Ló último de Visor Urbano</h2>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-4 sm:mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post: ArticuloProps) => (
             <Articulo key={post.id} {...post} />
           ))}

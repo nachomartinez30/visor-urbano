@@ -115,10 +115,10 @@ export const EquipoVisor = () => {
         setOpen={setOpenModal}
         selectedPerson={selectedPerson}
       />
-      <h2 className="text-center pt-9 mb-9 equipo__Titulo">Equipo Visor</h2>
+      <h2 className="text-center pt-0 sm:pt-9 mb-2 sm:mb-9 equipo__Titulo">Equipo Visor</h2>
       <ul
         role="list"
-        className="mx-auto mt-20 grid grid-cols-8 flex justify-items-center equipo__Grid"
+        className="mx-auto mt-10 sm:mt-20 grid grid-cols-8 flex justify-items-center equipo__Grid"
       >
         {equipo.map((person: Person) => (
           <AvatarCard
@@ -137,7 +137,7 @@ const AvatarCard = ({ person, onClick }: AvatarProps) => {
   return (
     <li
       onClick={() => onClick(person)}
-      className="col-span-2 flex flex-col items-center text-center equipo__Person"
+      className="col-span-4 sm:col-span-2 flex flex-col items-center text-center mb-10 sm:mb-0 equipo__Person"
     >
       <div>
         <Image

@@ -39,7 +39,7 @@ export const ModalEquipo = ({
               </button>
             </div>
             <div className="flex flex-col grid grid-cols-12 justify-between equipoModal">
-              <div className="col-start-2 col-span-3 flex flex-col items-center text-center">
+              <div className="col-start-1 col-span-12 sm:col-span-3 flex flex-col items-center text-center">
                 <Image
                   alt={selectedPerson.nombre}
                   className="equipoModal__Image"
@@ -59,7 +59,7 @@ export const ModalEquipo = ({
                   </a>
                 </div>
               </div>
-              <div className="col-start-6 col-span-6 flex flex-col text-left">
+              <div className="col-start-1 sm:col-start-6 col-span-12 sm:col-span-6 flex flex-col text-left">
                 <div className="font-bold equipoModal__Nombre">
                   {selectedPerson.nombre}
                 </div>

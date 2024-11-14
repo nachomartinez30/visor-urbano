@@ -1,13 +1,19 @@
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
-import { ModalProps } from "../types/modal.interface";
 
 import Image from "next/image";
 import success_pic from "../../assets/images/successModalPic.svg";
+import { useContext } from "react";
+import { ModalContext } from "../context/ContextModal";
 
-export const ModalSuccess = ({ open, setOpen }: ModalProps) => {
+export const ModalSuccess = () => {
+  const modalCtx = useContext(ModalContext);
   return (
-    <Dialog open={open} onClose={setOpen} className="relative z-10">
+    <Dialog
+      open={modalCtx?.isOpenSuccess}
+      onClose={() => modalCtx?.closeModalSuccess()}
+      className="relative z-10"
+    >
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-gray-500/75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
@@ -21,7 +27,7 @@ export const ModalSuccess = ({ open, setOpen }: ModalProps) => {
             <div className="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
               <button
                 type="button"
-                onClick={() => setOpen(false)}
+                onClick={() => modalCtx?.closeModalSuccess()}
                 className="rounded-md text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 <span className="sr-only">Close</span>
@@ -33,7 +39,12 @@ export const ModalSuccess = ({ open, setOpen }: ModalProps) => {
                 ¡Gracias por tu mensaje! en breve nos comunicaremos contigo
               </p>
               <Image alt="success" src={success_pic} className="h-48 w-auto" />
-              <button className="btn-primary">Aceptar</button>
+              <button
+                className="btn-primary"
+                onClick={() => modalCtx?.closeModalSuccess()}
+              >
+                Aceptar
+              </button>
             </div>
           </DialogPanel>
         </div>

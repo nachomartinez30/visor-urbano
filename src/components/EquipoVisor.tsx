@@ -61,13 +61,13 @@ const equipo: Person[] = [
   },
   {
     nombre: "Janeth Vargas",
-    rol: "Coordinadora de Enlaces Municipales",
+    rol: "Coordinadora de Enlace con Municipios",
     imageUrl: janeth,
-    correo: "yunive@visorurbano.com",
+    correo: "janeth@visorurbano.com",
     descripcion1:
-      "Daniel es abogado especializado en Derecho Administrativo por la Universidad de Guadalajara y maestrante en Propiedad Industrial, Derechos de Autor y Nuevas Tecnologías por la Universidad Panamericana.",
+      "Abogada egresada de la Universidad de Guadalajara, con especialidades en Derecho Administrativo y Derecho Constitucional y Amparo por la Universidad Panamericana. Especializada en Derecho Urbano y Usos de Suelo, se destaca por su experiencia en la administración pública mediante la tramitología de autorizaciones ante dependencias gubernamentales.",
     descripcion2:
-      "Dedicado a la mejora continua de los trámites y servicios gubernamentales a través de la innovación y el uso de la tecnología ha formado parte de Visor Urbano desde su creación e implementación en el municipio de Guadalajara en 2018 así como de las diversas réplicas que se han hecho de la plataforma en diversas ciudades a nivel nacional.",
+      "Actualmente, desempeña el rol de enlace oficial con los municipios a nivel Jalisco en Visor Urbano.",
     redes: {
       instagram: "",
       linkedin: "",
@@ -116,7 +116,9 @@ export const EquipoVisor = () => {
         selectedPerson={selectedPerson}
       />
       <h2 className="text-center pt-9 mb-9 equipo__Titulo">Equipo Visor</h2>
-      <ul role="list" className="mx-auto mt-20 grid grid-cols-8 flex justify-items-center equipo__Grid"
+      <ul
+        role="list"
+        className="mx-auto mt-20 grid grid-cols-8 flex justify-items-center equipo__Grid"
       >
         {equipo.map((person: Person) => (
           <AvatarCard
@@ -133,7 +135,10 @@ export const EquipoVisor = () => {
 const AvatarCard = ({ person, onClick }: AvatarProps) => {
   const { nombre, imageUrl, rol } = person;
   return (
-    <li onClick={() => onClick(person)} className="col-span-2 flex flex-col items-center text-center equipo__Person">
+    <li
+      onClick={() => onClick(person)}
+      className="col-span-2 flex flex-col items-center text-center equipo__Person"
+    >
       <div>
         <Image
           className="origin-center hover:scale-110 transform transition duration-700 ease-in-out equipo__Image"

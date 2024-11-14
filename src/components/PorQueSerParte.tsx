@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import clock from "../assets/images/features/ico_licencias_negocio_2.svg";
 import list from "../assets/images/features/ico_licencias_negocio.svg";
@@ -40,26 +41,32 @@ const features = [
   {
     content: "Facilita el aumento en la recaudación.",
     image: speaker,
-  }
+  },
 ];
 
 export const PorQueSerParte = () => {
+  const modalCtx = useContext(ModalContext);
   return (
     <section id="por_que_ser_parte" className="mt-10 porQueBackground">
-      <h3 className="text-center porQue__Titulo">¿Por qué ser parte de Visor Urbano?</h3>
+      <h3 className="text-center porQue__Titulo">
+        ¿Por qué ser parte de Visor Urbano?
+      </h3>
 
       <div className="grid grid-cols-3 grid-rows-2 grid-flow-col flex justify-center porQue__Grid">
-      {features.map((feature, index) => (
-        <Item key={index} {...feature} />
-      ))}
+        {features.map((feature, index) => (
+          <Item key={index} {...feature} />
+        ))}
       </div>
 
       <div className="grid grid-cols-2 grid-flow-col flex justify-center porQue__Botones">
         <button className="mx-4 btn-primary justify-center porQue__Botones--Boton">
-            Quiero implementar Visor Urbano
-          </button>
-        <button className="mx-4 btn-primary justify-center porQue__Botones--Boton">
-            ¿Necesitas ayuda? Contáctanos
+          Implementar por mi cuenta
+        </button>
+        <button
+          className="mx-4 btn-primary justify-center porQue__Botones--Boton"
+          onClick={() => modalCtx?.openModalContacto()}
+        >
+          Solicitar ayuda para implementar
         </button>
       </div>
 
@@ -71,7 +78,11 @@ export const PorQueSerParte = () => {
           </div>
           <div className="grid grid-cols-9 flex justify-items-center historia__Grid historia__Grid--left">
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_1" src={timeline_1} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_1"
+                src={timeline_1}
+              />
               <h2 className="year historia__Anios">2016</h2>
               <p className="text historia__Contenido">
                 Guadalajara gana el Premio “Mayors Challenge” de Bloomberg
@@ -80,16 +91,24 @@ export const PorQueSerParte = () => {
             </div>
 
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_2" src={timeline_2} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_2"
+                src={timeline_2}
+              />
               <h2 className="year historia__Anios">2018</h2>
               <p className="text historia__Contenido">
-                Visor Urbano Guadalajara gana el Premio Nacional de Innovación en
-                Transparencia
+                Visor Urbano Guadalajara gana el Premio Nacional de Innovación
+                en Transparencia
               </p>
             </div>
 
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_3" src={timeline_3} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_3"
+                src={timeline_3}
+              />
               <h2 className="year historia__Anios">2020</h2>
               <p className="text historia__Contenido">
                 Ganador del Future Cities Award de los Emiratos Árabes Unidos
@@ -97,9 +116,15 @@ export const PorQueSerParte = () => {
             </div>
 
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_4" src={timeline_4} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_4"
+                src={timeline_4}
+              />
               <h2 className="year historia__Anios">2022</h2>
-              <p className="text historia__Contenido">Lanzamiento de Visor Urbano en Hidalgo</p>
+              <p className="text historia__Contenido">
+                Lanzamiento de Visor Urbano en Hidalgo
+              </p>
             </div>
           </div>
 
@@ -109,23 +134,37 @@ export const PorQueSerParte = () => {
 
           <div className="grid grid-cols-9 flex justify-items-center historia__Grid historia__Grid--right">
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_5" src={timeline_5} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_5"
+                src={timeline_5}
+              />
               <h2 className="year historia__Anios">2017</h2>
               <p className="text historia__Contenido">
-                Lanzamiento de primera versión de Visor Urbano en Guadalajara, Jalisco
+                Lanzamiento de primera versión de Visor Urbano en Guadalajara,
+                Jalisco
               </p>
             </div>
 
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_6" src={timeline_6} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_6"
+                src={timeline_6}
+              />
               <h2 className="year historia__Anios">2019</h2>
               <p className="text historia__Contenido">
-                Primera réplica de Visor Urbano, en San Pedro Garza García, Nuevo León
+                Primera réplica de Visor Urbano, en San Pedro Garza García,
+                Nuevo León
               </p>
             </div>
 
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_7" src={timeline_7} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_7"
+                src={timeline_7}
+              />
               <h2 className="year historia__Anios">2021</h2>
               <p className="text historia__Contenido">
                 Consolidación de Visor Urbano en 33 municipios de Jalisco
@@ -133,9 +172,15 @@ export const PorQueSerParte = () => {
             </div>
 
             <div className="col-span-2 flex flex-col items-center text-center historiaGrid__Element">
-              <Image className="porQue_Imagenes" alt="timeline_8" src={timeline_8} />
+              <Image
+                className="porQue_Imagenes"
+                alt="timeline_8"
+                src={timeline_8}
+              />
               <h2 className="year historia__Anios">2023</h2>
-              <p className="text historia__Contenido">Meta de expansión a más de 50 ciudades en México</p>
+              <p className="text historia__Contenido">
+                Meta de expansión a más de 50 ciudades en México
+              </p>
             </div>
           </div>
         </div>
@@ -145,6 +190,8 @@ export const PorQueSerParte = () => {
 };
 
 import { StaticImageData } from "next/image";
+import { ModalContext } from "./context/ContextModal";
+import { useContext } from "react";
 
 const Item = ({
   content,
@@ -155,7 +202,7 @@ const Item = ({
 }) => {
   return (
     <div className="col-span-1 mx-4 my-6 flex justify-around flex-col items-center">
-      <Image src={image} alt="icon" className="porQue_Imagenes"/>
+      <Image src={image} alt="icon" className="porQue_Imagenes" />
       <p className="text-center porQue_Textos">{content}</p>
     </div>
   );

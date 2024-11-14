@@ -9,6 +9,7 @@ import gdl_logo from "../assets/images/ciudades/gdl_ico.svg";
 import tepa_logo from "../assets/images/ciudades/tepa_logo.png";
 import san_pedro_logo from "../assets/images/ciudades/san_pedro.svg";
 import hidalgo_logo from "../assets/images/ciudades/hidalgo.svg";
+import { useTranslations } from "next-intl";
 
 const responsive = {
   superLargeDesktop: {
@@ -59,11 +60,10 @@ const ciudades = [
 ];
 
 export const Ciudades = () => {
+  const t = useTranslations("Ciudades");
   return (
     <section id="ciudades" className="ciudades__Background pb-20">
-      <h2 className="text-center pt-9 mb-9 ciudades__Titulo">
-        Explora Visor Urbano en distintas Ciudades
-      </h2>
+      <h2 className="text-center pt-9 mb-9 ciudades__Titulo">{t("header")}</h2>
       <div className="flex justify-center">
         <Carousel responsive={responsive} className="p-5 ciudades__carousel">
           {ciudades.map((ciudad) => (
@@ -89,16 +89,22 @@ const Card = ({
   logo: string;
   url: string;
 }) => {
+  const t = useTranslations("Ciudades");
   return (
-    <a href={`${url}`} target="_blank" className="hover:shadow-xl rounded-3xl py-10 grid grid-cols-1 content-around card__cards">
-      <Image src={logo} alt={`logo_${titulo}`} className="cards__City"/>
-      <div
-        
-        className="rounded-full bg-gradient-to-t from-VerdeBase to-VerdeBaseClaro cards__Button"
-      >
-        <div className='flex justify-center'>
-          <Image className="hover:scale-150 transform transition duration-700 ease-in-out" src={icon_mapa} alt="icon-mapa"/>
-          <p className="pl-4">Ver el mapa</p>
+    <a
+      href={`${url}`}
+      target="_blank"
+      className="hover:shadow-xl rounded-3xl py-10 grid grid-cols-1 content-around card__cards"
+    >
+      <Image src={logo} alt={`logo_${titulo}`} className="cards__City" />
+      <div className="rounded-full bg-gradient-to-t from-VerdeBase to-VerdeBaseClaro cards__Button">
+        <div className="flex justify-center">
+          <Image
+            className="hover:scale-150 transform transition duration-700 ease-in-out"
+            src={icon_mapa}
+            alt="icon-mapa"
+          />
+          <p className="pl-4">{t("map")}</p>
         </div>
       </div>
     </a>

@@ -1,10 +1,99 @@
 {
-  "Badge": {
-    "header1": "Driving",
-    "header2": "the digital transformation",
-    "header3": "of the",
-    "header4": "cities of",
-    "header5": "the future.",
-    "header6": "Our platform enables and streamlines the issuance of digital business licenses"
-  }
+    "global": {
+        "button1": "Implement on my own",
+        "button2": "Request help to implement"
+    },
+    "Header": {
+        "option1": "History",
+        "option2": "News",
+        "option3": "Explore Urban Viewer"
+    },
+    "ModalContacto": {
+        "header": "Contact us to get <br></br> Urban Viewer in your city",
+        "closeBtn": "Close",
+        "name": "Full name* ",
+        "country": "Country",
+        "city": "City",
+        "email": "Email",
+        "phone": "Cell phone or contact phone",
+        "message": "Message",
+        "send": "Send",
+        "rightText": "Replicating Urban Viewer is a simple process because, in addition to being an intuitive and easy-to-use platform, it can be adapted according to the needs, challenges, and context of any city"
+    },
+    "Badge": {
+        "header1": "We drive",
+        "header2": "the digital",
+        "header3": "transformation of",
+        "header4": "the cities",
+        "header5": "of the future",
+        "header6": "We are a platform that allows the issuance of business and construction licenses entirely online"
+    },
+    "QuienesSomos": {
+        "header": "What is Urban Viewer?"
+    },
+    "Ciudades": {
+        "header": "Cities that already use Urban Viewer",
+        "map": "View map"
+    },
+    "PorQueSerParte": {
+        "header": "Why be part of Urban Viewer?",
+        "feature1": "Promotes agile and transparent procedures.",
+        "feature2": "Accelerates times and reduces costs of procedures.",
+        "feature3": "Allows the opening and georeferencing of information.",
+        "feature4": "Encourages collaboration between government entities.",
+        "feature5": "Fosters a closer relationship between government and citizens.",
+        "feature6": "Facilitates an increase in revenue.",
+        "header2": "Our History",
+        "timeline1": "Guadalajara wins the Bloomberg Philanthropies “Mayors Challenge” Award",
+        "timeline2": "Urban Viewer Guadalajara wins the National Innovation in Transparency Award",
+        "timeline3": "Winner of the Future Cities Award from the United Arab Emirates",
+        "timeline4": "Launch of Urban Viewer in Hidalgo",
+        "timeline5": "Launch of the first version of Urban Viewer in Guadalajara, Jalisco",
+        "timeline6": "First replication of Urban Viewer, in San Pedro Garza García, Nuevo León",
+        "timeline7": "Consolidation of Urban Viewer in 33 municipalities of Jalisco",
+        "timeline8": "Expansion goal to more than 50 cities in Mexico"
+    },
+    "EquipoVisor": {
+        "header": "Urban Viewer Team",
+        "yunive": {
+            "nombre": "Yunive Moreno",
+            "correo": "yunive@visorurbano.com",
+            "rol": "General Director",
+            "descripcion1": "Committed to making things happen to generate transformation processes in public and private organizations, through the Management of Technology and Innovation Projects and Cooperation. She was recognized as “AI Disruptor of the Year” by the Woman in AI North America Awards in 2022.",
+            "descripcion2": "Co-creator and General Director of Urban Viewer. Previously, she was the General Director of Liaison at the Innovation Coordination of the Government of Jalisco and Project Manager at the Innovation Directorate of the Government of Guadalajara.",
+            "instagram": "https://www.instagram.com/yunive_moreno/",
+            "linkedin": "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/"
+        },
+        "daniel": {
+            "nombre": "Daniel Murillo",
+            "rol": "Expansion Manager",
+            "correo": "daniel@visorurbano.com",
+            "descripcion1": "Daniel is a lawyer specialized in Administrative Law from the University of Guadalajara and a master's student in Industrial Property, Copyright, and New Technologies from the Panamerican University.",
+            "descripcion2": "Dedicated to the continuous improvement of government procedures and services through innovation and the use of technology, he has been part of Urban Viewer since its creation and implementation in the municipality of Guadalajara in 2018, as well as the various replications that have been made of the platform in various cities nationwide.",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/murillodani/"
+        },
+        "david": {
+            "nombre": "David Bates",
+            "rol": "Liaison and Sustainability Manager",
+            "correo": "dbates@visorurbano.com",
+            "descripcion1": "David promotes the use of exponential technologies to develop creative and scalable solutions to global challenges. He graduated with a degree in Communication Sciences and has specializations in Public Administration, Impact Measurement for Development, and Human-Centered Design for Social Innovation.",
+            "descripcion2": "He is an advisor and consultant for institutions in the innovation ecosystem in the implementation of projects focused on technology, public policy, social innovation, and socioeconomic development. Currently, he leads the Strategic Liaison of Urban Viewer, a project of the General Coordination of Government Innovation of Jalisco, in collaboration with the Bloomberg Philanthropies Foundation.",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/davidbatesf/"
+        },
+        "janeth": {
+            "nombre": "Janeth Vargas",
+            "rol": "Municipal Liaison Coordinator",
+            "correo": "janeth@visorurbano.com",
+            "descripcion1": "Lawyer graduated from the University of Guadalajara, with specializations in Administrative Law and Constitutional and Amparo Law from the Panamerican University. Specialized in Urban Law and Land Use, she stands out for her experience in public administration through the processing of authorizations before government agencies.",
+            "descripcion2": "Currently, she serves as the official liaison with municipalities at the state level in Urban Viewer.",
+            "instagram": "",
+            "linkedin": ""
+        }
+    },
+    "Noticias": {
+        "header": "Last news from Urban Viewer",
+        "button": "View all news"
+    }
 }

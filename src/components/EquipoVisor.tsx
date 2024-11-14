@@ -1,14 +1,15 @@
 "use client";
 import Image from "next/image";
 
-import yunive_moreno from "../assets/images/equipo_visor/yunive2.png";
 import daniel from "../assets/images/equipo_visor/daniel2.png";
 import dave from "../assets/images/equipo_visor/dave2.png";
+import yunive_moreno from "../assets/images/equipo_visor/yunive2.png";
 // import eliezer from "../assets/images/equipo_visor/eliezer2.png";
 import janeth from "../assets/images/equipo_visor/janeth2.png";
 // import victor from "../assets/images/equipo_visor/victor2.png";
-import { ModalEquipo } from "./Modales/ModalEquipo";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { ModalEquipo } from "./Modales/ModalEquipo";
 import { Person } from "./types/person.interface";
 
 interface AvatarProps {
@@ -16,90 +17,82 @@ interface AvatarProps {
   onClick: (person: Person) => void;
 }
 
-const equipo: Person[] = [
-  {
-    nombre: "Yunive Moreno",
-    rol: "Directora General",
-    imageUrl: yunive_moreno,
-    correo: "yunive@visorurbano.com",
-    descripcion1:
-      "Comprometida con hacer que las cosas sucedan para generar procesos de transformación en organizaciones públicas y privadas, a través de la Gestión de Proyectos de Tecnología e Innovación y Cooperación. Fue reconocida como “Disruptor de IA del año” por los premios Woman in AI North America Awards en el año 2022.",
-    descripcion2:
-      "Co-creadora y Directora General de Visor Urbano. Anteriormente fue Directora General de Vinculación la Coordinación de Innovación del Gobierno de Jalisco y Jefa de proyectos de la Dirección de Innovación del Gobierno de Guadalajara.",
-    redes: {
-      instagram: "https://www.instagram.com/yunive_moreno/",
-      linkedin: "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/",
-    },
-  },
-  {
-    nombre: "Daniel Murillo",
-    rol: "Gerente de Expansión",
-    imageUrl: daniel,
-    correo: "daniel@visorurbano.com",
-    descripcion1:
-      "Daniel es abogado especializado en Derecho Administrativo por la Universidad de Guadalajara y maestrante en Propiedad Industrial, Derechos de Autor y Nuevas Tecnologías por la Universidad Panamericana.",
-    descripcion2:
-      "Dedicado a la mejora continua de los trámites y servicios gubernamentales a través de la innovación y el uso de la tecnología ha formado parte de Visor Urbano desde su creación e implementación en el municipio de Guadalajara en 2018 así como de las diversas réplicas que se han hecho de la plataforma en diversas ciudades a nivel nacional.",
-    redes: {
-      instagram: "",
-      linkedin: "https://www.linkedin.com/in/murillodani/",
-    },
-  },
-  {
-    nombre: "David Bates",
-    rol: "Gerente de Vinculación y Sostenibilidad",
-    imageUrl: dave,
-    correo: "dbates@visorurbano.com",
-    descripcion1:
-      "David promueve el uso de tecnologías exponenciales para desarrollar soluciones creativas y escalables a los desafíos globales. Es graduado de la licenciatura en Ciencias de la Comunicación, y cuenta con especialidades en Administración Pública, Medición de Impacto para el Desarrollo y en Diseño Centrado en las Personas para la Innovación Social.",
-    descripcion2:
-      "Es asesor y consultor para instituciones del ecosistema de innovación en la implementación de proyectos enfocados en tecnología, política pública, innovación social y desarrollo socioeconómico. Actualmente, lidera la Vinculación Estratégica de Visor Urbano, proyecto de la Coordinación General de Innovación Gubernamental de Jalisco, en colaboración con la Fundación Bloomberg Philanthropies.",
-    redes: {
-      instagram: "",
-      linkedin: "https://www.linkedin.com/in/davidbatesf/",
-    },
-  },
-  {
-    nombre: "Janeth Vargas",
-    rol: "Coordinadora de Enlace con Municipios",
-    imageUrl: janeth,
-    correo: "janeth@visorurbano.com",
-    descripcion1:
-      "Abogada egresada de la Universidad de Guadalajara, con especialidades en Derecho Administrativo y Derecho Constitucional y Amparo por la Universidad Panamericana. Especializada en Derecho Urbano y Usos de Suelo, se destaca por su experiencia en la administración pública mediante la tramitología de autorizaciones ante dependencias gubernamentales.",
-    descripcion2:
-      "Actualmente, desempeña el rol de enlace oficial con los municipios a nivel Jalisco en Visor Urbano.",
-    redes: {
-      instagram: "",
-      linkedin: "",
-    },
-  },
-  /* {
-    nombre: "Eliezer Jerez",
-    rol: "Desarrollador Senior",
-    imageUrl: eliezer,
-    correo: "yunive@visorurbano.com",
-    descripcion:
-      "Comprometida con hacer que las cosas sucedan para generar procesos de transformación en organizaciones públicas y privadas, a través de la Gestión de Proyectos de Tecnología e Innovación y Cooperación. Fue reconocida como “Disruptor de IA del año” por los premios Woman in AI North America Awards en el año 2022. Co-creadora y Directora General de Visor Urbano. Anteriormente fue Directora General de Vinculación la Coordinación de Innovación del Gobierno de Jalisco y Jefa de proyectos de la Dirección de Innovación del Gobierno de Guadalajara.",
-    redes: {
-      instagram: "https://www.instagram.com/yunive_moreno/",
-      linkedin: "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/",
-    },
-  },
-  {
-    nombre: "Víctor Hernández",
-    rol: "Gerente de Tecnología y mejora continua",
-    imageUrl: victor,
-    correo: "yunive@visorurbano.com",
-    descripcion:
-      "Comprometida con hacer que las cosas sucedan para generar procesos de transformación en organizaciones públicas y privadas, a través de la Gestión de Proyectos de Tecnología e Innovación y Cooperación. Fue reconocida como “Disruptor de IA del año” por los premios Woman in AI North America Awards en el año 2022. Co-creadora y Directora General de Visor Urbano. Anteriormente fue Directora General de Vinculación la Coordinación de Innovación del Gobierno de Jalisco y Jefa de proyectos de la Dirección de Innovación del Gobierno de Guadalajara.",
-    redes: {
-      instagram: "https://www.instagram.com/yunive_moreno/",
-      linkedin: "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/",
-    },
-  }, */
-];
-
 export const EquipoVisor = () => {
+  const t = useTranslations("EquipoVisor");
+  const equipo: Person[] = [
+    {
+      nombre: t("yunive.nombre"),
+      rol: t("yunive.rol"),
+      imageUrl: yunive_moreno,
+      correo: t("yunive.correo"),
+      descripcion1: t("yunive.descripcion1"),
+      descripcion2: t("yunive.descripcion2"),
+      redes: {
+        instagram: t("yunive.instagram"),
+        linkedin: t("yunive.linkedin"),
+      },
+    },
+    {
+      nombre: t("daniel.nombre"),
+      rol: t("daniel.rol"),
+      imageUrl: daniel,
+      correo: t("daniel.correo"),
+      descripcion1: t("daniel.descripcion1"),
+      descripcion2: t("daniel.descripcion2"),
+      redes: {
+        instagram: t("daniel.instagram"),
+        linkedin: t("daniel.linkedin"),
+      },
+    },
+    {
+      nombre: t("david.nombre"),
+      rol: t("david.rol"),
+      imageUrl: dave,
+      correo: t("david.correo"),
+      descripcion1: t("david.descripcion1"),
+      descripcion2: t("david.descripcion2"),
+      redes: {
+        instagram: t("david.instagram"),
+        linkedin: t("david.linkedin"),
+      },
+    },
+    {
+      nombre: t("janeth.nombre"),
+      rol: t("janeth.rol"),
+      imageUrl: janeth,
+      correo: t("janeth.correo"),
+      descripcion1: t("janeth.descripcion1"),
+      descripcion2: t("janeth.descripcion2"),
+      redes: {
+        instagram: t("janeth.instagram"),
+        linkedin: t("janeth.linkedin"),
+      },
+    },
+    /* {
+      nombre: "Eliezer Jerez",
+      rol: "Desarrollador Senior",
+      imageUrl: eliezer,
+      correo: "yunive@visorurbano.com",
+      descripcion:
+        "Comprometida con hacer que las cosas sucedan para generar procesos de transformación en organizaciones públicas y privadas, a través de la Gestión de Proyectos de Tecnología e Innovación y Cooperación. Fue reconocida como “Disruptor de IA del año” por los premios Woman in AI North America Awards en el año 2022. Co-creadora y Directora General de Visor Urbano. Anteriormente fue Directora General de Vinculación la Coordinación de Innovación del Gobierno de Jalisco y Jefa de proyectos de la Dirección de Innovación del Gobierno de Guadalajara.",
+      redes: {
+        instagram: "https://www.instagram.com/yunive_moreno/",
+        linkedin: "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/",
+      },
+    },
+    {
+      nombre: "Víctor Hernández",
+      rol: "Gerente de Tecnología y mejora continua",
+      imageUrl: victor,
+      correo: "yunive@visorurbano.com",
+      descripcion:
+        "Comprometida con hacer que las cosas sucedan para generar procesos de transformación en organizaciones públicas y privadas, a través de la Gestión de Proyectos de Tecnología e Innovación y Cooperación. Fue reconocida como “Disruptor de IA del año” por los premios Woman in AI North America Awards en el año 2022. Co-creadora y Directora General de Visor Urbano. Anteriormente fue Directora General de Vinculación la Coordinación de Innovación del Gobierno de Jalisco y Jefa de proyectos de la Dirección de Innovación del Gobierno de Guadalajara.",
+      redes: {
+        instagram: "https://www.instagram.com/yunive_moreno/",
+        linkedin: "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/",
+      },
+    }, */
+  ];
   const [openModal, setOpenModal] = useState(false);
   const [selectedPerson, setSelectedPerson] = useState<Person>(equipo[0]);
 
@@ -115,7 +108,7 @@ export const EquipoVisor = () => {
         setOpen={setOpenModal}
         selectedPerson={selectedPerson}
       />
-      <h2 className="text-center pt-9 mb-9 equipo__Titulo">Equipo Visor</h2>
+      <h2 className="text-center pt-9 mb-9 equipo__Titulo">{t("header")}</h2>
       <ul
         role="list"
         className="mx-auto mt-20 grid grid-cols-8 flex justify-items-center equipo__Grid"

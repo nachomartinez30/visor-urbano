@@ -1,4 +1,25 @@
 {
+    "global": {
+        "button1": "Implementar por mi cuenta",
+        "button2": "Solicitar ayuda para implementar"
+    },
+    "Header": {
+        "option1": "Historia",
+        "option2": "Noticias",
+        "option3": "Explora Visor Urbano"
+    },
+    "ModalContacto": {
+        "header": "Contáctanos para obtener <br></br> Visor Urbano en tu ciudad",
+        "closeBtn": "Cerrar",
+        "name": "Nombre completo* ",
+        "country": "País",
+        "city": "Ciudad",
+        "email": "Correo electrónico",
+        "phone": "Celular o teléfono de contacto",
+        "message": "Mensaje",
+        "send": "Enviar",
+        "rightText": "Replicar Visor Urbano es un proceso sencillo ya que, además de ser una plataforma intuitiva y fácil de usar, puede ser adaptada de acuerdo a las necesidades, retos y contexto de cualquier ciudad"
+    },
     "Badge": {
         "header1": "Impulsamos",
         "header2": "la transformación",
@@ -6,5 +27,73 @@
         "header4": "ciudades",
         "header5": "del futuro",
         "header6": "Somos una plataforma que permite la emisión de licencias de negocio y de construcción totalmente en línea"
+    },
+    "QuienesSomos": {
+        "header": "¿Qué es Visor Urbano?"
+    },
+    "Ciudades": {
+        "header": "Ciudades que ya usan Visor Urbano",
+        "map": "Ver mapa"
+    },
+    "PorQueSerParte": {
+        "header": "¿Por qué ser parte de Visor Urbano?",
+        "feature1": "Promueve trámites ágiles y transparentes.",
+        "feature2": "Acelera tiempos y reduce costos de los trámites.",
+        "feature3": "Permite la apertura y georreferenciación de la información.",
+        "feature4": "Propicia la colaboración entre entidades gubernamentales.",
+        "feature5": "Fomenta una relación más cercana entre gobierno y ciudadanía.",
+        "feature6": "Facilita el aumento en la recaudación.",
+        "header2": "Nuestra Historia",
+        "timeline1": "Guadalajara gana el Premio “Mayors Challenge” de Bloomberg Philanthropies",
+        "timeline2": "Visor Urbano Guadalajara gana el Premio Nacional de Innovación en Transparencia",
+        "timeline3": "Ganador del Future Cities Award de los Emiratos Árabes Unidos",
+        "timeline4": "Lanzamiento de Visor Urbano en Hidalgo",
+        "timeline5": "Lanzamiento de primera versión de Visor Urbano en Guadalajara, Jalisco",
+        "timeline6": "Primera réplica de Visor Urbano, en San Pedro Garza García, Nuevo León",
+        "timeline7": "Consolidación de Visor Urbano en 33 municipios de Jalisco",
+        "timeline8": "Meta de expansión a más de 50 ciudades en México"
+    },
+    "EquipoVisor": {
+        "header": "Equipo Visor",
+        "yunive": {
+            "nombre": "Yunive Moreno",
+            "correo": "yunive@visorurbano.com",
+            "rol": "Directora General",
+            "descripcion1": "Comprometida con hacer que las cosas sucedan para generar procesos de transformación en organizaciones públicas y privadas, a través de la Gestión de Proyectos de Tecnología e Innovación y Cooperación. Fue reconocida como “Disruptor de IA del año” por los premios Woman in AI North America Awards en el año 2022.",
+            "descripcion2": "Co-creadora y Directora General de Visor Urbano. Anteriormente fue Directora General de Vinculación la Coordinación de Innovación del Gobierno de Jalisco y Jefa de proyectos de la Dirección de Innovación del Gobierno de Guadalajara.",
+            "instagram": "https://www.instagram.com/yunive_moreno/",
+            "linkedin": "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/"
+        },
+        "daniel": {
+            "nombre": "Daniel Murillo",
+            "rol": "Gerente de Expansión",
+            "correo": "daniel@visorurbano.com",
+            "descripcion1": "Daniel es abogado especializado en Derecho Administrativo por la Universidad de Guadalajara y maestrante en Propiedad Industrial, Derechos de Autor y Nuevas Tecnologías por la Universidad Panamericana.",
+            "descripcion2": "Dedicado a la mejora continua de los trámites y servicios gubernamentales a través de la innovación y el uso de la tecnología ha formado parte de Visor Urbano desde su creación e implementación en el municipio de Guadalajara en 2018 así como de las diversas réplicas que se han hecho de la plataforma en diversas ciudades a nivel nacional.",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/murillodani/"
+        },
+        "david": {
+            "nombre": "David Bates",
+            "rol": "Gerente de Vinculación y Sostenibilidad",
+            "correo": "dbates@visorurbano.com",
+            "descripcion1": "David promueve el uso de tecnologías exponenciales para desarrollar soluciones creativas y escalables a los desafíos globales. Es graduado de la licenciatura en Ciencias de la Comunicación, y cuenta con especialidades en Administración Pública, Medición de Impacto para el Desarrollo y en Diseño Centrado en las Personas para la Innovación Social.",
+            "descripcion2": "Es asesor y consultor para instituciones del ecosistema de innovación en la implementación de proyectos enfocados en tecnología, política pública, innovación social y desarrollo socioeconómico. Actualmente, lidera la Vinculación Estratégica de Visor Urbano, proyecto de la Coordinación General de Innovación Gubernamental de Jalisco, en colaboración con la Fundación Bloomberg Philanthropies.",
+            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/davidbatesf/"
+        },
+        "janeth": {
+            "nombre": "Janeth Vargas",
+            "rol": "Coordinadora de Enlace con Municipios",
+            "correo": "janeth@visorurbano.com",
+            "descripcion1": "Abogada egresada de la Universidad de Guadalajara, con especialidades en Derecho Administrativo y Derecho Constitucional y Amparo por la Universidad Panamericana. Especializada en Derecho Urbano y Usos de Suelo, se destaca por su experiencia en la administración pública mediante la tramitología de autorizaciones ante dependencias gubernamentales.",
+            "descripcion2": "Actualmente, desempeña el rol de enlace oficial con los municipios a nivel Jalisco en Visor Urbano.",
+            "instagram": "",
+            "linkedin": ""
+        }
+    },
+    "Noticias": {
+        "header": "Ló último de Visor Urbano",
+        "button": "Ver todas las noticias"
     }
 }

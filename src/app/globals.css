@@ -389,6 +389,26 @@ lite-youtube{
     font-weight: 600;
     font-size: var(--TitulosGeneral--Movil);
   }
+  .contactoModal__Bloque{
+    width: 95%;
+  }
+  .modalContacto__Titulo{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+  .modalContacto__Izquierda{
+    width: 100%;
+  }
+  .modalContacto__Boton{
+    width: 80%;
+    padding: 1em;
+    font-size: 1.1rem;
+  }
+  .modalDerecha__Texto{
+    padding: 4% 5%;
+    font-size: .9rem;
+    line-height: 1.2rem;
+  }
   .ciudades__carousel {
     width: 95%;
     padding-bottom: 1rem;

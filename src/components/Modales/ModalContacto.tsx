@@ -43,22 +43,21 @@ export const ModalContacto = () => {
                 <XMarkIcon aria-hidden="true" className="size-8 text-white" />
               </button>
             </div>
-            <div className="flex flex-col grid grid-cols-12 justify-between">
-              <div className="grid col-span-7 flex flex-col items-center text-center py-10">
+            <div className="flex flex-col grid grid-cols-10 sm:grid-cols-12 justify-between">
+              <div className="grid col-span-12 sm:col-span-7 flex flex-col items-center text-center py-4 sm:py-10">
                 {/* TITULO */}
                 <h2 className="modalContacto__Titulo">
-                  Contáctanos para obtener <br />
-                  Visor Urbano en tu ciudad
+                  Contáctanos para obtener <br/> Visor Urbano en tu ciudad
                 </h2>
 
                 {/* FORM */}
-                <div className="justify-self-center modalContacto__Izquierda">
+                <div className="justify-self-center px-2 sm:px-0 modalContacto__Izquierda">
                   <form
-                    className="grid grid-cols-12 gap-4"
+                    className="grid grid-cols-10 sm:grid-cols-12 gap-1 sm:gap-4"
                     onSubmit={handleSubmit}
                   >
                     {/* NOMBRE COMPLETO */}
-                    <div className="sm:col-span-12 mt-10">
+                    <div className="col-span-10 sm:col-span-12 mt-10">
                       <label
                         htmlFor="nombre"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
@@ -79,7 +78,7 @@ export const ModalContacto = () => {
                       </div>
                     </div>
                     {/* PAIS */}
-                    <div className="sm:col-span-6">
+                    <div className="col-span-10 sm:col-span-6">
                       <label
                         htmlFor="pais"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
@@ -100,7 +99,7 @@ export const ModalContacto = () => {
                       </div>
                     </div>
                     {/* CIUDAD */}
-                    <div className="sm:col-span-6">
+                    <div className="col-span-10 sm:col-span-6">
                       <label
                         htmlFor="ciudad"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
@@ -121,7 +120,7 @@ export const ModalContacto = () => {
                       </div>
                     </div>
                     {/* CORREO */}
-                    <div className="sm:col-span-6">
+                    <div className="col-span-10 sm:col-span-6">
                       <label
                         htmlFor="correo"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
@@ -142,7 +141,7 @@ export const ModalContacto = () => {
                       </div>
                     </div>
                     {/* CELULAR */}
-                    <div className="sm:col-span-6">
+                    <div className="col-span-10 sm:col-span-6">
                       <label
                         htmlFor="tel_contacto"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
@@ -163,7 +162,7 @@ export const ModalContacto = () => {
                       </div>
                     </div>
                     {/* MENSAJE */}
-                    <div className="sm:col-span-12">
+                    <div className="col-span-10 sm:col-span-12">
                       <label
                         htmlFor="mensaje"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
@@ -183,7 +182,7 @@ export const ModalContacto = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="sm:col-span-12 flex flex-col items-center mt-10">
+                    <div className="col-span-10 sm:col-span-12 flex flex-col items-center mt-10">
                       <button className="btn-primary text-center flex-col items-center modalContacto__Boton">
                         Enviar
                       </button>
@@ -191,7 +190,7 @@ export const ModalContacto = () => {
                   </form>
                 </div>
               </div>
-              <div className="grid col-span-5 flex flex-col items-center text-center">
+              <div className="grid col-span-12 sm:col-span-5 flex flex-col items-center text-center">
                 {/* INFO LATERAL */}
                 <div className="bg-gradient-to-t from-dark to-primary content-center modalDerecha__Gradiente">
                   <p className="flex flex-row text-white justify-center text-center modalDerecha__Texto">

@@ -12,12 +12,16 @@
   --VerdeFondosIconos: #BCE2AF;
   --AzulBase: #2151C6;
   --TitulosGeneral: 3rem;
+  --TitulosGeneral--Movil: 1.5rem;
   --GRegular: 'Geologica';
   --GBold: 'Geologica-Bold';
   --GSeBold: 'Geologica-SemiBold';
   --GExBold: 'Geologica-ExtraBold';
   --GLight: 'Geologica-Light';
   --GExLight: 'Geologica-ExtraLight';
+}
+html {
+  scroll-behavior: smooth;
 }
 @layer base {
   @font-face {
@@ -61,6 +65,9 @@ body {
   }
 }
 
+.fullWidth{
+  width: 100vw;
+}
 .navVisor{
   width: 95%;
 }
@@ -68,6 +75,13 @@ body {
   margin: 0 1.4rem;
   font-family: var(--GLight)!important;
   font-weight: 400!important;
+}
+.header__Logo{
+  position: relative;
+  left: 5%;
+}
+.borderTest{
+  border: 1px solid red;
 }
 .badgeBackground{
   background: no-repeat url("../assets/images/header.svg");
@@ -324,7 +338,56 @@ lite-youtube{
 }
 
 @media screen and (max-width: 400px) {
+  .navVisor__Display{
+    display: none;
+  }
+  .navVisor__link{
+    line-height: 1em;
+    font-family: var(--GExLight);
+    margin: 15px 0;
+  }
+  .navVisor__Control{
+    position: relative!important;
+    right: 0;
+    top: 0;
+  }
+  .navVisor__Control--idioma {
+    position: absolute!important;
+    right: 2%;
+    top: 32px;
+  }
+  .navVisor__Control--nav {
+    position: absolute!important;
+    left: 2%;
+    top: 32px;
+  }
+  .badgeBackground{
+    background: no-repeat url("../assets/images/story3.svg");
+    background-size: cover;
+    padding-bottom: 20%;
+  }
+  .badge__Titulo{
+    font-size: var(--TitulosGeneral--Movil);
+  }
+  .badge__Container{
+    padding: 45% 2% 0 2%;
+  }
+  .badge__Contenido{
+    width: 95%;
+    padding-top: 1.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
   lite-youtube {
-    min-width: 320px !important;
+    min-width: 300px !important;
+    border-radius: 15px;
+  }
+  .somosBackground{
+    padding: 2em 0;
+    background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
+  }
+  .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .equipo__Titulo {
+    font-weight: 600;
+    font-size: var(--TitulosGeneral--Movil);
   }
 }

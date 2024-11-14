@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1926 1565.1">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: url(#Degradado_sin_nombre);
+      }
+
+      .st2 {
+        fill: url(#Degradado_sin_nombre1);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre" data-name="Degradado sin nombre" x1="1212.9" y1="-1068.4" x2="1212.9" y2="-1066.6" gradientTransform="translate(-2335025 937611.8) scale(1926 877.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6abf4d"/>
+      <stop offset="1" stop-color="#4da847"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre1" data-name="Degradado sin nombre" x1="1212.4" y1="-1068.5" x2="1212.4" y2="-1068.5" xlink:href="#Degradado_sin_nombre"/>
+  </defs>
+  <g id="em7NQDiX9l21" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <path class="st0" d="M0,0"/>
+    <path class="st1" d="M0,0h1926v1565.1H0V0Z"/>
+    <path class="st2" d="M0,0"/>
+  </g>
+</svg>

@@ -24,6 +24,10 @@
         "send": "Enviar",
         "rightText": "Replicar o Visor Urbano é um processo simples, pois, além de ser uma plataforma intuitiva e fácil de usar, pode ser adaptada de acordo com as necessidades, desafios e contexto de qualquer cidade"
     },
+    "ModalSuccess": {
+        "text": "Obrigado pela sua mensagem! Entraremos em contato com você em breve",
+        "button": "Aceitar"
+    },
     "Badge": {
         "header1": "Impulsionamos",
         "header2": "a transformação",

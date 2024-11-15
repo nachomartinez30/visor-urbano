@@ -5,8 +5,10 @@ import Image from "next/image";
 import success_pic from "../../assets/images/successModalPic.svg";
 import { useContext } from "react";
 import { ModalContext } from "../context/ContextModal";
+import { useTranslations } from "next-intl";
 
 export const ModalSuccess = () => {
+  const t = useTranslations("ModalSuccess");
   const modalCtx = useContext(ModalContext);
   return (
     <Dialog
@@ -35,15 +37,13 @@ export const ModalSuccess = () => {
               </button>
             </div>
             <div className="h-full bg-gradient-to-t from-dark to-primary grid-flow-row">
-              <p className=" text-white">
-                ¡Gracias por tu mensaje! en breve nos comunicaremos contigo
-              </p>
+              <p className=" text-white">{t("text")}</p>
               <Image alt="success" src={success_pic} className="h-48 w-auto" />
               <button
                 className="btn-primary"
                 onClick={() => modalCtx?.closeModalSuccess()}
               >
-                Aceptar
+                {t("button")}
               </button>
             </div>
           </DialogPanel>

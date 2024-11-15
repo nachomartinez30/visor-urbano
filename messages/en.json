@@ -24,6 +24,10 @@
         "send": "Send",
         "rightText": "Replicating Urban Viewer is a simple process because, in addition to being an intuitive and easy-to-use platform, it can be adapted according to the needs, challenges, and context of any city"
     },
+    "ModalSuccess": {
+        "text": "Thank you for your message! We will get in touch with you shortly",
+        "button": "Accept"
+    },
     "Badge": {
         "header1": "We drive",
         "header2": "the digital",

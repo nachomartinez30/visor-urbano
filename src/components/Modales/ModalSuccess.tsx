@@ -36,15 +36,16 @@ export const ModalSuccess = () => {
                 <XMarkIcon aria-hidden="true" className="size-8" />
               </button>
             </div>
-            <div className="h-full bg-gradient-to-t from-dark to-primary grid-flow-row">
-              <p className=" text-white">{t("text")}</p>
-              <Image alt="success" src={success_pic} className="h-48 w-auto" />
-              <button
-                className="btn-primary"
-                onClick={() => modalCtx?.closeModalSuccess()}
-              >
-                {t("button")}
-              </button>
+            <div className="grid col-span-12 sm:col-span-12 flex flex-col items-center text-center h-full bg-gradient-to-t from-dark to-primary">
+              <div className="content-center">
+                <p className="flex flex-row text-white justify-center text-center text-white py-5 px-10 sm:py-10 sm:px-20">{t("text")}</p>
+                <Image alt="success" src={success_pic} className="justify-self-center w-auto" />
+                <div className="col-span-10 sm:col-span-12 flex flex-col items-center mt-10 px-10 sm:px-20">
+                  <button className="btn-primary text-center flex-col items-center modalContacto__Boton" onClick={() => modalCtx?.closeModalSuccess()}>
+                    Aceptar
+                  </button>
+                </div>
+              </div>
             </div>
           </DialogPanel>
         </div>

@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import visor_urbano_logo from "../assets/images/logo_visor.svg";
 import boomergang_logo from "../assets/images/logo_bloomberg.svg";

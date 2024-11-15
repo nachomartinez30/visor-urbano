@@ -7,8 +7,10 @@ import contacto_img from "../../assets/images/contacto-bg.png";
 
 import { useContext } from "react";
 import { ModalContext } from "../context/ContextModal";
+import { useTranslations } from "next-intl";
 
 export const ModalContacto = () => {
+  const t = useTranslations("ModalContacto");
   const modalCtx = useContext(ModalContext);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -39,7 +41,7 @@ export const ModalContacto = () => {
                 /* TODO: Cambiar a text-white cuando este alineado */
                 className="rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
-                <span className="sr-only">Cerrar</span>
+                <span className="sr-only">{t("closeBtn")}</span>
                 <XMarkIcon aria-hidden="true" className="size-8 text-white" />
               </button>
             </div>
@@ -47,7 +49,9 @@ export const ModalContacto = () => {
               <div className="grid col-span-12 sm:col-span-7 flex flex-col items-center text-center py-4 sm:py-10">
                 {/* TITULO */}
                 <h2 className="modalContacto__Titulo">
-                  Contáctanos para obtener <br/> Visor Urbano en tu ciudad
+                  {t.rich("header", {
+                    br: () => <br />,
+                  })}
                 </h2>
 
                 {/* FORM */}
@@ -62,7 +66,7 @@ export const ModalContacto = () => {
                         htmlFor="nombre"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
-                        Nombre completo*
+                        {t("name")}
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
@@ -83,7 +87,7 @@ export const ModalContacto = () => {
                         htmlFor="pais"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
-                        País
+                        {t("country")}
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
@@ -104,7 +108,7 @@ export const ModalContacto = () => {
                         htmlFor="ciudad"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
-                        Ciudad
+                        {t("city")}
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
@@ -125,7 +129,7 @@ export const ModalContacto = () => {
                         htmlFor="correo"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
-                        Correo electrónico
+                        {t("email")}
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
@@ -146,7 +150,7 @@ export const ModalContacto = () => {
                         htmlFor="tel_contacto"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
-                        Celular o teléfono de contacto
+                        {t("phone")}
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
@@ -167,7 +171,7 @@ export const ModalContacto = () => {
                         htmlFor="mensaje"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
-                        Mensaje
+                        {t("message")}
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
@@ -184,7 +188,7 @@ export const ModalContacto = () => {
                     </div>
                     <div className="col-span-10 sm:col-span-12 flex flex-col items-center mt-10">
                       <button className="btn-primary text-center flex-col items-center modalContacto__Boton">
-                        Enviar
+                        {t("send")}
                       </button>
                     </div>
                   </form>
@@ -194,10 +198,7 @@ export const ModalContacto = () => {
                 {/* INFO LATERAL */}
                 <div className="bg-gradient-to-t from-dark to-primary content-center modalDerecha__Gradiente">
                   <p className="flex flex-row text-white justify-center text-center modalDerecha__Texto">
-                    Replicar Visor Urbano es un proceso sencillo ya que, además
-                    de ser una plataforma intuitiva y fácil de usar, puede ser
-                    adaptada de acuerdo a las necesidades, retos y contexto de
-                    cualquier ciudad
+                    {t("rightText")}
                   </p>
                   <Image
                     src={contacto_img}

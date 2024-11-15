@@ -44,7 +44,7 @@ const posts = postsDTO(data.data); /* asi esta el API de visor urbano */
 
 export const ArticulosContainer = () => {
   return (
-    <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    <div className="mx-auto mt-4 sm:mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       {posts.map((post: ArticuloProps) => (
         <Articulo key={post.id} {...post} />
       ))}

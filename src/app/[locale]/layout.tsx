@@ -8,21 +8,22 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}
+
 export default async function RootLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
-  const { locale } = params;
+}: RootLayoutProps) {
+  const { locale } = await params;
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
   setRequestLocale(locale);
   const messages = await getMessages();
-
 
   return (
     <html lang={locale}>

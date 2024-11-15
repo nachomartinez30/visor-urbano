@@ -5,9 +5,9 @@ import Image from "next/image";
 
 import contacto_img from "../../assets/images/contacto-bg.png";
 
+import { useTranslations } from "next-intl";
 import { useContext } from "react";
 import { ModalContext } from "../context/ContextModal";
-import { useTranslations } from "next-intl";
 
 export const ModalContacto = () => {
   const t = useTranslations("ModalContacto");
@@ -15,8 +15,41 @@ export const ModalContacto = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    modalCtx?.openModalSuccess();
-    modalCtx?.closeModalContacto();
+    fetch("https://api-visorurbano.jalisco.gob.mx/contactFormLanding", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        data: {
+          nombre: e.currentTarget.nombre.value,
+          pais: e.currentTarget.pais.value,
+          ciudad: e.currentTarget.ciudad.value,
+          mail: e.currentTarget.mail.value,
+          telefono: e.currentTarget.telefono.value,
+          mensaje: e.currentTarget.mensaje.value,
+          funcionario: e.currentTarget.funcionario.value,
+          cargo: e.currentTarget.cargo.value,
+          dependencia: e.currentTarget.dependencia.value,
+          estado: e.currentTarget.estado.value,
+        },
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then(() => {
+        modalCtx?.openModalSuccess();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      })
+      .finally(() => {
+        modalCtx?.closeModalContacto();
+      });
   };
   return (
     <Dialog
@@ -61,7 +94,7 @@ export const ModalContacto = () => {
                     onSubmit={handleSubmit}
                   >
                     {/* NOMBRE COMPLETO */}
-                    <div className="col-span-10 sm:col-span-12 mt-10">
+                    <div className="col-span-10 sm:col-span-12 mt-5">
                       <label
                         htmlFor="nombre"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
@@ -72,10 +105,99 @@ export const ModalContacto = () => {
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
                           <input
                             id="nombre"
+                            required
                             name="nombre"
                             type="text"
                             placeholder=""
                             autoComplete="nombre"
+                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    {/* FUNCIONARIO */}
+                    <div className="col-span-10 sm:col-span-12">
+                      <label
+                        htmlFor="funcionario"
+                        className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
+                      >
+                        {t("funcionario")}
+                      </label>
+                      <div className="mt-2">
+                        <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
+                          <input
+                            id="funcionario"
+                            required
+                            name="funcionario"
+                            type="text"
+                            placeholder=""
+                            autoComplete="funcionario"
+                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    {/* DEPENDENCIA */}
+                    <div className="col-span-10 sm:col-span-12">
+                      <label
+                        htmlFor="dependencia"
+                        className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
+                      >
+                        {t("dependencia")}
+                      </label>
+                      <div className="mt-2">
+                        <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
+                          <input
+                            id="dependencia"
+                            required
+                            name="dependencia"
+                            type="text"
+                            placeholder=""
+                            autoComplete="dependencia"
+                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    {/* CARGO */}
+                    <div className="col-span-10 sm:col-span-6">
+                      <label
+                        htmlFor="cargo"
+                        className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
+                      >
+                        {t("cargo")}
+                      </label>
+                      <div className="mt-2">
+                        <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
+                          <input
+                            id="cargo"
+                            required
+                            name="cargo"
+                            type="text"
+                            placeholder=""
+                            autoComplete="cargo"
+                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    {/* ESTADO */}
+                    <div className="col-span-10 sm:col-span-6">
+                      <label
+                        htmlFor="estado"
+                        className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
+                      >
+                        {t("estado")}
+                      </label>
+                      <div className="mt-2">
+                        <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
+                          <input
+                            id="estado"
+                            required
+                            name="estado"
+                            type="text"
+                            placeholder=""
+                            autoComplete="estado"
                             className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
                           />
                         </div>
@@ -93,6 +215,7 @@ export const ModalContacto = () => {
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
                           <input
                             id="pais"
+                            required
                             name="pais"
                             type="text"
                             placeholder=""
@@ -114,6 +237,7 @@ export const ModalContacto = () => {
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
                           <input
                             id="ciudad"
+                            required
                             name="ciudad"
                             type="text"
                             placeholder=""
@@ -126,7 +250,7 @@ export const ModalContacto = () => {
                     {/* CORREO */}
                     <div className="col-span-10 sm:col-span-6">
                       <label
-                        htmlFor="correo"
+                        htmlFor="mail"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
                         {t("email")}
@@ -134,11 +258,12 @@ export const ModalContacto = () => {
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
                           <input
-                            id="correo"
-                            name="correo"
+                            id="mail"
+                            required
+                            name="mail"
                             type="text"
                             placeholder=""
-                            autoComplete="correo"
+                            autoComplete="mail"
                             className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
                           />
                         </div>
@@ -147,7 +272,7 @@ export const ModalContacto = () => {
                     {/* CELULAR */}
                     <div className="col-span-10 sm:col-span-6">
                       <label
-                        htmlFor="tel_contacto"
+                        htmlFor="telefono"
                         className="text-left block text-sm/6 font-medium text-[#545F65] izquierda__Labels"
                       >
                         {t("phone")}
@@ -155,11 +280,12 @@ export const ModalContacto = () => {
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-[#DFE8EB] focus-within:ring-2 focus-within:ring-inset focus-within:ring-VerdeBase">
                           <input
-                            id="tel_contacto"
-                            name="tel_contacto"
+                            id="telefono"
+                            required
+                            name="telefono"
                             type="text"
                             placeholder=""
-                            autoComplete="tel_contacto"
+                            autoComplete="telefono"
                             className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
                           />
                         </div>
@@ -186,7 +312,7 @@ export const ModalContacto = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-10 sm:col-span-12 flex flex-col items-center mt-10">
+                    <div className="col-span-10 sm:col-span-12 flex flex-col items-center mt-5">
                       <button className="btn-primary text-center flex-col items-center modalContacto__Boton">
                         {t("send")}
                       </button>

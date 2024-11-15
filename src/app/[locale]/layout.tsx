@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import "../globals.css";
@@ -18,6 +17,7 @@ export default async function RootLayout({
   params,
 }: RootLayoutProps) {
   const { locale } = await params;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
@@ -28,13 +28,15 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className="antialiased">
-        <NextIntlClientProvider messages={messages}>
-          <ModalProvider>
-            <Header />
-            {children}
-            <Footer />
-          </ModalProvider>
-        </NextIntlClientProvider>
+        {locale && (
+          <NextIntlClientProvider messages={messages}>
+            <ModalProvider>
+              <Header />
+              {children}
+              <Footer />
+            </ModalProvider>
+          </NextIntlClientProvider>
+        )}
       </body>
     </html>
   );

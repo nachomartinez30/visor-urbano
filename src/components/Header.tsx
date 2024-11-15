@@ -1,13 +1,22 @@
 "use client";
 import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
   Popover,
   PopoverButton,
-  PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
-import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { XMarkIcon, Bars3Icon, BellIcon } from "@heroicons/react/20/solid";
+import {
+  Bars3Icon,
+  PhoneIcon,
+  PlayCircleIcon,
+  XMarkIcon,
+} from "@heroicons/react/20/solid";
 import {
   ArrowPathIcon,
   ChartPieIcon,
@@ -15,13 +24,15 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useContext } from "react";
 import logo from "../assets/images/logo_visor_header.png";
 import { ModalContacto } from "./Modales/ModalContacto";
 import { ModalSuccess } from "./Modales/ModalSuccess";
-import { IdiomasIcon } from "./icons/IdiomasIcon";
 import { ModalContext } from "./context/ContextModal";
+import { IdiomasIcon } from "./icons/IdiomasIcon";
+import Link from "next/link";
 
 /* TODO: quitar products por las options  */
 const products = [
@@ -61,25 +72,30 @@ const callsToAction = [
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
-const navigation = [
-  { name: 'Inicio', href: '#home', current: false },
-  { name: 'Historia', href: '#nuestra_historia', current: false },
-  { name: 'Noticias', href: '#noticias', current: false },
-  { name: 'Explora Visor Urbano', href: '#ciudades', current: false },
-]
-
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ')
+function classNames(...classes: (string | undefined)[]) {
+  return classes.filter(Boolean).join(" ");
 }
 
 export const Header = () => {
+  const t = useTranslations("Header");
+  const tGlobal = useTranslations("global");
+  const navigation = [
+    { name: t("home"), href: "#home", current: false },
+    { name: t("option1"), href: "#nuestra_historia", current: false },
+    { name: t("option2"), href: "#noticias", current: false },
+    { name: t("option3"), href: "#ciudades", current: false },
+  ];
+
   const modalCtx = useContext(ModalContext);
 
   return (
     <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 fullWidth z-10">
       <ModalContacto />
       <ModalSuccess />
-      <Disclosure as="nav" className='mx-auto flex justify-between p-2 sm:p-6 navVisor'>
+      <Disclosure
+        as="nav"
+        className="mx-auto flex justify-between p-2 sm:p-6 navVisor"
+      >
         <div className="flex items-center navVisor__Display">
           <div className="relative flex h-16 items-center justify-self-start">
             <div className="flex flex-1 items-center justify-self-start sm:items-stretch sm:justify-start">
@@ -98,8 +114,14 @@ export const Header = () => {
               <DisclosureButton className="group inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-verdeFondoIconos hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white navVisor__Control--nav">
                 <span className="" />
                 <span className="sr-only">Menú</span>
-                <Bars3Icon aria-hidden="true" className="block size-6 group-data-[open]:hidden" />
-                <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-[open]:block" />
+                <Bars3Icon
+                  aria-hidden="true"
+                  className="block size-6 group-data-[open]:hidden"
+                />
+                <XMarkIcon
+                  aria-hidden="true"
+                  className="hidden size-6 group-data-[open]:block"
+                />
               </DisclosureButton>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -109,10 +131,12 @@ export const Header = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      aria-current={item.current ? 'page' : undefined}
+                      aria-current={item.current ? "page" : undefined}
                       className={classNames(
-                        item.current ? 'navVisor__link' : 'hover:bg-VerdeFondosIconos navVisor__link',
-                        'rounded-md px-3 py-2 text-sm font-medium',
+                        item.current
+                          ? "navVisor__link"
+                          : "hover:bg-VerdeFondosIconos navVisor__link",
+                        "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                     >
                       {item.name}
@@ -130,16 +154,16 @@ export const Header = () => {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                   className={classNames(
-                    item.current ? 'bg-gray-900' : 'hover:bg-VerdeFondosIconos',
-                    'block rounded-md px-3 py-2 text-base font-medium',
+                    item.current ? "bg-gray-900" : "hover:bg-VerdeFondosIconos",
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                 >
                   {item.name}
                 </DisclosureButton>
               ))}
-              
+
               <Popover className="relative">
                 <PopoverButton className="btn-primary navVisor__link">
                   Implementar por mi cuenta
@@ -165,7 +189,9 @@ export const Header = () => {
                             {item.name}
                             <span className="absolute inset-0" />
                           </a>
-                          <p className="mt-1 text-gray-600">{item.description}</p>
+                          <p className="mt-1 text-gray-600">
+                            {item.description}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -187,15 +213,18 @@ export const Header = () => {
                   </div>
                 </PopoverPanel>
               </Popover>
-              <button onClick={() => modalCtx?.openModalContacto()} className="btn-primary mt-5 navVisor__link">
+              <button
+                onClick={() => modalCtx?.openModalContacto()}
+                className="btn-primary mt-5 navVisor__link"
+              >
                 Solicitar ayuda para implementar
               </button>
             </div>
           </DisclosurePanel>
-          
+
           <Popover className="relative navVisor__Display">
             <PopoverButton className="btn-primary navVisor__link">
-              Implementar por mi cuenta
+              {tGlobal("button1")}
             </PopoverButton>
             <PopoverPanel
               transition
@@ -240,10 +269,13 @@ export const Header = () => {
               </div>
             </PopoverPanel>
           </Popover>
-          <button onClick={() => modalCtx?.openModalContacto()} className="btn-primary navVisor__link navVisor__Display">
-            Solicitar ayuda para implementar
+          <button
+            onClick={() => modalCtx?.openModalContacto()}
+            className="btn-primary navVisor__link navVisor__Display"
+          >
+            {tGlobal("button2")}
           </button>
-          
+
           <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {/* Profile dropdown */}
             <Menu as="div" className="ml-3">
@@ -252,20 +284,35 @@ export const Header = () => {
                   <span className="" />
                   <span className="sr-only">Idiomas</span>
                   <IdiomasIcon />
-
                 </MenuButton>
               </div>
               <MenuItems
-                transition className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in">
+                transition
+                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+              >
                 <MenuItem>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none">
-                    Inglés
-                  </a>
+                  <Link
+                    href="/es"
+                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
+                  >
+                    {tGlobal("spanish")}
+                  </Link>
                 </MenuItem>
                 <MenuItem>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none">
-                    Portugués
-                  </a>
+                  <Link
+                    href="/en"
+                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
+                  >
+                    {tGlobal("english")}
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link
+                    href="/pt"
+                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
+                  >
+                    {tGlobal("portuguese")}
+                  </Link>
                 </MenuItem>
               </MenuItems>
             </Menu>

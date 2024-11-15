@@ -1,9 +1,13 @@
 {
     "global": {
         "button1": "Implementar por mi cuenta",
-        "button2": "Solicitar ayuda para implementar"
+        "button2": "Solicitar ayuda para implementar",
+        "english": "English",
+        "spanish": "Español",
+        "portuguese": "Português"
     },
     "Header": {
+        "home": "Inicio",
         "option1": "Historia",
         "option2": "Noticias",
         "option3": "Explora Visor Urbano"

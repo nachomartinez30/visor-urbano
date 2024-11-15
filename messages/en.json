@@ -1,9 +1,13 @@
 {
     "global": {
         "button1": "Implement on my own",
-        "button2": "Request help to implement"
+        "button2": "Request help to implement",
+        "english": "English",
+        "spanish": "Español",
+        "portuguese": "Português"
     },
     "Header": {
+        "home": "Home",
         "option1": "History",
         "option2": "News",
         "option3": "Explore Urban Viewer"

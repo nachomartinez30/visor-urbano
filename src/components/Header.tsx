@@ -26,13 +26,16 @@ import {
 } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useContext } from "react";
+import { startTransition, useContext } from "react";
 import logo from "../assets/images/logo_visor_header.png";
 import { ModalContacto } from "./Modales/ModalContacto";
 import { ModalSuccess } from "./Modales/ModalSuccess";
 import { ModalContext } from "./context/ContextModal";
 import { IdiomasIcon } from "./icons/IdiomasIcon";
-import Link from "next/link";
+import { Locale } from "@/i18n/config";
+import { setUserLocale } from "@/services/locale";
+
+
 
 /* TODO: quitar products por las options  */
 const products = [
@@ -87,6 +90,13 @@ export const Header = () => {
   ];
 
   const modalCtx = useContext(ModalContext);
+
+  const handleLangChange = (value: string) => {
+    const locale = value as Locale;
+    startTransition(() => {
+      setUserLocale(locale);
+    });
+  };
 
   return (
     <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 fullWidth z-10">
@@ -291,28 +301,28 @@ export const Header = () => {
                 className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
               >
                 <MenuItem>
-                  <Link
-                    href="/es"
+                  <div
+                    onClick={() => handleLangChange("es")}
                     className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
                   >
                     {tGlobal("spanish")}
-                  </Link>
+                  </div>
                 </MenuItem>
                 <MenuItem>
-                  <Link
-                    href="/en"
+                  <div
+                    onClick={() => handleLangChange("en")}
                     className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
                   >
                     {tGlobal("english")}
-                  </Link>
+                  </div>
                 </MenuItem>
                 <MenuItem>
-                  <Link
-                    href="/pt"
+                  <div
+                    onClick={() => handleLangChange("pt")}
                     className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
                   >
                     {tGlobal("portuguese")}
-                  </Link>
+                  </div>
                 </MenuItem>
               </MenuItems>
             </Menu>

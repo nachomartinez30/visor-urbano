@@ -47,6 +47,24 @@
         "header": "Cities that already use Urban Viewer",
         "map": "View map"
     },
+    "Caracteristicas": {
+        "header": "Characteristics that every Urban Viewer must have",
+        "description": "The central identity of Urban Viewer is based on two key characteristics that guarantee an official, certified, and exclusive Urban Viewer for cities",
+        "column1": {
+            "header": "Digital and georeferenced records of cadastre and permit requirements",
+            "headerFeature1": "Permit requirements",
+            "feature1": "Official requirements that ensure consistency in the issuance of business permits.",
+            "headerFeature2": "Georeferenced cadastre records",
+            "feature2": "Map with public records information on land and properties."
+        },
+        "column2": {
+            "header": "Transparent and online commercial permit process step by step for residents",
+            "headerFeature1": "Interoperability",
+            "feature1": "Digital data exchange between municipal systems",
+            "headerFeature2": "Traceability",
+            "feature2": "Tracking each step in the permit procedure ensuring accountability"
+        }
+    },
     "PorQueSerParte": {
         "header": "Why be part of Urban Viewer?",
         "feature1": "Promotes agile and transparent procedures.",

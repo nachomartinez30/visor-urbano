@@ -47,6 +47,24 @@
         "header": "Ciudades que ya usan Visor Urbano",
         "map": "Ver mapa"
     },
+    "Caracteristicas": {
+        "header": "Características que todo Visor Urbano debe tener",
+        "description": "La identidad central de Visor Urbano se basa en dos características clave que garatizan un Visor Urbano oficial, certificado y exclusivo para las ciudades",
+        "column1": {
+            "header": "Resgistros digitales y georreferenciados de catastro y requisitos de permisos",
+            "headerFeature1": "Requisitos de permisos",
+            "feature1": "Requisitos oficiales que aseguran consistencia en la emisión de permisos de negocios.",
+            "headerFeature2": "Registro georreferenciados de catastro",
+            "feature2": "Mapa con información de registros públicos sobre terrenos y propiedades."
+        },
+        "column2": {
+            "header": "Proceso transparente y en linea de permisos comerciales paso a paso para los residentes",
+            "headerFeature1": "Interoperabilidad",
+            "feature1": "Intercambio digital de datos entre sistemas municipales",
+            "headerFeature2": "Trazabilidad",
+            "feature2": "Seguimiento de cada paso en el procedimiento de permisos asegudando accountability"
+        }
+    },
     "PorQueSerParte": {
         "header": "¿Por qué ser parte de Visor Urbano?",
         "feature1": "Promueve trámites ágiles y transparentes.",

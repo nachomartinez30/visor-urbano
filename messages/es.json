@@ -179,9 +179,12 @@
         "button": "Ir al código abierto de Visor Urbano"
     },
     "DocumentacionHerramientas": {
-        "button1": "Diagnóstico de viabilidad",
-        "button2": "Tutoriales y manuales de uso",
-        "button3": "Manual de uso de marca"
+        "title": "Documentación y herramientas",
+        "sidebar": {
+            "button1": "Diagnóstico de viabilidad",
+            "button2": "Tutoriales y manuales de uso",
+            "button3": "Manual de uso de marca"
+        }
     },
     "DiagnosticoViabilidad": {
         "header": "Diagnóstico de viabilidad",

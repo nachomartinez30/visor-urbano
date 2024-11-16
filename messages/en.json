@@ -10,7 +10,15 @@
         "home": "Home",
         "option1": "History",
         "option2": "News",
-        "option3": "Explore Urban Viewer"
+        "option3": "Explore Urban Viewer",
+        "submenu":{
+            "main": "Implement on my own",
+            "option1": "How to start?",
+            "option2": "Step by step for implementation",
+            "option3": "Necessary resources",
+            "option4": "Open source code",
+            "option5": "Documentation and tools"
+        }
     },
     "ModalContacto": {
         "header": "Contact us to get <br></br> Urban Viewer in your city",

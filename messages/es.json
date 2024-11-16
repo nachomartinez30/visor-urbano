@@ -10,7 +10,15 @@
         "home": "Inicio",
         "option1": "Historia",
         "option2": "Noticias",
-        "option3": "Explora Visor Urbano"
+        "option3": "Explora Visor Urbano",
+        "submenu":{
+            "main": "Implementar por mi cuenta",
+            "option1": "¿Cómo empezar?",
+            "option2": "Paso a paso para implementación",
+            "option3": "Recursos necesarios",
+            "option4": "Código abierto",
+            "option5": "Documentación y herramientas"
+        }
     },
     "ModalContacto": {
         "header": "Contáctanos para obtener <br></br> Visor Urbano en tu ciudad",

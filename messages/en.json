@@ -125,5 +125,125 @@
     "Noticias": {
         "header": "Last news from Urban Viewer",
         "button": "View all news"
+    },
+    "ComoEmpezarPage": {
+        "header": "How to start: the team and professionals needed to implement Urban Viewer",
+        "description1": "To adopt Urban Viewer in your city, it is essential to foster strong collaboration between key municipal teams and actively involve the local business community.",
+        "description2": " Access here to see our recommendations on how to involve your city's teams and form a multidisciplinary team to implement Urban Viewer. Gather a team with representatives from Cadastre, Licensing, IT, Urban Development, and Treasury to co-design the Urban Viewer adoption plan, assigning a dedicated project manager to lead its implementation.",
+        "button": "View recommendations"
+    },
+    "PasoAPasoPage": {
+        "header": "Step by step for implementing Urban Viewer in your city",
+        "description1": "To launch Urban Viewer in your city, you will need to follow these steps:",
+        "steps": {
+            "first": {
+                "strong": "Establish the Foundations and Collect Data:",
+                "description": "Form an interdepartmental team with management support, document current licensing flows, and collect essential spatial data (cadastral maps, satellite images, urban plans) that support the platform configuration."
+            },
+            "second": {
+                "strong": "Set Up the Platform Infrastructure:",
+                "description": "Determine the type of hosting (local or cloud) and configure the Urban Viewer platform for your city. Then, integrate the necessary spatial data sets and customize the front-end to fit the city's licensing processes, ensuring accessibility and a smooth user experience."
+            },
+            "third": {
+                "strong": "Train, Launch, and Promote:",
+                "description": "Provide personalized training for city staff, launch a public communication strategy to engage residents and business owners, and promote the use of the platform through events and outreach activities led by the city."
+            }
+        },
+        "description2": "Access here to see the details of each implementation step.",
+        "button": "View document"
+    },
+    "RecursosNecesarioPage": {
+        "header": "Necessary resources: what data and resources will you need for the application?",
+        "description1": "To launch Urban Viewer, your city will need four main resources:",
+        "steps": {
+            "first": {
+                "description": "Digitization of Cadastral Maps"
+            },
+            "second": {
+                "description": "Obtaining Satellite Images or Aerial Photos"
+            },
+            "third": {
+                "description": "Software Development Capability"
+            },
+            "fourth": {
+                "description": "Platform Hosting"
+            }
+        },
+        "description2": "Access here to see the details of each necessary resource.",
+        "button": "View document"
+    },
+    "CodigoAbiertoPage": {
+        "header": "How to adapt the Urban Viewer code to your city?",
+        "description1": "In this section, you can access the open-source code of Urban Viewer, a resource developed to facilitate the adoption and adaptation of the platform in each municipality, allowing them to configure and customize digital tools according to their local needs.",
+        "description2": "This open-source code includes all the basic and advanced components of Urban Viewer, giving them the freedom to adapt functionalities, integrate new tools, and build solutions that strengthen transparency, efficiency in license issuance, and reduce bureaucratic processes in their community. Each municipality will have the flexibility to create a version of Urban Viewer aligned with their own challenges and objectives.",
+        "button": "Go to Urban Viewer open-source code"
+    },
+    "DocumentacionHerramientas": {
+        "button1": "Feasibility diagnosis",
+        "button2": "Tutorials and user manuals",
+        "button3": "Brand usage manual"
+    },
+    "DiagnosticoViabilidad": {
+        "header": "Feasibility diagnosis",
+        "descripcion1": "In this section, you will find the feasibility diagnosis questionnaire, a tool designed to clearly and detailedly define the functional and non-functional requirements, as well as to conduct an initial diagnosis to evaluate the implementation of Urban Viewer in your municipality.",
+        "descripcion2": "The questionnaire is structured to guide you in identifying the essential processes and resources to ensure a successful adoption of the platform. Each requirement is described in detailed sheets, facilitating its review and evaluation by the responsible team, and providing a solid starting point to align the municipality's capabilities with Urban Viewer's digital transformation objectives.",
+        "descripcion3": "This diagnosis is the first step towards an informed and personalized implementation, suitable for the challenges and needs of your municipality.",
+        "button": "View document"
+    },
+    "TutorialesManuales": {
+        "header": "Tutorials and user manuals",
+        "descripcion1": "",
+        "descripcion2": "",
+        "watchManualButton": "View the manual",
+        "videos": {
+            "video1": {
+                "title": "1. Customize the 'my municipality' section",
+                "url": "https://"
+            },
+            "video2": {
+                "title": "2. How to configure requirements",
+                "url": "https://"
+            },
+            "video3": {
+                "title": "3. Adjust the 'turns' section",
+                "url": "https://"
+            },
+            "video4": {
+                "title": "4. How to upload the license history and renew licenses",
+                "url": "https://"
+            },
+            "video5": {
+                "title": "5. How to issue a license",
+                "url": "https://"
+            },
+            "video6": {
+                "title": "6. Renew licenses",
+                "url": "https://"
+            },
+            "video7": {
+                "title": "7. Draw a plot",
+                "url": "https://"
+            }
+        }
+    },
+    "ManualUsoMarca": {
+        "header": "Brand usage manual",
+        "descripcion1": "The Urban Viewer Brand Usage Manual provides a comprehensive guide to ensure the uniform and professional implementation of our platform in each municipality. This document includes key resources and visual and technical guidelines to adapt Urban Viewer to local needs without losing the identity that distinguishes us. Within the manual, you will find: - Introduction to Urban Viewer - Logo - Institutional Colors - Typography - Correct Uses - Landing Page - Map - Requirements consultation form and license application initiation - Admin panel - License (PDF Document) - Accessibility recommendations - Contact information",
+        "list": {
+            "item2": "Introduction to Urban Viewer",
+            "item3": "Logo",
+            "item4": "Institutional Colors",
+            "item5": "Typography",
+            "item6": "Correct Uses",
+            "item7": "Landing Page",
+            "item8": "Map",
+            "item9": "Requirements consultation form and license application initiation",
+            "item10": "Admin panel",
+            "item11": "License (PDF Document)",
+            "item12": "Accessibility recommendations",
+            "item13": "Contact information"
+        },
+        "button1": "Download logo",
+        "button2": "Download Manual"
     }
 }

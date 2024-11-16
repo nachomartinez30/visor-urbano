@@ -125,5 +125,125 @@
     "Noticias": {
         "header": "Ló último de Visor Urbano",
         "button": "Ver todas las noticias"
+    },
+    "ComoEmpezarPage": {
+        "header": "Cómo empezar: el equipo y los profesionales necesarios para implementar Visor Urbano",
+        "description1": "Para adoptar Visor Urbano en su ciudad, es fundamental fomentar una colaboración sólida entre los equipos municipales clave y, al mismo tiempo, involucrar activamente a la comunidad empresarial local.",
+        "description2": " Acceda aquí para ver nuestras recomendaciones sobre cómo involucrar a los equipos de su ciudad y formar un equipo multidisciplinario para implementar Visor Urbano. Reúna un equipo con representantes de Catastro, Licencias, TI, Desarrollo Urbano y Tesorería, para co-diseñar el plan de adopción de Visor Urbano, asignando un gerente de proyecto dedicado a liderar su implementación.",
+        "button": "Ver recomendaciones"
+    },
+    "PasoAPasoPage": {
+        "header": "Paso a paso para implementación de Visor Urbano en su ciudad",
+        "description1": "Para lanzar Visor Urbano en su ciudad, deberá seguir estos pasos:",
+        "steps": {
+            "first": {
+                "strong": "Establecer las Bases y Recopilar Datos:",
+                "description": "Forme un equipo interdepartamental con apoyo de la dirección, documente los flujos actuales de licenciamiento y recopile datos espaciales esenciales (mapas catastrales, imágenes satelitales, planes urbanos) que apoyen la configuración de la plataforma."
+            },
+            "second": {
+                "strong": "Configurar la Infraestructura de la Plataforma:",
+                "description": "Determine el tipo de alojamiento (local o en la nube) y configure la plataforma de Visor Urbano para su ciudad. Luego, integre los conjuntos de datos espaciales necesarios y personalice el front-end para que se adapte a los procesos de licenciamiento de la ciudad, garantizando accesibilidad y una experiencia de usuario fluida."
+            },
+            "third": {
+                "strong": "Capacitar, Lanzar y Promocionar:",
+                "description": "Ofrezca capacitación personalizada para el personal de la ciudad, lance una estrategia de comunicación pública para involucrar a los residentes y dueños de negocios, y promueva el uso de la plataforma mediante eventos y actividades de divulgación liderados por la ciudad."
+            }
+        },
+        "description2": "Acceda aquí para ver los detalles de cada uno de los pasos de implementación.",
+        "button": "Ver documento"
+    },
+    "RecursosNecesarioPage": {
+        "header": "Recursos necesarios: ¿qué datos y recursos necesitará para la aplicación?",
+        "description1": "Para lanzar Visor Urbano, su ciudad necesitará cuatro recursos principales:",
+        "steps": {
+            "first": {
+                "description": "Digitalización de Mapas Catastrales"
+            },
+            "second": {
+                "description": "Obtención de Imágenes Satelitales o Fotos Aéreas"
+            },
+            "third": {
+                "description": "Capacidad de Desarrollo de Software"
+            },
+            "fourth": {
+                "description": "Hospedaje de la Plataforma"
+            }
+        },
+        "description2": "Acceda aquí para ver los detalles de cada uno de los recursos necesarios.",
+        "button": "Ver documento"
+    },
+    "CodigoAbiertoPage": {
+        "header": "¿Como adaptar el código de Visor Urbano a su ciudad?",
+        "description1": "En esta sección podrán acceder al código abierto de Visor Urbano, un recurso desarrollado para facilitar la adopción y adaptación de la plataforma en cada municipio, permitiéndoles configurar y personalizar las herramientas digitales de acuerdo con sus necesidades locales.",
+        "description2": "Este código abierto incluye todos los componentes básicos y avanzados de Visor Urbano, brindándoles la libertad de adaptar funcionalidades, integrar nuevas herramientas y construir soluciones que fortalezcan la transparencia, la eficiencia en la emisión de licencias, y la reducción de procesos burocráticos en su comunidad. Cada municipio tendrá la flexibilidad de crear una versión de Visor Urbano alineada a sus propios desafíos y objetivos.",
+        "button": "Ir al código abierto de Visor Urbano"
+    },
+    "DocumentacionHerramientas": {
+        "button1": "Diagnóstico de viabilidad",
+        "button2": "Tutoriales y manuales de uso",
+        "button3": "Manual de uso de marca"
+    },
+    "DiagnosticoViabilidad": {
+        "header": "Diagnóstico de viabilidad",
+        "descripcion1": "En esta sección encontrarán el cuestionario de diagnóstico de viabilidad, una herramienta diseñada para definir de manera clara y detallada los requerimientos funcionales y no funcionales, así como para realizar un diagnóstico inicial que permita evaluar la implementación de Visor Urbano en su municipio.",
+        "descripcion2": "El cuestionario está estructurado para guiarles en la identificación de los procesos y recursos esenciales para asegurar una adopción exitosa de la plataforma. Cada requerimiento está descrito en fichas detalladas, facilitando su revisión y evaluación por el equipo encargado, y proporcionando un punto de partida sólido para alinear las capacidades del municipio con los objetivos de transformación digital de Visor Urbano.",
+        "descripcion3": "Este diagnóstico es el primer paso hacia una implementación informada y personalizada, adecuada a los retos y necesidades de su municipio.",
+        "button": "Ver documento"
+    },
+    "TutorialesManuales": {
+        "header": "Tutoriales y manuales de uso",
+        "descripcion1": "",
+        "descripcion2": "",
+        "watchManualButton": "Ver el manual",
+        "videos": {
+            "video1": {
+                "title": "1. Personalizar la sección 'mi municipio'",
+                "url": "https: //"
+            },
+            "video2": {
+                "title": "2. Cómo configurar requisitos",
+                "url": "https://"
+            },
+            "video3": {
+                "title": "3. Ajustar la sección “giros”",
+                "url": "https://"
+            },
+            "video4": {
+                "title": "4. Cómo subir el histórico de licencias y refrendar licencias",
+                "url": "https://"
+            },
+            "video5": {
+                "title": "5. Cómo emitir una licencia",
+                "url": "https://"
+            },
+            "video6": {
+                "title": "6. Refrendar licencias",
+                "url": "https://"
+            },
+            "video7": {
+                "title": "7. Dibujar un predio",
+                "url": "https://"
+            }
+        }
+    },
+    "ManualUsoMarca": {
+        "header": "Manual de uso de marca",
+        "descripcion1": "El Manual de Uso de Marca de Visor Urbano proporciona una guía completa para garantizar la implementación uniforme y profesional de nuestra plataforma en cada municipio. Este documento incluye recursos clave y directrices visuales y técnicas para adaptar Visor Urbano a las necesidades locales, sin perder la identidad que nos distingue. Dentro del manual, encontrarán: - Introducción a Visor Urbano - Logotipo - Colores Institucionales - Tipografía - Usos correctos - Landing Page - Mapa - Formulario de consulta de requisitos e inicio de trámite de licencias - Panel administrador - Licencia (Documento PDF) - Recomendaciones de accesibilidad - Datos de contacto",
+        "list": {
+            "item2": "Introducción a Visor Urbano",
+            "item3": "Logotipo",
+            "item4": "Colores Institucionales",
+            "item5": "Tipografía",
+            "item6": "Usos correctos",
+            "item7": "Landing Page",
+            "item8": "Mapa",
+            "item9": "Formulario de consulta de requisitos e inicio de trámite de licencias",
+            "item10": "Panel administrador",
+            "item11": "Licencia (Documento PDF)",
+            "item12": "Recomendaciones de accesibilidad",
+            "item13": "Datos de contacto"
+        },
+        "button1": "Descargar logotipo",
+        "button2": "Descargar Manual"
     }
 }

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import visor_urbano_logo from "../assets/images/logo_visor.svg";
 import boomergang_logo from "../assets/images/logo_bloomberg.svg";
@@ -7,7 +7,6 @@ import jalisco_logo from "../assets/images/logo_jal.svg";
 import facebook_logo from "../assets/images/facebook.svg";
 import twitter_logo from "../assets/images/twitter.svg";
 import instagram_logo from "../assets/images/instagram.svg";
-import linkedin_logo from "../assets/images/linkedin.png";
 import { ModalAvisoPrivacidad } from "./Modales/ModalAvisoPrivacidad";
 import { useState } from "react";
 
@@ -35,26 +34,27 @@ export const Footer = () => {
           alt="jalisco_logo"
         />
         <div className="grid grid-flow-col flex-col items-center text-center justify-self-center footer__Redes">
-          <Image
-            alt="facebook_logo_logo"
-            src={facebook_logo}
-            className="justify-self-center redes__Iconos"
-          />
-          <Image
-            alt="twitter_logo"
-            src={twitter_logo}
-            className="justify-self-center redes__Iconos"
-          />
-          <Image
-            alt="instagram_logo"
-            src={instagram_logo}
-            className="justify-self-center redes__Iconos"
-          />
-          <Image
-            alt="linkedin_logo"
-            src={linkedin_logo}
-            className="justify-self-center redes__Iconos"
-          />
+          <a href="https://www.facebook.com/VisorUrbano.mxx" target="_blank">
+            <Image
+              alt="facebook_logo_logo"
+              src={facebook_logo}
+              className="justify-self-center redes__Iconos"
+            />
+          </a>
+          <a href="https://x.com/VisorUrbanoMx" target="_blank">
+            <Image
+              alt="twitter_logo"
+              src={twitter_logo}
+              className="justify-self-center redes__Iconos"
+            />
+          </a>
+          <a href="https://www.instagram.com/visorurbano.mx/" target="_blank">
+            <Image
+              alt="instagram_logo"
+              src={instagram_logo}
+              className="justify-self-center redes__Iconos"
+            />
+          </a>
         </div>
         <div className="">
           <h3

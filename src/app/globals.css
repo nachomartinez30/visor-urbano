@@ -113,7 +113,7 @@ lite-youtube{
   border-radius: 45px;
   background-image: url('../assets/images/youtubePortada.png');
 }
-.somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo {
+.somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo, .comoEmpezar__Titulo {
   color: var(--AzulBase);
   font-family: var(--GRegular);
   font-weight: 600;
@@ -361,12 +361,41 @@ lite-youtube{
   max-width: 25px;
   max-height: 25px;
 }
-
 .contacto__Background{
   background: no-repeat url("../assets/images/contacto.svg");
   background-size: cover;
   background-position: right;
 }
+.comoEmpezar__Seccion{
+  padding: 0 20%;
+}
+.comoEmpezar__Titulo, .pasoPaso__Titulo{
+  color: var(--AzulBase);
+  font-family: var(--GRegular);
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.comoEmpezar__Contenido, .comoEmpezar__Contenido{
+  font-family: var(--GExLight);
+  font-weight: 400;
+}
+.pasoPaso__Seccion {
+  padding: 0 10%;
+}
+.pasoPaso__Descripcion{
+  font-family: var(--GExLight);
+}
+.pasoPaso__Boton{
+  font-family: var(--GExLight);
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 400px) {
   .navVisor__Display{
@@ -417,7 +446,7 @@ lite-youtube{
     padding: 2em 0;
     background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
   }
-  .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo {
+  .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo, .comoEmpezar__Titulo {
     font-weight: 600;
     font-size: var(--TitulosGeneral--Movil);
   }
@@ -572,5 +601,24 @@ lite-youtube{
     width: 100%;
     max-width: 45px;
     max-height: 45px;
+  }
+  .comoEmpezar__Seccion, .pasoPaso__Seccion{
+    padding: 0 5%;
+  }
+  .comoEmpezar__Titulo, .pasoPaso__Titulo {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .comoEmpezar__Contenido, .comoEmpezar__Contenido{
+    text-align: center;
+  }
+  .pasoPaso__Descripcion{
+    font-family: var(--GExLight);
+  }
+  .pasoPaso__Boton{
+    font-family: var(--GExLight);
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

@@ -1,10 +1,4 @@
 import Image from "next/image";
-import clock from "../assets/images/features/ico_licencias_negocio_2.svg";
-import list from "../assets/images/features/ico_licencias_negocio.svg";
-import map from "../assets/images/features/ico_licencias_negocio_3.svg";
-import mail from "../assets/images/features/ico_licencias_negocio_4.svg";
-import like from "../assets/images/features/ico_licencias_negocio_5.svg";
-import speaker from "../assets/images/features/ico_licencias_negocio_6.svg";
 import timeline from "../assets/images/timeline.svg";
 import timeline_1 from "../assets/images/timeline_1.svg";
 import timeline_2 from "../assets/images/timeline_2.svg";
@@ -18,33 +12,7 @@ import { useTranslations } from "next-intl";
 
 export const NuestraHistoria = () => {
   const t = useTranslations("PorQueSerParte");
-  const tGlobal = useTranslations("global");
-  const features = [
-    {
-      content: t("feature1"),
-      image: clock,
-    },
-    {
-      content: t("feature2"),
-      image: list,
-    },
-    {
-      content: t("feature3"),
-      image: map,
-    },
-    {
-      content: t("feature4"),
-      image: mail,
-    },
-    {
-      content: t("feature5"),
-      image: like,
-    },
-    {
-      content: t("feature6"),
-      image: speaker,
-    },
-  ];
+
   return (
     <section id="nuestra_historia" className="nuestraHistoria__Background">
       <div className="nuestraHistoria__Section">

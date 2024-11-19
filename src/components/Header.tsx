@@ -112,7 +112,7 @@ export const Header = () => {
                     />
                     <XMarkIcon
                       aria-hidden="true"
-                      className="hidden size-6 group-data-[open]:block"
+                      className="hidden size-8 group-data-[open]:block"
                     />
                   </DisclosureButton>
                 </div>
@@ -140,7 +140,45 @@ export const Header = () => {
               </div>
 
               <DisclosurePanel className="sm:hidden">
-                <div className="space-y-1 px-6 sm:px-2 pb-3 pt-2">
+                <div className="space-y-1 px-6 sm:px-2 pb-3 pt-14 sm:pt-2">
+                  <Menu as="div" className="ml-3">
+                    <div>
+                      <MenuButton className="flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 navVisor__Control--idioma">
+                        <span className="" />
+                        <span className="sr-only">Idiomas</span>
+                        <IdiomasIcon />
+                      </MenuButton>
+                    </div>
+                    <MenuItems
+                      transition
+                      className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                    >
+                      <MenuItem>
+                        <div
+                          onClick={() => handleLangChange("es")}
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
+                        >
+                          {tGlobal("spanish")}
+                        </div>
+                      </MenuItem>
+                      <MenuItem>
+                        <div
+                          onClick={() => handleLangChange("en")}
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
+                        >
+                          {tGlobal("english")}
+                        </div>
+                      </MenuItem>
+                      <MenuItem>
+                        <div
+                          onClick={() => handleLangChange("pt")}
+                          className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
+                        >
+                          {tGlobal("portuguese")}
+                        </div>
+                      </MenuItem>
+                    </MenuItems>
+                  </Menu>
                   {navigation.map((item) => (
                     <DisclosureButton
                       key={item.name}
@@ -151,7 +189,7 @@ export const Header = () => {
                         item.current
                           ? "bg-gray-900"
                           : "hover:bg-VerdeFondosIconos",
-                        "block rounded-md px-3 py-2 text-base font-medium"
+                        "block rounded-md sm:px-3 py-2 text-base font-medium"
                       )}
                     >
                       {item.name}
@@ -159,7 +197,7 @@ export const Header = () => {
                   ))}
 
                   <Popover className="relative">
-                    <PopoverButton className="navVisor__link">
+                    <PopoverButton className="btn-primary navVisor__link">
                       {t("submenu.main")}
                     </PopoverButton>
                     <PopoverPanel
@@ -231,7 +269,7 @@ export const Header = () => {
 
               <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3">
+                <Menu as="div" className="ml-3 hidden sm:block">
                   <div>
                     <MenuButton className="flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 navVisor__Control--idioma">
                       <span className="" />

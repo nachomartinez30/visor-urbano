@@ -113,7 +113,7 @@ lite-youtube{
   border-radius: 45px;
   background-image: url('../assets/images/youtubePortada.png');
 }
-.somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .equipo__Titulo, .noticiasBloque__Titulo {
+.somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo {
   color: var(--AzulBase);
   font-family: var(--GRegular);
   font-weight: 600;
@@ -180,9 +180,9 @@ lite-youtube{
   width: 75%;
 }
 .porQueBackground {
-  background: no-repeat url("../assets/images/story_new.svg");
+  background: no-repeat url("../assets/images/story_new_4.svg");
   background-size: cover;
-  background-position: left top;
+  background-position: center bottom;
 }
 .porQue__Grid{
   padding: 5% 20%;
@@ -200,6 +200,38 @@ lite-youtube{
   font-family: var(--GRegular);
   font-weight: 400;
   font-size: 16px;
+}
+.caracteristicas__Background{
+  background: var(--GrisClaro);
+}
+.caracteristicas__Descripcion{
+  font-family: var(--GExLight);
+  font-size: 1.6rem;
+}
+.caracteristicas__Grid{
+  padding: 0 15% 5% 15%;
+  box-sizing: border-box;
+}
+.caracteristicas__Cards{
+  background-color: var(--BlancoBase);
+  border-radius: 25px;
+  padding: 10%;
+  margin: 0 5%;
+  box-sizing: border-box;
+}
+.caraCards__Icons{
+  margin-top: -15px;
+  width: 100%;
+  max-width: 160px;
+}
+.caraCards__Icon--check{
+  margin-top: -15px;  
+  width: 50%;
+  max-width: 160px;
+}
+.nuestraHistoria__Background {
+  background: no-repeat url("../assets/images/story.svg"), linear-gradient(var(--GrisClaro)60%, var(--BlancoBase)60%);
+  background-size: cover;
 }
 .nuestraHistoria__Section{
   padding: 10% 0;
@@ -352,12 +384,12 @@ lite-youtube{
   }
   .navVisor__Control--idioma {
     position: absolute!important;
-    right: 2%;
+    left: 8%;
     top: 20px;
   }
   .navVisor__Control--nav {
     position: absolute!important;
-    left: 2%;
+    right: 2%;
     top: 20px;
   }
   .badgeBackground{
@@ -385,7 +417,7 @@ lite-youtube{
     padding: 2em 0;
     background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
   }
-  .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .equipo__Titulo, .noticiasBloque__Titulo {
+  .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo {
     font-weight: 600;
     font-size: var(--TitulosGeneral--Movil);
   }
@@ -443,8 +475,15 @@ lite-youtube{
   .porQue__Botones--Boton{
     margin: .5rem 2rem;
   }
+  .caracteristicas__Descripcion{
+    font-size: 1.4rem;
+  }
+  .caracteristicas__Grid{
+    padding: 0 5% 5% 5%;
+    box-sizing: border-box;
+  }
   .nuestraHistoria__Section{
-    padding: 40% 0;
+    padding: 40% 0 70% 0;
     overflow: hidden;
   }
   .historia__Grid {

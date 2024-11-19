@@ -4,6 +4,7 @@ import { Ciudades } from "@/components/Ciudades";
 import { EquipoVisor } from "@/components/EquipoVisor";
 import { Noticias } from "@/components/Noticias";
 import { PorQueSerParte } from "@/components/PorQueSerParte";
+import { NuestraHistoria } from "@/components/NuestraHistoria";
 import { QuienesSomos } from "@/components/QuienesSomos";
 
 export default function Home() {
@@ -12,8 +13,9 @@ export default function Home() {
       <Badge />
       <QuienesSomos />
       <Ciudades />
-      <Caracteristicas  />
       <PorQueSerParte />
+      <Caracteristicas/>
+      <NuestraHistoria/>
       <EquipoVisor />
       <Noticias />
     </>

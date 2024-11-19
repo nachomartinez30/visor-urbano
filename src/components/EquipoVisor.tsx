@@ -130,7 +130,7 @@ const AvatarCard = ({ person, onClick }: AvatarProps) => {
   return (
     <li
       onClick={() => onClick(person)}
-      className="col-span-4 sm:col-span-2 flex flex-col items-center text-center mb-10 sm:mb-0 equipo__Person"
+      className="col-span-8 sm:col-span-2 flex flex-col items-center text-center mb-10 sm:mb-0 equipo__Person"
     >
       <div>
         <Image

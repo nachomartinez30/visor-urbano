@@ -75,7 +75,7 @@ const Item = ({
   image: StaticImageData;
 }) => {
   return (
-    <div className="col-span-1 mx-4 my-6 flex justify-around flex-col items-center">
+    <div className="col-span-1 mx-4 my-6 flex flex-col items-center">
       <Image src={image} alt="icon" className="porQue_Imagenes" />
       <p className="text-center porQue_Textos">{content}</p>
     </div>

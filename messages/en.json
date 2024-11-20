@@ -187,21 +187,31 @@
         "button": "Go to Urban Viewer open-source code"
     },
     "DocumentacionHerramientas": {
-        "button1": "Feasibility diagnosis",
-        "button2": "Tutorials and user manuals",
-        "button3": "Brand usage manual"
+        "header": "Documentation and tools",
+        "description1": "In this Resources section, you will find all the necessary documentation and tools to efficiently implement Urban Viewer in your municipalities. Each subsection is designed to guide you from the initial evaluation to the use and customization of the platform, ensuring that your team has all the essential information and materials for a successful deployment.",
+        "description2": "These resources are designed to offer you a comprehensive experience in adopting Urban Viewer, providing you with the knowledge and tools to make the most of all its functionalities.",
+        "list": {
+            "item1": "Feasibility Diagnosis: A questionnaire that will allow you to evaluate the feasibility of implementing Urban Viewer in your community, reviewing key aspects and specific needs of the municipality.",
+            "item2": "User manuals and tutorial videos: Detailed instructions and support videos to configure and manage each section of the platform, from customizing 'My Municipality' to issuing licenses.",
+            "item3": "Urban Viewer brand usage manual: Visual guidelines and graphic identity elements, such as logos, colors, and accessibility recommendations, to ensure consistent and appropriate use of the Urban Viewer image in your communications."
+        },
+        "sidebar": {
+            "button1": "Feasibility diagnosis",
+            "button2": "Tutorials and user manuals",
+            "button3": "Brand usage manual"
+        }
     },
     "DiagnosticoViabilidad": {
         "header": "Feasibility diagnosis",
         "descripcion1": "In this section, you will find the feasibility diagnosis questionnaire, a tool designed to clearly and detailedly define the functional and non-functional requirements, as well as to conduct an initial diagnosis to evaluate the implementation of Urban Viewer in your municipality.",
         "descripcion2": "The questionnaire is structured to guide you in identifying the essential processes and resources to ensure a successful adoption of the platform. Each requirement is described in detailed sheets, facilitating its review and evaluation by the responsible team, and providing a solid starting point to align the municipality's capabilities with Urban Viewer's digital transformation objectives.",
         "descripcion3": "This diagnosis is the first step towards an informed and personalized implementation, suitable for the challenges and needs of your municipality.",
-        "button": "View document"
+        "button": "Download diagnosis"
     },
     "TutorialesManuales": {
-        "header": "Tutorials and user manuals",
-        "descripcion1": "",
-        "descripcion2": "",
+        "header": "Videos tutorials and user manuals",
+        "descripcion1": "In this section, cities will find a series of practical manuals designed to help customize and optimize the use of Urban Viewer in each municipality. With these resources, they will be able to configure the platform according to their local needs and operate efficiently in the issuance of licenses.",
+        "descripcion2": "Each manual offers detailed instructions and specific examples to facilitate the implementation and daily management of the platform.",
         "watchManualButton": "View the manual",
         "videos": {
             "video1": {

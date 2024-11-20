@@ -11,7 +11,7 @@
         "option1": "História",
         "option2": "Notícias",
         "option3": "Explore Visor Urbano",
-        "submenu":{
+        "submenu": {
             "main": "Implementar por minha conta",
             "option1": "Como começar?",
             "option2": "Passo a passo para implementação",
@@ -187,21 +187,31 @@
         "button": "Ir ao código aberto do Visor Urbano"
     },
     "DocumentacionHerramientas": {
-        "button1": "Diagnóstico de viabilidade",
-        "button2": "Tutoriais e manuais de uso",
-        "button3": "Manual de uso da marca"
+        "header": "Documentação e ferramentas",
+        "description1": "Nesta seção de Recursos, você encontrará toda a documentação e ferramentas necessárias para implementar o Visor Urbano em seus municípios de maneira eficiente. Cada subseção está projetada para guiá-lo desde a avaliação inicial até o uso e personalização da plataforma, garantindo que sua equipe disponha de todas as informações e materiais essenciais para um lançamento bem-sucedido.",
+        "description2": "Esses recursos são projetados para oferecer uma experiência completa na adoção do Visor Urbano, proporcionando o conhecimento e as ferramentas para aproveitar ao máximo todas as suas funcionalidades.",
+        "list": {
+            "item1": "Diagnóstico de Viabilidade: Um questionário que permitirá avaliar a viabilidade de implementar o Visor Urbano em sua comunidade, revisando aspectos-chave e necessidades específicas do município.",
+            "item2": "Manuais de uso e vídeos tutoriais: Instruções detalhadas e vídeos de apoio para configurar e administrar cada seção da plataforma, desde a personalização de 'Meu Município' até a emissão de licenças.",
+            "item3": "Manual de uso da marca do Visor Urbano: Diretrizes visuais e elementos de identidade gráfica, como logotipos, cores e recomendações de acessibilidade, para garantir um uso consistente e adequado da imagem do Visor Urbano em suas comunicações."
+        },
+        "sidebar": {
+            "button1": "Diagnóstico de viabilidade",
+            "button2": "Tutoriais e manuais de uso",
+            "button3": "Manual de uso da marca"
+        }
     },
     "DiagnosticoViabilidad": {
         "header": "Diagnóstico de viabilidade",
         "descripcion1": "Nesta seção, você encontrará o questionário de diagnóstico de viabilidade, uma ferramenta projetada para definir de maneira clara e detalhada os requisitos funcionais e não funcionais, bem como para realizar um diagnóstico inicial que permita avaliar a implementação do Visor Urbano em seu município.",
         "descripcion2": "O questionário está estruturado para guiá-lo na identificação dos processos e recursos essenciais para garantir uma adoção bem-sucedida da plataforma. Cada requisito está descrito em fichas detalhadas, facilitando sua revisão e avaliação pela equipe responsável, e proporcionando um ponto de partida sólido para alinhar as capacidades do município com os objetivos de transformação digital do Visor Urbano.",
         "descripcion3": "Este diagnóstico é o primeiro passo para uma implementação informada e personalizada, adequada aos desafios e necessidades de seu município.",
-        "button": "Ver documento"
+        "button": "Baixar diagnóstico"
     },
     "TutorialesManuales": {
-        "header": "Tutoriais e manuais de uso",
-        "descripcion1": "",
-        "descripcion2": "",
+        "header": "Videp Tutoriais e manuais de uso",
+        "descripcion1": "Nesta seção, as cidades encontrarão uma série de manuais práticos projetados para ajudar a personalizar e otimizar o uso do Visor Urbano em cada município. Com esses recursos, poderão configurar a plataforma de acordo com suas necessidades locais e operar de maneira eficiente na emissão de licenças.",
+        "descripcion2": "Cada manual oferece instruções detalhadas e exemplos específicos para facilitar a implementação e o manejo diário da plataforma.",
         "watchManualButton": "Ver o manual",
         "videos": {
             "video1": {

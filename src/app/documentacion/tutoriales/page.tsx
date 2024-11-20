@@ -13,31 +13,31 @@ const PageTutoriales = () => {
   const videos: { [key: string]: { title: string; url: string } } = {
     video1: {
       title: t("videos.title1"),
-      url: "https: //",
+      url: "/videos/1_mi_municipio.mp4",
     },
     video2: {
       title: t("videos.title2"),
-      url: "https://",
+      url: "/videos/2_requisitos.mp4",
     },
     video3: {
       title: t("videos.title3"),
-      url: "https://",
+      url: "/videos/3_giros.mp4",
     },
     video4: {
       title: t("videos.title4"),
-      url: "https://",
+      url: "/videos/.mp4",
     },
     video5: {
       title: t("videos.title5"),
-      url: "https://",
+      url: "/videos/5_emision_licencias.mp4",
     },
     video6: {
       title: t("videos.title6"),
-      url: "https://",
+      url: "/videos/.mp4",
     },
     video7: {
       title: t("videos.title7"),
-      url: "https://",
+      url: "/videos/7_dibujar_predio.mp4",
     },
   };
   return (
@@ -72,7 +72,12 @@ const VideoItem = ({ title, url, buttonText }: VideoItemProps) => {
         <Image src={icoManual} alt="icono" width={55} height={55} />
         {buttonText}
       </div>
-      <div className=""><video className="documentacion__Videos">{/* video aqui */ url}</video></div>
+      <div className="">
+        <video controls preload="none" className="documentacion__Videos">
+          <source src={url} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   );
 };

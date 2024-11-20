@@ -196,33 +196,6 @@ export const Header = () => {
                     </DisclosureButton>
                   ))}
 
-                  <Popover className="relative">
-                    <PopoverButton className="btn-primary navVisor__link">
-                      {t("submenu.main")}
-                    </PopoverButton>
-                    <PopoverPanel
-                      transition
-                      className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-                    >
-                      <div className="p-4">
-                        {menuItems.map((item) => (
-                          <div
-                            key={item.description}
-                            className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
-                          >
-                            <div className="flex-auto">
-                              <Link
-                                href={item.href}
-                                className="mt-1 text-gray-600"
-                              >
-                                {item.description}
-                              </Link>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </PopoverPanel>
-                  </Popover>
                   <button
                     onClick={() => modalCtx?.openModalContacto()}
                     className="btn-primary mt-5 navVisor__link"
@@ -232,34 +205,36 @@ export const Header = () => {
                 </div>
               </DisclosurePanel>
 
-              <Popover className="relative navVisor__Display">
-                <PopoverButton className="flex navVisor__link justify-center align-middle">
+              <Menu as="div" className="relative navVisor__Display">
+                <MenuButton className="flex navVisor__link justify-center align-middle">
                   {tGlobal("button1")}
                   <ChevronDownIcon
                     aria-hidden="true"
                     className="size-5 ml-2 "
                   />
-                </PopoverButton>
-                <PopoverPanel
+                </MenuButton>
+                <MenuItems
                   transition
                   className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
                 >
                   <div className="p-4">
                     {menuItems.map((item) => (
-                      <div
-                        key={item.description}
-                        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
-                      >
-                        <div className="flex-auto">
-                          <Link href={item.href} className="mt-1 text-gray-600">
-                            {item.description}
-                          </Link>
+                      <MenuItem key={item.description}>
+                        <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                          <div className="flex-auto">
+                            <Link
+                              href={item.href}
+                              className="mt-1 text-gray-600"
+                            >
+                              {item.description}
+                            </Link>
+                          </div>
                         </div>
-                      </div>
+                      </MenuItem>
                     ))}
                   </div>
-                </PopoverPanel>
-              </Popover>
+                </MenuItems>
+              </Menu>
               <button
                 onClick={() => modalCtx?.openModalContacto()}
                 className="btn-primary navVisor__link navVisor__Display"

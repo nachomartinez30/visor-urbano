@@ -433,11 +433,6 @@ lite-youtube{
   font-family: var(--GBold);
   font-size: 1.1rem;
 }
-
-
-
-
-
 /*Ajustes Responsive*/
 @media screen and (max-width: 400px) {
   .navVisor__Display{
@@ -663,44 +658,7 @@ lite-youtube{
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-
   .documentacion__Bloque{
-    /* padding: 4% 6%; */
-    /* margin-bottom: 1rem; */
     margin-right: 0rem;
-    /* box-sizing: border-box; */
-  }
-  .documentacion__NavIzquierda{
-    background-color: var(--VerdeBase);
-    color: var(--BlancoBase);
-    font-family: var(--GExLight);
-    border-radius: 45px;
-    padding: .5em 2em;
-    
-  }
-  .documentacion__Titulos{
-    color: var(--AzulBase);
-    font-family: var(--GRegular);
-    font-weight: 600;
-    font-size: 2.2rem;
-  }
-  .documentacion__Contenido{
-    font-family: var(--GExLight);
-    font-weight: 400;
-    text-align: justify;
-  }
-  .documentacion__Videos{
-    width: 100%;
-    min-width: 200px !important;
-    height: auto;
-    border-radius: 15px;
-    background-image: url('../assets/images/youtubePortada.png');
-    background-position: center center;
-    background-size: cover;
-  }
-  .docVideos__Titulos{
-    font-family: var(--GBold);
-    font-size: 1.1rem;
   }
 }

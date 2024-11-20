@@ -7,9 +7,7 @@ import {
   MenuButton,
   MenuItem,
   MenuItems,
-  Popover,
-  PopoverButton,
-  PopoverPanel,
+
 } from "@headlessui/react";
 import {
   Bars3Icon,

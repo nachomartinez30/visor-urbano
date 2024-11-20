@@ -61,7 +61,7 @@ body {
     @apply flex items-center gap-x-1 text-sm/6 font-semibold bg-gradient-to-t from-blueDark to-bluePrimary px-7 py-2 rounded-full border-r-[40] text-white hover:from-[#224FC2] hover:to-[#224FC2] hover:shadow-gray-500 hover:shadow-xl
   }
   .activePath{
-    @apply px-7 bg-VerdeBase text-white rounded-full shadow-xl
+    @apply documentacion__NavIzquierda my-6
   }
   .main-title{
     @apply text-[#2151C6] text-[50px] font-bold
@@ -115,6 +115,8 @@ lite-youtube{
   min-width: 1200px !important;
   border-radius: 45px;
   background-image: url('../assets/images/youtubePortada.png');
+  background-position: center center;
+  background-size: cover;
 }
 .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo, .comoEmpezar__Titulo {
   color: var(--AzulBase);
@@ -393,13 +395,50 @@ lite-youtube{
   padding-left: 4rem;
   padding-right: 4rem;
 }
+.documentacion__Bloque{
+  padding: 4% 6%;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  box-sizing: border-box;
+}
+.documentacion__NavIzquierda{
+  background-color: var(--VerdeBase);
+  color: var(--BlancoBase);
+  font-family: var(--GExLight);
+  border-radius: 45px;
+  padding: .5em 2em;
+  
+}
+.documentacion__Titulos{
+  color: var(--AzulBase);
+  font-family: var(--GRegular);
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.documentacion__Contenido{
+  font-family: var(--GExLight);
+  font-weight: 400;
+  text-align: justify;
+}
+.documentacion__Videos{
+  width: 100%;
+  min-width: 200px !important;
+  height: auto;
+  border-radius: 15px;
+  background-image: url('../assets/images/youtubePortada.png');
+  background-position: center center;
+  background-size: cover;
+}
+.docVideos__Titulos{
+  font-family: var(--GBold);
+  font-size: 1.1rem;
+}
 
 
 
 
 
-
-
+/*Ajustes Responsive*/
 @media screen and (max-width: 400px) {
   .navVisor__Display{
     display: none;
@@ -623,5 +662,45 @@ lite-youtube{
     font-family: var(--GExLight);
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+
+  .documentacion__Bloque{
+    /* padding: 4% 6%; */
+    /* margin-bottom: 1rem; */
+    margin-right: 0rem;
+    /* box-sizing: border-box; */
+  }
+  .documentacion__NavIzquierda{
+    background-color: var(--VerdeBase);
+    color: var(--BlancoBase);
+    font-family: var(--GExLight);
+    border-radius: 45px;
+    padding: .5em 2em;
+    
+  }
+  .documentacion__Titulos{
+    color: var(--AzulBase);
+    font-family: var(--GRegular);
+    font-weight: 600;
+    font-size: 2.2rem;
+  }
+  .documentacion__Contenido{
+    font-family: var(--GExLight);
+    font-weight: 400;
+    text-align: justify;
+  }
+  .documentacion__Videos{
+    width: 100%;
+    min-width: 200px !important;
+    height: auto;
+    border-radius: 15px;
+    background-image: url('../assets/images/youtubePortada.png');
+    background-position: center center;
+    background-size: cover;
+  }
+  .docVideos__Titulos{
+    font-family: var(--GBold);
+    font-size: 1.1rem;
   }
 }

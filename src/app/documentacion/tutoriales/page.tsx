@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import icoManual from "../../../assets/images/videos/ico_enlace.svg";
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 interface VideoItemProps {
   title: string;
@@ -13,31 +14,31 @@ const PageTutoriales = () => {
   const videos: { [key: string]: { title: string; url: string } } = {
     video1: {
       title: t("videos.title1"),
-      url: "/videos/1_mi_municipio.mp4",
+      url: "NL3FP6LwAhg",
     },
     video2: {
       title: t("videos.title2"),
-      url: "/videos/2_requisitos.mp4",
+      url: "B_5mqtII7zM",
     },
     video3: {
       title: t("videos.title3"),
-      url: "/videos/3_giros.mp4",
+      url: "BhFYs0-Rrn4",
     },
     video4: {
       title: t("videos.title4"),
-      url: "/videos/.mp4",
+      url: "iMF8HOTo1Ec",
     },
     video5: {
       title: t("videos.title5"),
-      url: "/videos/5_emision_licencias.mp4",
+      url: "EbspVsKc4oI",
     },
     video6: {
       title: t("videos.title6"),
-      url: "/videos/.mp4",
+      url: "iMF8HOTo1E",
     },
     video7: {
       title: t("videos.title7"),
-      url: "/videos/7_dibujar_predio.mp4",
+      url: "nTP2HVbE0No",
     },
   };
   return (
@@ -73,10 +74,7 @@ const VideoItem = ({ title, url, buttonText }: VideoItemProps) => {
         {buttonText}
       </div>
       <div className="">
-        <video controls preload="none" className="documentacion__Videos">
-          <source src={url} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <YouTubeEmbed videoid={url} />
       </div>
     </div>
   );

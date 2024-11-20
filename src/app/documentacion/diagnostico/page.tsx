@@ -10,7 +10,7 @@ const PageDiagnostico = () => {
         <p className="mt-6">{t("descripcion2")}</p>
         <p>{t("descripcion3")}</p>
         <div className="flex flex-col">
-        <a href="/files/Diagnostico_para_la_implementacion_de_Visor_Urbano.docx" download={true} className="btn-primary text-center flex-col items-center mt-10 mx-5 sm:mx-40">{t("button")}</a>
+        <a href="/files/Diagnostico_para_la_implementacion_de_Visor_Urbano.pdf" download={true} className="btn-primary text-center flex-col items-center mt-10 mx-5 sm:mx-40">{t("button")}</a>
         </div>
       </div>
     </section>

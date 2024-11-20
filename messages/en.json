@@ -11,7 +11,7 @@
         "option1": "History",
         "option2": "News",
         "option3": "Explore Urban Viewer",
-        "submenu":{
+        "submenu": {
             "main": "Implement on my own",
             "option1": "How to start?",
             "option2": "Step by step for implementation",
@@ -214,52 +214,31 @@
         "descripcion2": "Each manual offers detailed instructions and specific examples to facilitate the implementation and daily management of the platform.",
         "watchManualButton": "View the manual",
         "videos": {
-            "video1": {
-                "title": "1. Customize the 'my municipality' section",
-                "url": "https://"
-            },
-            "video2": {
-                "title": "2. How to configure requirements",
-                "url": "https://"
-            },
-            "video3": {
-                "title": "3. Adjust the 'turns' section",
-                "url": "https://"
-            },
-            "video4": {
-                "title": "4. How to upload the license history and renew licenses",
-                "url": "https://"
-            },
-            "video5": {
-                "title": "5. How to issue a license",
-                "url": "https://"
-            },
-            "video6": {
-                "title": "6. Renew licenses",
-                "url": "https://"
-            },
-            "video7": {
-                "title": "7. Draw a plot",
-                "url": "https://"
-            }
+            "title1": "1. Customize the \"My Municipality\" section",
+            "title2": "2. How to configure requirements",
+            "title3": "3. Adjust the 'Sectors' section",
+            "title4": "4. How to upload license history and renew licenses",
+            "title5": "5. How to issue a license",
+            "title6": "6. Refrendar licencias",
+            "title7": "7. Dibujar un predio"
         }
     },
     "ManualUsoMarca": {
         "header": "Brand usage manual",
         "descripcion1": "The Urban Viewer Brand Usage Manual provides a comprehensive guide to ensure the uniform and professional implementation of our platform in each municipality. This document includes key resources and visual and technical guidelines to adapt Urban Viewer to local needs without losing the identity that distinguishes us. Within the manual, you will find: - Introduction to Urban Viewer - Logo - Institutional Colors - Typography - Correct Uses - Landing Page - Map - Requirements consultation form and license application initiation - Admin panel - License (PDF Document) - Accessibility recommendations - Contact information",
         "list": {
-            "item2": "Introduction to Urban Viewer",
-            "item3": "Logo",
-            "item4": "Institutional Colors",
-            "item5": "Typography",
-            "item6": "Correct Uses",
-            "item7": "Landing Page",
-            "item8": "Map",
-            "item9": "Requirements consultation form and license application initiation",
-            "item10": "Admin panel",
-            "item11": "License (PDF Document)",
-            "item12": "Accessibility recommendations",
-            "item13": "Contact information"
+            "item1": "Introduction to Urban Viewer",
+            "item2": "Logo",
+            "item3": "Institutional Colors",
+            "item4": "Typography",
+            "item5": "Correct Uses",
+            "item6": "Landing Page",
+            "item7": "Map",
+            "item8": "Requirements consultation form and license application initiation",
+            "item9": "Admin panel",
+            "item10": "License (PDF Document)",
+            "item11": "Accessibility recommendations",
+            "item12": "Contact information"
         },
         "button1": "Download logo",
         "button2": "Download Manual"

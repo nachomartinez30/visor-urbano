@@ -214,52 +214,31 @@
         "descripcion2": "Cada manual oferece instruções detalhadas e exemplos específicos para facilitar a implementação e o manejo diário da plataforma.",
         "watchManualButton": "Ver o manual",
         "videos": {
-            "video1": {
-                "title": "1. Personalizar a seção 'meu município'",
-                "url": "https://"
-            },
-            "video2": {
-                "title": "2. Como configurar requisitos",
-                "url": "https://"
-            },
-            "video3": {
-                "title": "3. Ajustar a seção 'giros'",
-                "url": "https://"
-            },
-            "video4": {
-                "title": "4. Como subir o histórico de licenças e renovar licenças",
-                "url": "https://"
-            },
-            "video5": {
-                "title": "5. Como emitir uma licença",
-                "url": "https://"
-            },
-            "video6": {
-                "title": "6. Renovar licenças",
-                "url": "https://"
-            },
-            "video7": {
-                "title": "7. Desenhar um terreno",
-                "url": "https://"
-            }
+            "title1": "1. Personalizar a seção \"meu município\"",
+            "title2": "2. Como configurar requisitos",
+            "title3": "3. Ajustar a seção “atividades”",
+            "title4": "4. Como subir o histórico de licenças e renovar licenças",
+            "title5": "5. Como emitir uma licença",
+            "title6": "6. Renovar licenças",
+            "title7": "7. Desenhar um terreno"
         }
     },
     "ManualUsoMarca": {
         "header": "Manual de uso da marca",
         "descripcion1": "O Manual de Uso da Marca do Visor Urbano fornece um guia completo para garantir a implementação uniforme e profissional de nossa plataforma em cada município. Este documento inclui recursos chave e diretrizes visuais e técnicas para adaptar o Visor Urbano às necessidades locais, sem perder a identidade que nos distingue. Dentro do manual, você encontrará: - Introdução ao Visor Urbano - Logotipo - Cores Institucionais - Tipografia - Usos corretos - Landing Page - Mapa - Formulário de consulta de requisitos e início de processo de licenciamento - Painel administrador - Licença (Documento PDF) - Recomendações de acessibilidade - Dados de contato",
         "list": {
-            "item2": "Introdução ao Visor Urbano",
-            "item3": "Logotipo",
-            "item4": "Cores Institucionais",
-            "item5": "Tipografia",
-            "item6": "Usos corretos",
-            "item7": "Landing Page",
-            "item8": "Mapa",
-            "item9": "Formulário de consulta de requisitos e início de processo de licenciamento",
-            "item10": "Painel administrador",
-            "item11": "Licença (Documento PDF)",
-            "item12": "Recomendações de acessibilidade",
-            "item13": "Dados de contato"
+            "item1": "Introdução ao Visor Urbano",
+            "item2": "Logotipo",
+            "item3": "Cores Institucionais",
+            "item4": "Tipografia",
+            "item5": "Usos corretos",
+            "item6": "Landing Page",
+            "item7": "Mapa",
+            "item8": "Formulário de consulta de requisitos e início de processo de licenciamento",
+            "item9": "Painel administrador",
+            "item10": "Licença (Documento PDF)",
+            "item11": "Recomendações de acessibilidade",
+            "item12": "Dados de contato"
         },
         "button1": "Baixar logotipo",
         "button2": "Baixar Manual"

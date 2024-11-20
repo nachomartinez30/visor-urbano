@@ -214,34 +214,13 @@
         "descripcion2": "Cada manual ofrece instrucciones detalladas y ejemplos específicos para facilitar la implementación y el manejo diario de la plataforma.",
         "watchManualButton": "Ver el manual",
         "videos": {
-            "video1": {
-                "title": "1. Personalizar la sección 'mi municipio'",
-                "url": "https: //"
-            },
-            "video2": {
-                "title": "2. Cómo configurar requisitos",
-                "url": "https://"
-            },
-            "video3": {
-                "title": "3. Ajustar la sección “giros”",
-                "url": "https://"
-            },
-            "video4": {
-                "title": "4. Cómo subir el histórico de licencias y refrendar licencias",
-                "url": "https://"
-            },
-            "video5": {
-                "title": "5. Cómo emitir una licencia",
-                "url": "https://"
-            },
-            "video6": {
-                "title": "6. Refrendar licencias",
-                "url": "https://"
-            },
-            "video7": {
-                "title": "7. Dibujar un predio",
-                "url": "https://"
-            }
+            "title1": "1. Personalizar la sección \"mi municipio\"",
+            "title2": "2. Cómo configurar requisitos",
+            "title3": "3. Ajustar la sección “giros”",
+            "title4": "4. Cómo subir el histórico de licencias y refrendar licencias",
+            "title5": "5. Cómo emitir una licencia",
+            "title6": "6. Refrendar licencias",
+            "title7": "7. Dibujar un predio"
         }
     },
     "ManualUsoMarca": {

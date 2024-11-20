@@ -18,10 +18,10 @@ const LayoutDocumentacion = ({ children }: LayoutDocumentacionProps) => {
       <div className="col-span-1 bg-white gap-4">
         <Link
           href="/documentacion/diagnostico"
-          className="text-VerdeTextos font-bold "
+          className="text-VerdeTextos font-bold"
         >
           <div
-            className={`hover:pl-5 ${
+            className={`flex flex-row gap-2 py-2  ${
               pathname === "/documentacion/diagnostico" ? "activePath" : ""
             }`}
           >
@@ -38,7 +38,7 @@ const LayoutDocumentacion = ({ children }: LayoutDocumentacionProps) => {
           className="text-VerdeTextos font-bold "
         >
           <div
-            className={`hover:pl-5 ${
+            className={`flex flex-row gap-2 py-2   ${
               pathname === "/documentacion/tutoriales" ? "activePath" : ""
             }`}
           >
@@ -55,7 +55,7 @@ const LayoutDocumentacion = ({ children }: LayoutDocumentacionProps) => {
           className="text-VerdeTextos font-bold "
         >
           <div
-            className={`hover:pl-5 ${
+            className={`flex flex-row gap-2 py-2   ${
               pathname === "/documentacion/manual" ? "activePath" : ""
             }`}
           >

@@ -6,7 +6,9 @@ const PagePasoAPaso = () => {
   return (
     <section className="gap-4 mt-32 sm:mt-40 grid pasoPaso__Seccion">
       <div className="grid grid-cols-9">
-        <h2 className="col-start-2 sm:col-start-2 col-span-8 sm:col-span-8 pasoPaso__Titulo">{t("header")}</h2>
+        <h2 className="col-start-2 sm:col-start-2 col-span-8 sm:col-span-8 pasoPaso__Titulo">
+          {t("header")}
+        </h2>
       </div>
       <div className="grid grid-cols-9">
         <div className="col-start-2 sm:col-start-2 col-span-8 sm:col-span-8 pasoPaso__Descripcion">
@@ -18,7 +20,12 @@ const PagePasoAPaso = () => {
           <CirclosNumerosIcon numero={1} />{" "}
         </div>
         <div className="col-span-8 sm:col-span-8 flex flex-col">
-          <strong className="text-VerdeTextos">{t("steps.first.strong")} </strong><span className="pasoPaso__Descripcion">{t("steps.first.description")}</span>
+          <strong className="text-VerdeTextos">
+            {t("steps.first.strong")}{" "}
+          </strong>
+          <span className="pasoPaso__Descripcion">
+            {t("steps.first.description")}
+          </span>
         </div>
       </div>
       <div className="grid grid-cols-9">
@@ -26,7 +33,12 @@ const PagePasoAPaso = () => {
           <CirclosNumerosIcon numero={2} />{" "}
         </div>
         <div className="col-span-8 sm:col-span-8 flex flex-col">
-          <strong className="text-VerdeTextos">{t("steps.second.strong")} </strong><span className="pasoPaso__Descripcion">{t("steps.second.description")}</span>
+          <strong className="text-VerdeTextos">
+            {t("steps.second.strong")}{" "}
+          </strong>
+          <span className="pasoPaso__Descripcion">
+            {t("steps.second.description")}
+          </span>
         </div>
       </div>
       <div className="grid grid-cols-9">
@@ -34,7 +46,12 @@ const PagePasoAPaso = () => {
           <CirclosNumerosIcon numero={3} />{" "}
         </div>
         <div className="col-span-8 sm:col-span-8 flex flex-col">
-          <strong className="text-VerdeTextos">{t("steps.third.strong")} </strong><span className="pasoPaso__Descripcion">{t("steps.third.description")}</span>
+          <strong className="text-VerdeTextos">
+            {t("steps.third.strong")}{" "}
+          </strong>
+          <span className="pasoPaso__Descripcion">
+            {t("steps.third.description")}
+          </span>
         </div>
       </div>
       <div className="grid grid-cols-9">
@@ -42,7 +59,13 @@ const PagePasoAPaso = () => {
           {t("description2")}
         </div>
       </div>
-      <button className="btn-primary mt-10 justify-self-center pasoPaso__Boton">{t("button")}</button>
+      <a
+        href="/files/Paso_a_paso_para_la_implementacion_de_Visor_Urbano_en_su_ciudad.pdf"
+        download={true}
+        className="btn-primary mt-10 justify-self-center pasoPaso__Boton"
+      >
+        {t("button")}
+      </a>
     </section>
   );
 };

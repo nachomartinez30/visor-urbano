@@ -6,7 +6,9 @@ const PageRecursosNecesarios = () => {
   return (
     <section className="gap-4 mt-32 sm:mt-40 grid pasoPaso__Seccion">
       <div className="grid grid-cols-9">
-        <h2 className="col-start-2 sm:col-start-2 col-span-8 sm:col-span-8 pasoPaso__Titulo">{t("header")}</h2>
+        <h2 className="col-start-2 sm:col-start-2 col-span-8 sm:col-span-8 pasoPaso__Titulo">
+          {t("header")}
+        </h2>
       </div>
       <div className="grid grid-cols-9">
         <div className="col-start-2 sm:col-start-2 col-span-8 sm:col-span-8 pasoPaso__Descripcion">
@@ -18,7 +20,9 @@ const PageRecursosNecesarios = () => {
           <CirclosNumerosIcon numero={1} />
         </div>
         <div className="col-span-8 sm:col-span-8 flex flex-col">
-          <span className="pasoPaso__Descripcion">{t("steps.first.description")}</span>
+          <span className="pasoPaso__Descripcion">
+            {t("steps.first.description")}
+          </span>
         </div>
       </div>
       <div className="grid grid-cols-9">
@@ -26,7 +30,9 @@ const PageRecursosNecesarios = () => {
           <CirclosNumerosIcon numero={2} />
         </div>
         <div className="col-span-8 sm:col-span-8 flex flex-col">
-          <span className="pasoPaso__Descripcion">{t("steps.second.description")}</span>
+          <span className="pasoPaso__Descripcion">
+            {t("steps.second.description")}
+          </span>
         </div>
       </div>
       <div className="grid grid-cols-9">
@@ -34,7 +40,9 @@ const PageRecursosNecesarios = () => {
           <CirclosNumerosIcon numero={3} />
         </div>
         <div className="col-span-8 sm:col-span-8 flex flex-col">
-          <span className="pasoPaso__Descripcion">{t("steps.third.description")}</span>
+          <span className="pasoPaso__Descripcion">
+            {t("steps.third.description")}
+          </span>
         </div>
       </div>
       <div className="grid grid-cols-9">
@@ -42,7 +50,9 @@ const PageRecursosNecesarios = () => {
           <CirclosNumerosIcon numero={4} />
         </div>
         <div className="col-span-8 sm:col-span-8 flex flex-col">
-          <span className="pasoPaso__Descripcion">{t("steps.fourth.description")}</span>
+          <span className="pasoPaso__Descripcion">
+            {t("steps.fourth.description")}
+          </span>
         </div>
       </div>
       <div className="grid grid-cols-9">
@@ -50,7 +60,13 @@ const PageRecursosNecesarios = () => {
           {t("description2")}
         </div>
       </div>
-      <button className="btn-primary mt-10 justify-self-center pasoPaso__Boton">{t("button")}</button>
+      <a
+        href="/files/Recursos_necesarios_que_datos_y_recursos_necesitara_para_la_implementacion.pdf"
+        download={true}
+        className="btn-primary mt-10 justify-self-center pasoPaso__Boton"
+      >
+        {t("button")}
+      </a>
     </section>
   );
 };

@@ -73,7 +73,7 @@ const VideoItem = ({ title, url, buttonText }: VideoItemProps) => {
         <Image src={icoManual} alt="icono" width={55} height={55} />
         {buttonText}
       </div>
-      <div className="">
+      <div className="documentacion__Videos">
         <YouTubeEmbed videoid={url} />
       </div>
     </div>

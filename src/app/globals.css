@@ -420,7 +420,7 @@ lite-youtube{
   font-weight: 400;
   text-align: justify;
 }
-.documentacion__Videos{
+.documentacion__Videos lite-youtube{
   width: 100%;
   min-width: 200px !important;
   height: auto;

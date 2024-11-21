@@ -67,10 +67,10 @@ const PageTutoriales = () => {
 
 const VideoItem = ({ title, url, buttonText }: VideoItemProps) => {
   return (
-    <div className="col-span-1 grid">
+    <div className="col-span-1 grid docVideos__Background">
       <h3 className="docVideos__Titulos mb-6">{title}</h3>
       <div className="flex flex-row text-VerdeTextos hover:underline mb-6">
-        <Image src={icoManual} alt="icono" width={55} height={55} />
+        <Image src={icoManual} alt="icono" width={35} height={35} />
         {buttonText}
       </div>
       <div className="documentacion__Videos self-end">

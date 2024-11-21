@@ -432,6 +432,17 @@ body {
   font-family: var(--GBold);
   font-size: 1.1rem;
 }
+.docVideos__Background{
+  border-radius: 10px;
+  background-color: var(--GrisClaro);
+}
+
+
+
+
+
+
+
 /*Ajustes Responsive*/
 @media screen and (max-width: 400px) {
   .navVisor__Display{
@@ -461,6 +472,7 @@ body {
     background: no-repeat url("../assets/images/story3.svg");
     background-size: cover;
     padding-bottom: 20%;
+    border: 0px solid rgba(25, 0, 255, 0); /*Borrar al final*/
   }
   .badge__Titulo{
     font-size: var(--TitulosGeneral--Movil);

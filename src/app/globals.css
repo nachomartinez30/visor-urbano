@@ -110,7 +110,7 @@ body {
 .somosBackground{
   background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
 }
-lite-youtube{
+.somosBackground lite-youtube{
   width: 70%;
   min-width: 1200px !important;
   border-radius: 45px;
@@ -475,7 +475,7 @@ lite-youtube{
     text-align: center;
     font-size: 1.2rem;
   }
-  lite-youtube {
+  .somosBackground lite-youtube {
     min-width: 300px !important;
     border-radius: 15px;
   }

@@ -63,7 +63,7 @@ const PageRecursosNecesarios = () => {
       <a
         href="/files/Recursos_necesarios_que_datos_y_recursos_necesitara_para_la_implementacion.pdf"
         download={true}
-        className="btn-primary mt-10 justify-self-center pasoPaso__Boton"
+        className="btn-primary mt-2 sm:mt-5 justify-self-center pasoPaso__Boton"
       >
         {t("button")}
       </a>

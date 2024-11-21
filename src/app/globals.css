@@ -67,7 +67,6 @@ body {
     @apply text-[#2151C6] text-[50px] font-bold
   }
 }
-
 .fullWidth{
   width: 100vw;
 }
@@ -112,7 +111,7 @@ body {
 }
 .somosBackground lite-youtube{
   width: 70%;
-  min-width: 1200px !important;
+  min-width: 1000px !important;
   border-radius: 45px;
   background-image: url('../assets/images/youtubePortada.png')!important;
   background-position: center center;

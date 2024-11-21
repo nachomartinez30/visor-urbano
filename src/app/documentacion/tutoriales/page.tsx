@@ -47,7 +47,7 @@ const PageTutoriales = () => {
       <div className="documentacion__Contenido">
         <p>{t("descripcion1")}</p>
         <p>{t("descripcion2")}</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 col-row-4 sm:col-row-9 gap-4 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 col-row-4 sm:col-row-9 gap-4 py-10 content-between">
           {Object.keys(videos).map((key) => {
             const { title, url } = videos[key];
             return (
@@ -67,13 +67,13 @@ const PageTutoriales = () => {
 
 const VideoItem = ({ title, url, buttonText }: VideoItemProps) => {
   return (
-    <div className="col-span-1">
+    <div className="col-span-1 grid">
       <h3 className="docVideos__Titulos mb-6">{title}</h3>
       <div className="flex flex-row text-VerdeTextos hover:underline mb-6">
         <Image src={icoManual} alt="icono" width={55} height={55} />
         {buttonText}
       </div>
-      <div className="documentacion__Videos">
+      <div className="documentacion__Videos self-end">
         <YouTubeEmbed videoid={url} />
       </div>
     </div>

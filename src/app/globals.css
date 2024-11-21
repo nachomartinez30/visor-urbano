@@ -114,7 +114,7 @@ body {
   width: 70%;
   min-width: 1200px !important;
   border-radius: 45px;
-  background-image: url('../assets/images/youtubePortada.png');
+  background-image: url('../assets/images/youtubePortada.png')!important;
   background-position: center center;
   background-size: cover;
 }
@@ -425,7 +425,7 @@ body {
   min-width: 200px !important;
   height: auto;
   border-radius: 15px;
-  background-image: url('../assets/images/youtubePortada.png');
+  background-image: url('../assets/images/youtubePortada.png')!important;
   background-position: center center;
   background-size: cover;
 }

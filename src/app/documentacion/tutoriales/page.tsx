@@ -34,7 +34,7 @@ const PageTutoriales = () => {
     },
     video6: {
       title: t("videos.title6"),
-      url: "iMF8HOTo1E",
+      url: "iMF8HOTo1Ec",
     },
     video7: {
       title: t("videos.title7"),

@@ -10,7 +10,7 @@
         "home": "Home",
         "option1": "History",
         "option2": "News",
-        "option3": "Explore Urban Viewer",
+        "option3": "Explore Visor Urbano",
         "submenu": {
             "main": "Implement on my own",
             "option1": "How to start?",
@@ -21,7 +21,7 @@
         }
     },
     "ModalContacto": {
-        "header": "Contact us to get <br></br> Urban Viewer in your city",
+        "header": "Contact us to get <br></br> Visor Urbano in your city",
         "closeBtn": "Close",
         "name": "Full name*",
         "funcionario": "Are you a public official or belong to an NGO?*",
@@ -34,7 +34,7 @@
         "phone": "Cell phone or contact phone*",
         "message": "Message*",
         "send": "Send",
-        "rightText": "Replicating Urban Viewer is a simple process because, in addition to being an intuitive and easy-to-use platform, it can be adapted according to the needs, challenges, and context of any city"
+        "rightText": "Replicating Visor Urbano is a simple process because, in addition to being an intuitive and easy-to-use platform, it can be adapted according to the needs, challenges, and context of any city"
     },
     "ModalSuccess": {
         "text": "Thank you for your message! We will get in touch with you shortly",
@@ -49,15 +49,15 @@
         "header6": "We are a platform that allows the issuance of business and construction licenses entirely online"
     },
     "QuienesSomos": {
-        "header": "What is Urban Viewer?"
+        "header": "What is Visor Urbano?"
     },
     "Ciudades": {
-        "header": "Cities that already use Urban Viewer",
+        "header": "Cities that already use Visor Urbano",
         "map": "View map"
     },
     "Caracteristicas": {
-        "header": "Characteristics that every Urban Viewer must have",
-        "description": "The central identity of Urban Viewer is based on two key characteristics that guarantee an official, certified, and exclusive Urban Viewer for cities",
+        "header": "Characteristics that every Visor Urbano must have",
+        "description": "The central identity of Visor Urbano is based on two key characteristics that guarantee an official, certified, and exclusive Visor Urbano for cities",
         "column1": {
             "header": "Digital and georeferenced records of cadastre and permit requirements",
             "headerFeature1": "Permit requirements",
@@ -74,7 +74,7 @@
         }
     },
     "PorQueSerParte": {
-        "header": "Why be part of Urban Viewer?",
+        "header": "Why be part of Visor Urbano?",
         "feature1": "Promotes agile and transparent procedures.",
         "feature2": "Accelerates times and reduces costs of procedures.",
         "feature3": "Allows the opening and georeferencing of information.",
@@ -83,22 +83,22 @@
         "feature6": "Facilitates an increase in revenue.",
         "header2": "Our History",
         "timeline1": "Guadalajara wins the Bloomberg Philanthropies “Mayors Challenge” Award",
-        "timeline2": "Urban Viewer Guadalajara wins the National Innovation in Transparency Award",
+        "timeline2": "Visor Urbano Guadalajara wins the National Innovation in Transparency Award",
         "timeline3": "Winner of the Future Cities Award from the United Arab Emirates",
-        "timeline4": "Launch of Urban Viewer in Hidalgo",
-        "timeline5": "Launch of the first version of Urban Viewer in Guadalajara, Jalisco",
-        "timeline6": "First replication of Urban Viewer, in San Pedro Garza García, Nuevo León",
-        "timeline7": "Consolidation of Urban Viewer in 33 municipalities of Jalisco",
+        "timeline4": "Launch of Visor Urbano in Hidalgo",
+        "timeline5": "Launch of the first version of Visor Urbano in Guadalajara, Jalisco",
+        "timeline6": "First replication of Visor Urbano, in San Pedro Garza García, Nuevo León",
+        "timeline7": "Consolidation of Visor Urbano in 33 municipalities of Jalisco",
         "timeline8": "Expansion goal to more than 50 cities in Mexico"
     },
     "EquipoVisor": {
-        "header": "Urban Viewer Team",
+        "header": "Visor Urbano Team",
         "yunive": {
             "nombre": "Yunive Moreno",
             "correo": "yunive@visorurbano.com",
             "rol": "General Director",
             "descripcion1": "Committed to making things happen to generate transformation processes in public and private organizations, through the Management of Technology and Innovation Projects and Cooperation. She was recognized as “AI Disruptor of the Year” by the Woman in AI North America Awards in 2022.",
-            "descripcion2": "Co-creator and General Director of Urban Viewer. Previously, she was the General Director of Liaison at the Innovation Coordination of the Government of Jalisco and Project Manager at the Innovation Directorate of the Government of Guadalajara.",
+            "descripcion2": "Co-creator and General Director of Visor Urbano. Previously, she was the General Director of Liaison at the Innovation Coordination of the Government of Jalisco and Project Manager at the Innovation Directorate of the Government of Guadalajara.",
             "instagram": "https://www.instagram.com/yunive_moreno/",
             "linkedin": "https://www.linkedin.com/in/yunive-moreno-0b3b6b1b/"
         },
@@ -107,7 +107,7 @@
             "rol": "Expansion Manager",
             "correo": "daniel@visorurbano.com",
             "descripcion1": "Daniel is a lawyer specialized in Administrative Law from the University of Guadalajara and a master's student in Industrial Property, Copyright, and New Technologies from the Panamerican University.",
-            "descripcion2": "Dedicated to the continuous improvement of government procedures and services through innovation and the use of technology, he has been part of Urban Viewer since its creation and implementation in the municipality of Guadalajara in 2018, as well as the various replications that have been made of the platform in various cities nationwide.",
+            "descripcion2": "Dedicated to the continuous improvement of government procedures and services through innovation and the use of technology, he has been part of Visor Urbano since its creation and implementation in the municipality of Guadalajara in 2018, as well as the various replications that have been made of the platform in various cities nationwide.",
             "instagram": "",
             "linkedin": "https://www.linkedin.com/in/murillodani/"
         },
@@ -116,7 +116,7 @@
             "rol": "Liaison and Sustainability Manager",
             "correo": "dbates@visorurbano.com",
             "descripcion1": "David promotes the use of exponential technologies to develop creative and scalable solutions to global challenges. He graduated with a degree in Communication Sciences and has specializations in Public Administration, Impact Measurement for Development, and Human-Centered Design for Social Innovation.",
-            "descripcion2": "He is an advisor and consultant for institutions in the innovation ecosystem in the implementation of projects focused on technology, public policy, social innovation, and socioeconomic development. Currently, he leads the Strategic Liaison of Urban Viewer, a project of the General Coordination of Government Innovation of Jalisco, in collaboration with the Bloomberg Philanthropies Foundation.",
+            "descripcion2": "He is an advisor and consultant for institutions in the innovation ecosystem in the implementation of projects focused on technology, public policy, social innovation, and socioeconomic development. Currently, he leads the Strategic Liaison of Visor Urbano, a project of the General Coordination of Government Innovation of Jalisco, in collaboration with the Bloomberg Philanthropies Foundation.",
             "instagram": "",
             "linkedin": "https://www.linkedin.com/in/davidbatesf/"
         },
@@ -125,24 +125,24 @@
             "rol": "Municipal Liaison Coordinator",
             "correo": "janeth@visorurbano.com",
             "descripcion1": "Lawyer graduated from the University of Guadalajara, with specializations in Administrative Law and Constitutional and Amparo Law from the Panamerican University. Specialized in Urban Law and Land Use, she stands out for her experience in public administration through the processing of authorizations before government agencies.",
-            "descripcion2": "Currently, she serves as the official liaison with municipalities at the state level in Urban Viewer.",
+            "descripcion2": "Currently, she serves as the official liaison with municipalities at the state level in Visor Urbano.",
             "instagram": "",
             "linkedin": ""
         }
     },
     "Noticias": {
-        "header": "Last news from Urban Viewer",
+        "header": "Last news from Visor Urbano",
         "button": "View all news"
     },
     "ComoEmpezarPage": {
-        "header": "How to start: the team and professionals needed to implement Urban Viewer",
-        "description1": "To adopt Urban Viewer in your city, it is essential to foster strong collaboration between key municipal teams and actively involve the local business community.",
-        "description2": " Access here to see our recommendations on how to involve your city's teams and form a multidisciplinary team to implement Urban Viewer. Gather a team with representatives from Cadastre, Licensing, IT, Urban Development, and Treasury to co-design the Urban Viewer adoption plan, assigning a dedicated project manager to lead its implementation.",
+        "header": "How to start: the team and professionals needed to implement Visor Urbano",
+        "description1": "To adopt Visor Urbano in your city, it is essential to foster strong collaboration between key municipal teams and actively involve the local business community.",
+        "description2": " Access here to see our recommendations on how to involve your city's teams and form a multidisciplinary team to implement Visor Urbano. Gather a team with representatives from Cadastre, Licensing, IT, Urban Development, and Treasury to co-design the Visor Urbano adoption plan, assigning a dedicated project manager to lead its implementation.",
         "button": "View recommendations"
     },
     "PasoAPasoPage": {
-        "header": "Step by step for implementing Urban Viewer in your city",
-        "description1": "To launch Urban Viewer in your city, you will need to follow these steps:",
+        "header": "Step by step for implementing Visor Urbano in your city",
+        "description1": "To launch Visor Urbano in your city, you will need to follow these steps:",
         "steps": {
             "first": {
                 "strong": "Establish the Foundations and Collect Data:",
@@ -150,7 +150,7 @@
             },
             "second": {
                 "strong": "Set Up the Platform Infrastructure:",
-                "description": "Determine the type of hosting (local or cloud) and configure the Urban Viewer platform for your city. Then, integrate the necessary spatial data sets and customize the front-end to fit the city's licensing processes, ensuring accessibility and a smooth user experience."
+                "description": "Determine the type of hosting (local or cloud) and configure the Visor Urbano platform for your city. Then, integrate the necessary spatial data sets and customize the front-end to fit the city's licensing processes, ensuring accessibility and a smooth user experience."
             },
             "third": {
                 "strong": "Train, Launch, and Promote:",
@@ -162,7 +162,7 @@
     },
     "RecursosNecesarioPage": {
         "header": "Necessary resources: what data and resources will you need for the application?",
-        "description1": "To launch Urban Viewer, your city will need four main resources:",
+        "description1": "To launch Visor Urbano, your city will need four main resources:",
         "steps": {
             "first": {
                 "description": "Digitization of Cadastral Maps"
@@ -181,19 +181,19 @@
         "button": "View document"
     },
     "CodigoAbiertoPage": {
-        "header": "How to adapt the Urban Viewer code to your city?",
-        "description1": "In this section, you can access the open-source code of Urban Viewer, a resource developed to facilitate the adoption and adaptation of the platform in each municipality, allowing them to configure and customize digital tools according to their local needs.",
-        "description2": "This open-source code includes all the basic and advanced components of Urban Viewer, giving them the freedom to adapt functionalities, integrate new tools, and build solutions that strengthen transparency, efficiency in license issuance, and reduce bureaucratic processes in their community. Each municipality will have the flexibility to create a version of Urban Viewer aligned with their own challenges and objectives.",
-        "button": "Go to Urban Viewer open-source code"
+        "header": "How to adapt the Visor Urbano code to your city?",
+        "description1": "In this section, you can access the open-source code of Visor Urbano, a resource developed to facilitate the adoption and adaptation of the platform in each municipality, allowing them to configure and customize digital tools according to their local needs.",
+        "description2": "This open-source code includes all the basic and advanced components of Visor Urbano, giving them the freedom to adapt functionalities, integrate new tools, and build solutions that strengthen transparency, efficiency in license issuance, and reduce bureaucratic processes in their community. Each municipality will have the flexibility to create a version of Visor Urbano aligned with their own challenges and objectives.",
+        "button": "Go to Visor Urbano open-source code"
     },
     "DocumentacionHerramientas": {
         "header": "Documentation and tools",
-        "description1": "In this Resources section, you will find all the necessary documentation and tools to efficiently implement Urban Viewer in your municipalities. Each subsection is designed to guide you from the initial evaluation to the use and customization of the platform, ensuring that your team has all the essential information and materials for a successful deployment.",
-        "description2": "These resources are designed to offer you a comprehensive experience in adopting Urban Viewer, providing you with the knowledge and tools to make the most of all its functionalities.",
+        "description1": "In this Resources section, you will find all the necessary documentation and tools to efficiently implement Visor Urbano in your municipalities. Each subsection is designed to guide you from the initial evaluation to the use and customization of the platform, ensuring that your team has all the essential information and materials for a successful deployment.",
+        "description2": "These resources are designed to offer you a comprehensive experience in adopting Visor Urbano, providing you with the knowledge and tools to make the most of all its functionalities.",
         "list": {
-            "item1": "Feasibility Diagnosis: A questionnaire that will allow you to evaluate the feasibility of implementing Urban Viewer in your community, reviewing key aspects and specific needs of the municipality.",
+            "item1": "Feasibility Diagnosis: A questionnaire that will allow you to evaluate the feasibility of implementing Visor Urbano in your community, reviewing key aspects and specific needs of the municipality.",
             "item2": "User manuals and tutorial videos: Detailed instructions and support videos to configure and manage each section of the platform, from customizing 'My Municipality' to issuing licenses.",
-            "item3": "Urban Viewer brand usage manual: Visual guidelines and graphic identity elements, such as logos, colors, and accessibility recommendations, to ensure consistent and appropriate use of the Urban Viewer image in your communications."
+            "item3": "Visor Urbano brand usage manual: Visual guidelines and graphic identity elements, such as logos, colors, and accessibility recommendations, to ensure consistent and appropriate use of the Visor Urbano image in your communications."
         },
         "sidebar": {
             "button1": "Feasibility diagnosis",
@@ -203,14 +203,14 @@
     },
     "DiagnosticoViabilidad": {
         "header": "Feasibility diagnosis",
-        "descripcion1": "In this section, you will find the feasibility diagnosis questionnaire, a tool designed to clearly and detailedly define the functional and non-functional requirements, as well as to conduct an initial diagnosis to evaluate the implementation of Urban Viewer in your municipality.",
-        "descripcion2": "The questionnaire is structured to guide you in identifying the essential processes and resources to ensure a successful adoption of the platform. Each requirement is described in detailed sheets, facilitating its review and evaluation by the responsible team, and providing a solid starting point to align the municipality's capabilities with Urban Viewer's digital transformation objectives.",
+        "descripcion1": "In this section, you will find the feasibility diagnosis questionnaire, a tool designed to clearly and detailedly define the functional and non-functional requirements, as well as to conduct an initial diagnosis to evaluate the implementation of Visor Urbano in your municipality.",
+        "descripcion2": "The questionnaire is structured to guide you in identifying the essential processes and resources to ensure a successful adoption of the platform. Each requirement is described in detailed sheets, facilitating its review and evaluation by the responsible team, and providing a solid starting point to align the municipality's capabilities with Visor Urbano's digital transformation objectives.",
         "descripcion3": "This diagnosis is the first step towards an informed and personalized implementation, suitable for the challenges and needs of your municipality.",
         "button": "Download diagnosis"
     },
     "TutorialesManuales": {
         "header": "Videos tutorials and user manuals",
-        "descripcion1": "In this section, cities will find a series of practical manuals designed to help customize and optimize the use of Urban Viewer in each municipality. With these resources, they will be able to configure the platform according to their local needs and operate efficiently in the issuance of licenses.",
+        "descripcion1": "In this section, cities will find a series of practical manuals designed to help customize and optimize the use of Visor Urbano in each municipality. With these resources, they will be able to configure the platform according to their local needs and operate efficiently in the issuance of licenses.",
         "descripcion2": "Each manual offers detailed instructions and specific examples to facilitate the implementation and daily management of the platform.",
         "watchManualButton": "View the manual",
         "videos": {
@@ -219,15 +219,15 @@
             "title3": "3. Adjust the 'Sectors' section",
             "title4": "4. How to upload license history and renew licenses",
             "title5": "5. How to issue a license",
-            "title6": "6. Refrendar licencias",
-            "title7": "7. Dibujar un predio"
+            "title6": "6. Renew licenses",
+            "title7": "7. Draw a property"
         }
     },
     "ManualUsoMarca": {
         "header": "Brand usage manual",
-        "descripcion1": "The Urban Viewer Brand Usage Manual provides a comprehensive guide to ensure the uniform and professional implementation of our platform in each municipality. This document includes key resources and visual and technical guidelines to adapt Urban Viewer to local needs without losing the identity that distinguishes us. Within the manual, you will find: - Introduction to Urban Viewer - Logo - Institutional Colors - Typography - Correct Uses - Landing Page - Map - Requirements consultation form and license application initiation - Admin panel - License (PDF Document) - Accessibility recommendations - Contact information",
+        "descripcion1": "The Visor Urbano Brand Usage Manual provides a comprehensive guide to ensure the uniform and professional implementation of our platform in each municipality. This document includes key resources and visual and technical guidelines to adapt Visor Urbano to local needs without losing the identity that distinguishes us. Within the manual, you will find: - Introduction to Visor Urbano - Logo - Institutional Colors - Typography - Correct Uses - Landing Page - Map - Requirements consultation form and license application initiation - Admin panel - License (PDF Document) - Accessibility recommendations - Contact information",
         "list": {
-            "item1": "Introduction to Urban Viewer",
+            "item1": "Introduction to Visor Urbano",
             "item2": "Logo",
             "item3": "Institutional Colors",
             "item4": "Typography",

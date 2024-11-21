@@ -435,6 +435,8 @@ body {
 .docVideos__Background{
   border-radius: 10px;
   background-color: var(--GrisClaro);
+  padding: 3%;
+  box-sizing: border-box;
 }
 
 

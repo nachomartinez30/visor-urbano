@@ -14,27 +14,27 @@ const PageTutoriales = () => {
   const videos: { [key: string]: { title: string; url: string } } = {
     video1: {
       title: t("videos.title1"),
-      url: "NL3FP6LwAhg",
+      url: "XwQUpCS1C_M",
     },
     video2: {
       title: t("videos.title2"),
-      url: "B_5mqtII7zM",
+      url: "NL3FP6LwAhg",
     },
     video3: {
       title: t("videos.title3"),
-      url: "BhFYs0-Rrn4",
+      url: "B_5mqtII7zM",
     },
     video4: {
       title: t("videos.title4"),
-      url: "iMF8HOTo1Ec",
+      url: "BhFYs0-Rrn4",
     },
     video5: {
       title: t("videos.title5"),
-      url: "EbspVsKc4oI",
+      url: "iMF8HOTo1Ec",
     },
     video6: {
       title: t("videos.title6"),
-      url: "iMF8HOTo1Ec",
+      url: "EbspVsKc4oI",
     },
     video7: {
       title: t("videos.title7"),

@@ -195,9 +195,9 @@
         "description1": "En esta sección de Recursos encontrarán toda la documentación y herramientas necesarias para implementar Visor Urbano en sus municipios de manera eficiente. Cada subsección está diseñada para guiarles desde la evaluación inicial hasta el uso y personalización de la plataforma, asegurando que su equipo disponga de toda la información y materiales esenciales para un despliegue exitoso.",
         "description2": "Estos recursos están diseñados para ofrecerles una experiencia integral en la adopción de Visor Urbano, brindándoles el conocimiento y herramientas para aprovechar al máximo todas sus funcionalidades.",
         "list": {
-            "item1": "Diagnóstico de Viabilidad: Un cuestionario que les permitirá evaluar la factibilidad de implementar Visor Urbano en su comunidad, revisando aspectos clave y necesidades específicas del municipio. ",
-            "item2": "Manuales de uso y videos tutoriales: Instrucciones detalladas y videos de apoyo para configurar y administrar cada sección de la plataforma, desde la personalización de “Mi Municipio” hasta la emisión de licencias. ",
-            "item3": "Manual de uso de marca de Visor Urbano: Lineamientos visuales y elementos de identidad gráfica, como logotipos, colores, y recomendaciones de accesibilidad, para asegurar un uso consistente y adecuado de la imagen de Visor Urbano en sus comunicaciones."
+            "item1": "<span>Diagnóstico de Viabilidad:</span> Un cuestionario que les permitirá evaluar la factibilidad de implementar Visor Urbano en su comunidad, revisando aspectos clave y necesidades específicas del municipio. ",
+            "item2": "<span>Manuales de uso y videos tutoriales:</span> Instrucciones detalladas y videos de apoyo para configurar y administrar cada sección de la plataforma, desde la personalización de “Mi Municipio” hasta la emisión de licencias. ",
+            "item3": "<span>Manual de uso de marca de Visor Urbano:</span> Lineamientos visuales y elementos de identidad gráfica, como logotipos, colores, y recomendaciones de accesibilidad, para asegurar un uso consistente y adecuado de la imagen de Visor Urbano en sus comunicaciones."
         },
         "sidebar": {
             "button1": "Diagnóstico de viabilidad",

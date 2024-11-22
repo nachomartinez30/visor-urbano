@@ -195,9 +195,9 @@
         "description1": "In this Resources section, you will find all the necessary documentation and tools to efficiently implement Visor Urbano in your municipalities. Each subsection is designed to guide you from the initial evaluation to the use and customization of the platform, ensuring that your team has all the essential information and materials for a successful deployment.",
         "description2": "These resources are designed to offer you a comprehensive experience in adopting Visor Urbano, providing you with the knowledge and tools to make the most of all its functionalities.",
         "list": {
-            "item1": "Feasibility Diagnosis: A questionnaire that will allow you to evaluate the feasibility of implementing Visor Urbano in your community, reviewing key aspects and specific needs of the municipality.",
-            "item2": "User manuals and tutorial videos: Detailed instructions and support videos to configure and manage each section of the platform, from customizing 'My Municipality' to issuing licenses.",
-            "item3": "Visor Urbano brand usage manual: Visual guidelines and graphic identity elements, such as logos, colors, and accessibility recommendations, to ensure consistent and appropriate use of the Visor Urbano image in your communications."
+            "item1": "<span>Feasibility Diagnosis:</span> A questionnaire that will allow you to evaluate the feasibility of implementing Visor Urbano in your community, reviewing key aspects and specific needs of the municipality.",
+            "item2": "<span>User manuals and tutorial videos:</span> Detailed instructions and support videos to configure and manage each section of the platform, from customizing 'My Municipality' to issuing licenses.",
+            "item3": "<span>Visor Urbano brand usage manual:</span> Visual guidelines and graphic identity elements, such as logos, colors, and accessibility recommendations, to ensure consistent and appropriate use of the Visor Urbano image in your communications."
         },
         "sidebar": {
             "button1": "Feasibility diagnosis",

@@ -8,9 +8,10 @@
     },
     "Header": {
         "home": "Home",
-        "option1": "History",
-        "option2": "News",
-        "option3": "Explore Visor Urbano",
+        "nuestra_historia": "History",
+        "noticias": "News",
+        "ciudades": "Explore Visor Urbano",
+        "publicaciones": "Publications",
         "submenu": {
             "main": "Implement on my own",
             "option1": "How to start?",
@@ -54,6 +55,9 @@
     "Ciudades": {
         "header": "Cities that already use Visor Urbano",
         "map": "View map"
+    },
+    "Publicaciones": {
+        "header": "Publications"
     },
     "Caracteristicas": {
         "header": "Characteristics that every Visor Urbano must have",

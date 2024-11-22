@@ -9,6 +9,10 @@ import gdl_logo from "../assets/images/ciudades/gdl_ico.svg";
 import tepa_logo from "../assets/images/ciudades/tepa_logo.png";
 import san_pedro_logo from "../assets/images/ciudades/san_pedro.svg";
 import hidalgo_logo from "../assets/images/ciudades/hidalgo.svg";
+import chihuahua_logo from "../assets/images/ciudades/chihuahua_logo.png";
+import cuernavaca_logo from "../assets/images/ciudades/cuernavaca_logo.png";
+import morelos_logo from "../assets/images/ciudades/morelos_logo.png";
+
 import { useTranslations } from "next-intl";
 
 const responsive = {
@@ -56,6 +60,21 @@ const ciudades = [
     title: "Hidalgo",
     img: hidalgo_logo,
     url: "https://visorurbano.hidalgo.gob.mx/inicio",
+  },
+  {
+    title: "Cuernavaca",
+    img: cuernavaca_logo,
+    url: "https://visorurbano.cuernavaca.gob.mx/inicio",
+  },
+  {
+    title: "Morelos",
+    img: morelos_logo,
+    url: "https://visorurbano.morelos.gob.mx/inicio",
+  },
+  {
+    title: "Chihuahua",
+    img: chihuahua_logo,
+    url: "https://sigmun-visorurbano.mpiochih.gob.mx",
   },
 ];
 

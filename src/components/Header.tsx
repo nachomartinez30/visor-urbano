@@ -246,7 +246,7 @@ export const Header = () => {
               <Menu as="div" className="relative navVisor__Display">
                 <MenuButton
                   ref={buttonARef}
-                  className="flex navVisor__link justify-center align-middle"
+                  className="flex navVisor__link justify-center align-middle btn-primary"
                 >
                   {tGlobal("button1")}
                   <ChevronDownIcon

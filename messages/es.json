@@ -46,7 +46,7 @@
         "header3": "digital de las",
         "header4": "ciudades",
         "header5": "del futuro",
-        "header6": "Somos una plataforma que permite la emisión de licencias de negocio y de construcción totalmente en línea"
+        "header6": "Somos una plataforma que permite la emisión de licencias de negocio totalmente en línea y sin costo para las ciudades."
     },
     "QuienesSomos": {
         "header": "¿Qué es Visor Urbano?"
@@ -59,7 +59,7 @@
         "header": "Características que todo Visor Urbano debe tener",
         "description": "La identidad central de Visor Urbano se basa en dos características clave que garatizan un Visor Urbano oficial, certificado y exclusivo para las ciudades",
         "column1": {
-            "header": "Resgistros digitales y georreferenciados de catastro y requisitos de permisos",
+            "header": "Registros digitales y georreferenciados de catastro y requisitos de permisos",
             "headerFeature1": "Requisitos de permisos",
             "feature1": "Requisitos oficiales que aseguran consistencia en la emisión de permisos de negocios.",
             "headerFeature2": "Registro georreferenciados de catastro",
@@ -70,7 +70,7 @@
             "headerFeature1": "Interoperabilidad",
             "feature1": "Intercambio digital de datos entre sistemas municipales",
             "headerFeature2": "Trazabilidad",
-            "feature2": "Seguimiento de cada paso en el procedimiento de permisos asegudando accountability"
+            "feature2": "Seguimiento de cada paso en el procedimiento de permisos asegurando la rendición de cuentas"
         }
     },
     "PorQueSerParte": {

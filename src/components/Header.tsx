@@ -63,9 +63,10 @@ export const Header = () => {
   ];
   const tGlobal = useTranslations("global");
   const navigation = [
-    { name: t("option1"), href: "/#nuestra_historia", current: false },
-    { name: t("option2"), href: "/#noticias", current: false },
-    { name: t("option3"), href: "/#ciudades", current: false },
+    { name: t("nuestra_historia"), href: "/#nuestra_historia", current: false },
+    { name: t("noticias"), href: "/#noticias", current: false },
+    { name: t("ciudades"), href: "/#ciudades", current: false },
+    { name: t("publicaciones"), href: "/publicaciones", current: false },
   ];
 
   const modalCtx = useContext(ModalContext);

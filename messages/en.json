@@ -13,7 +13,6 @@
         "ciudades": "Explore Visor Urbano",
         "publicaciones": "Publications",
         "submenu": {
-            "main": "Implement on my own",
             "option1": "How to start?",
             "option2": "Step by step for implementation",
             "option3": "Necessary resources",

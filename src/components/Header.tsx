@@ -208,8 +208,11 @@ export const Header = () => {
                     </DisclosureButton>
                   ))}
                   <Menu as="div" className="relative">
-                    <MenuButton className="btn-primary navVisor__link">
-                      {t("submenu.main")}
+                    <MenuButton
+                      ref={buttonARef}
+                      className="btn-primary navVisor__link"
+                    >
+                      {tGlobal("button1")}
                       <ChevronDownIcon
                         aria-hidden="true"
                         className="size-5 ml-2 "
@@ -222,6 +225,7 @@ export const Header = () => {
                             <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
                               <div className="flex-auto">
                                 <Link
+                                  onClick={handleButtonClickB}
                                   href={item.href}
                                   className="mt-1 text-gray-600"
                                 >

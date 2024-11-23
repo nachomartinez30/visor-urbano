@@ -76,6 +76,13 @@
             "feature2": "Tracking each step in the permit procedure ensuring accountability"
         }
     },
+    "BeneficiosCertificar": {
+        "header": "Benefits of certifying your city's Visor Urbano",
+        "item1": "Expand your reach to citizens and businesses by appearing on the official Visor Urbano page",
+        "item2": "Access the network of certified cities to exchange learnings and best practices",
+        "item3": "Position your city as a benchmark in digitization, transparency, and innovation at the regional and international level",
+        "button": "I want to certify my city"
+    },
     "PorQueSerParte": {
         "header": "Why be part of Visor Urbano?",
         "feature1": "Promotes agile and transparent procedures.",

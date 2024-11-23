@@ -1,5 +1,6 @@
 "use client";
 import {
+  CloseButton,
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
@@ -31,6 +32,12 @@ import { IdiomasIcon } from "./icons/IdiomasIcon";
 import { Locale } from "@/i18n/config";
 import { setUserLocale } from "@/services/locale";
 import Link from "next/link";
+
+interface TutorialButtonsProps {
+  onClick: () => void;
+  href: string;
+  description: string;
+}
 
 function classNames(...classes: (string | undefined)[]) {
   return classes.filter(Boolean).join(" ");
@@ -116,7 +123,7 @@ export const Header = () => {
                 <div className="inset-y-0 items-center sm:hidden">
                   {/* Mobile menu button*/}
                   <DisclosureButton className="group inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-verdeFondoIconos hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white navVisor__Control--nav">
-                    <span/>
+                    <span />
                     <span className="sr-only">Menú</span>
                     <Bars3Icon
                       aria-hidden="true"
@@ -207,6 +214,7 @@ export const Header = () => {
                       {item.name}
                     </DisclosureButton>
                   ))}
+                  {/* MOBILE DOPDOWN MENU */}
                   <Menu as="div" className="relative">
                     <MenuButton
                       ref={buttonARef}
@@ -224,13 +232,14 @@ export const Header = () => {
                           <MenuItem key={item.description}>
                             <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
                               <div className="flex-auto">
-                                <Link
-                                  onClick={handleButtonClickB}
+                                <CloseButton
+                                  as={TutorialOptions}
                                   href={item.href}
-                                  className="mt-1 text-gray-600"
+                                  description={item.description}
+                                  onClick={handleButtonClickB}
                                 >
-                                  {item.description}
-                                </Link>
+                                  Close
+                                </CloseButton>
                               </div>
                             </div>
                           </MenuItem>
@@ -331,5 +340,17 @@ export const Header = () => {
         </header>
       )}
     </>
+  );
+};
+
+const TutorialOptions = ({
+  onClick,
+  href,
+  description,
+}: TutorialButtonsProps) => {
+  return (
+    <Link onClick={onClick} href={href} className="mt-1 text-gray-600">
+      {description}
+    </Link>
   );
 };

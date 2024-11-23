@@ -76,6 +76,13 @@
             "feature2": "Seguimiento de cada paso en el procedimiento de permisos asegurando la rendición de cuentas"
         }
     },
+    "BeneficiosCertificar": {
+        "header": "Beneficios de certificar el Visor Urbano de tu ciudad",
+        "item1": "Amplía tu alcance a ciudadanos y empresas al aparecer en la página oficial de Visor Urbano",
+        "item2": "Accede a la red de ciudades certificadas para intercambiar aprendizajes y mejores prácticas",
+        "item3": "Posiciona a tu ciudad como referente en digitalización, transparencia e innovación a nivel regional e internacional",
+        "button": "Quiero certificar mi ciudad"
+    },
     "PorQueSerParte": {
         "header": "¿Por qué ser parte de Visor Urbano?",
         "feature1": "Promueve trámites ágiles y transparentes.",

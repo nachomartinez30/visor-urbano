@@ -58,7 +58,7 @@ body {
 
 @layer components{
   .btn-primary{
-    @apply flex items-center gap-x-1 text-sm/6 font-semibold bg-gradient-to-t from-blueDark to-bluePrimary px-7 py-2 rounded-full border-r-[40] text-white hover:from-[#224FC2] hover:to-[#224FC2] hover:shadow-gray-500 hover:shadow-xl
+    @apply flex items-center gap-x-1 text-sm/6 font-semibold bg-gradient-to-t from-blueDark to-bluePrimary px-7 py-2 rounded-full border-r-[40] text-white hover:from-[#224FC2] hover:to-[#224FC2] hover:shadow-gray-500 hover:shadow-xl font-[Geologica-ExtraLight]
   }
   .activePath{
     @apply documentacion__NavIzquierda my-6

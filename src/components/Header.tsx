@@ -116,7 +116,7 @@ export const Header = () => {
                 <div className="inset-y-0 items-center sm:hidden">
                   {/* Mobile menu button*/}
                   <DisclosureButton className="group inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-verdeFondoIconos hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white navVisor__Control--nav">
-                    <span className="" />
+                    <span/>
                     <span className="sr-only">Menú</span>
                     <Bars3Icon
                       aria-hidden="true"

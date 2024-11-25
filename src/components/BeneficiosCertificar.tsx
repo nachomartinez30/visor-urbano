@@ -1,8 +1,12 @@
+'use client'
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import check_icon from "../assets/images/caracteristicas/checkIcon.svg";
+import { useContext } from "react";
+import { ModalContext } from "./context/ContextModal";
 
 export const BeneficiosCertificar = () => {
+  const modalCtx = useContext(ModalContext);
   const t = useTranslations("BeneficiosCertificar");
   return (
     <section
@@ -40,7 +44,10 @@ export const BeneficiosCertificar = () => {
         </div>
       </div>
 
-      <button className="btn-primary text-center flex-col items-center">
+      <button
+        className="btn-primary text-center flex-col items-center"
+        onClick={() => modalCtx?.openModalContacto()}
+      >
         {t("button")}
       </button>
     </section>

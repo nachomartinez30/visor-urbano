@@ -22,7 +22,8 @@ export default {
         VerdeBase: "#4DA847",
         VerdeBaseClaro: "#6ABF4D",
         VerdeTextos: "#65C65D",
-        VerdeFondosIconos: "#BCE2AF",
+        /* VerdeFondosIconos: "#BCE2AF", */
+        VerdeFondosIconos: "#1E6537",
         AzulBase: "#2151C6",
       },
     },

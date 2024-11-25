@@ -24,14 +24,14 @@ const PageManual = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-10 py-10">
           <a
             href="/files/Logotipo_Visor_Urbano.zip"
-            className="col-span-1 btn-primary text-center flex-col items-center"
+            className="col-span-1 btn-primary text-center flex-col justify-self-center"
           >
             {t("button1")}
           </a>
           <a
             href="/files/Manual_de_uso_de_marca_de_Visor_Urbano.pdf"
             download={true}
-            className="col-span-1 btn-primary text-center flex-col items-center"
+            className="col-span-1 btn-primary text-center flex-col justify-self-center"
           >
             {t("button2")}
           </a>

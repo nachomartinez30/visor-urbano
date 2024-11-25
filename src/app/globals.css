@@ -7,7 +7,8 @@
   --BlancoBase: #FFFFFF;
   --GrisClaro: #F6FAFA;
   --VerdeBase: #4DA847;
-  --VerdeBaseClaro: #6ABF4D
+  /* --VerdeBaseClaro: #6ABF4D */
+  --VerdeBaseClaro: #1E6537
   --VerdeTextos: #65C65D;
   --VerdeFondosIconos: #BCE2AF;
   --AzulBase: #2151C6;
@@ -71,6 +72,12 @@ body {
   font-family: var(--GExLight);
   font-weight: 400;
 }
+.btn-primary{
+  width: 327px;
+  max-width: 327px;
+  height: 49px;
+  max-height: 49px;
+}
 .fullWidth{
   width: 100vw;
 }
@@ -103,11 +110,11 @@ body {
   font-size: var(--TitulosGeneral);
 }
 .badge__Contenido{
-  width: 50%;
+  width: 55%;
   padding-top: 1.8rem;
   color: var(--BlancoBase);
   font-family: var(--GLight) !important;
-  text-align: justify;
+  text-align: left;
   font-size: 1.5rem;
 }
 .somosBackground{
@@ -327,7 +334,7 @@ body {
 }
 .equipoModal__Contenido{
   font-family: var(--GExLight);
-  text-align: justify;
+  text-align: left;
   font-size: 1.1rem;
   padding-right: 6%;
 }
@@ -416,7 +423,8 @@ body {
   font-family: var(--GExLight);
   border-radius: 45px;
   padding: .5em 2em;
-  
+  max-width: 330px;
+  max-height: 44px;
 }
 .documentacion__Titulos{
   color: var(--AzulBase);
@@ -427,7 +435,7 @@ body {
 .documentacion__Contenido{
   font-family: var(--GExLight);
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
 }
 .documentacion__Videos lite-youtube{
   width: 100%;

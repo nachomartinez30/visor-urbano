@@ -13,7 +13,7 @@ import { useState } from "react";
 export const Footer = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="flex flex-col items-center footerBg sm:h-[323.03px]">
+    <div className="flex flex-col items-center sm:h-[400px] footerBg">
       <ModalAvisoPrivacidad open={openModal} setOpen={setOpenModal} />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 flex-col items-center footer__Bloque">
         <Image

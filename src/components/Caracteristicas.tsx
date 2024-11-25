@@ -13,7 +13,7 @@ export const Caracteristicas = () => {
     <section id="caracterisrticas" className="pt-10 caracteristicas__Background">
       <div className="grid flex justify-center px-5 sm:px-40 caracteristicas__TextosTop">
         <h3 className="text-center pt-5 caracteristicas__Titulo">{t("header")}</h3>
-        <p className="text-center py-5 sm:py-10 px-10 sm:px-60 caracteristicas__Descripcion">{t("description")}</p>
+        <p className="text-center py-5 sm:py-10 px-10 sm:px-10 xl:px-60 caracteristicas__Descripcion">{t("description")}</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-col flex justify-center caracteristicas__Grid">
         <div className="grid sm:grid-flow-col my-5 sm:my-0">

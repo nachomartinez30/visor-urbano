@@ -68,7 +68,7 @@ const PagePublicaciones = () => {
       </div>
       <ul
         role="list"
-        className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-[10%] pt-9"
+        className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-[10%] pt-9 mb-10"
       >
         {publicaciones.map((publicacion, index) => (
           <Card key={index} image={publicacion.image} file={publicacion.file} />

@@ -67,6 +67,10 @@ body {
     @apply text-[#2151C6] text-[50px] font-bold
   }
 }
+.btn__Regular{
+  font-family: var(--GExLight);
+  font-weight: 400;
+}
 .fullWidth{
   width: 100vw;
 }
@@ -108,6 +112,7 @@ body {
 }
 .somosBackground{
   background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
+  padding-bottom: 4%;
 }
 .somosBackground lite-youtube{
   width: 70%;
@@ -117,7 +122,7 @@ body {
   background-position: center center;
   background-size: cover;
 }
-.somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo, .comoEmpezar__Titulo {
+.somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo, .comoEmpezar__Titulo, .beneficios__Titulo {
   color: var(--AzulBase);
   font-family: var(--GRegular);
   font-weight: 600;
@@ -185,7 +190,7 @@ body {
 }
 .porQueBackground {
   background: no-repeat url("../assets/images/story_new_4.svg");
-  background-size: cover;
+  background-size: contain;
   background-position: center bottom;
 }
 .porQue__Grid{
@@ -238,7 +243,7 @@ body {
   background-size: cover;
 }
 .nuestraHistoria__Section{
-  padding: 10% 0;
+  padding: 15% 0;
   overflow: hidden;
 }
 .historia__Grid {
@@ -285,6 +290,9 @@ body {
   padding-top: 3%;
   text-align: center;
   padding-bottom: 60px;
+}
+.beneficios__Block{
+  padding: 5% 16.5%;
 }
 .equipo__Grid {
   padding: 0 10%;
@@ -353,9 +361,11 @@ body {
 }
 .footer__Bloque{
   width: 80%;
+  position: relative;
+  bottom: -10rem;
 }
 .footer__Logos{
-  width: 35%;
+  width: 45%;
 }
 .footer__Redes{
   width: 30%;
@@ -441,15 +451,247 @@ body {
 
 
 
-
-
-
-
-/*Ajustes Responsive*/
-@media screen and (max-width: 400px) {
-  .navVisor__Display{
+/*Ajustes Responsive Tablet*/
+@media screen and (max-width: 1024px) {
+  .navVisor__Display {
     display: none;
   }
+  .navVisor__link {
+    line-height: 1em;
+    font-family: var(--GExLight);
+    margin: 15px 0;
+  }
+  .navVisor__Control {
+    position: relative !important;
+    right: 0;
+    top: 0;
+  }
+  .navVisor__Control--idioma {
+    position: absolute!important;
+    left: 5%;
+    top: 20px;
+  }
+  .navVisor__Control--nav {
+    position: absolute!important;
+    right: 2%;
+    top: 20px;
+  }
+  .badgeBackground {
+    background: no-repeat url("../assets/images/header.svg");
+    background-size: cover;
+    padding-bottom: 20%;
+  }
+  .badge__Titulo {
+    font-size: var(--TitulosGeneral--Movil);
+  }
+  .badge__Container {
+    padding: 25% 4% 0 4%;
+  }
+  .badge__Contenido {
+    width: 85%;
+    padding-top: 1.3rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .somosBackground lite-youtube {
+    min-width: 500px !important;
+    border-radius: 15px;
+  }
+  .somosBackground {
+    padding: 2em 0;
+  }
+  .somos__Titulo,
+  .ciudades__Titulo,
+  .porQue__Titulo,
+  .caracteristicas__Titulo,
+  .equipo__Titulo,
+  .noticiasBloque__Titulo,
+  .comoEmpezar__Titulo {
+    font-weight: 600;
+    font-size: var(--TitulosGeneral--Movil);
+  }
+  .contactoModal__Bloque {
+    width: 95%;
+  }
+  .modalContacto__Titulo {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+  .modalContacto__Izquierda {
+    width: 100%;
+  }
+  .modalContacto__Boton {
+    width: 80%;
+    padding: 1em;
+    font-size: 1.1rem;
+  }
+  .modalDerecha__Texto {
+    padding: 4% 5%;
+    font-size: .9rem;
+    line-height: 1.2rem;
+  }
+  .ciudades__carousel {
+    width: 95%;
+    padding-bottom: 1rem;
+  }
+  .card__cards {
+    background: var(--BlancoBase);
+    width: 90%;
+    min-height: 340px;
+  }
+  .cards__City {
+    min-width: 100%;
+    max-width: 165px;
+    max-height: 165px;
+    min-height: auto;
+  }
+  .cards__Button {
+    left: 8%;
+  }
+  .porQue__Grid {
+    padding: 5% 5%;
+  }
+  .porQue__Botones {
+    padding: 0 1% 5% 1%;
+  }
+  .porQue_Imagenes {
+    width: 100%;
+    max-width: 160px;
+  }
+  .porQue_Textos {
+    font-size: 14px;
+  }
+  .porQue__Botones--Boton {
+    margin: .5rem 2rem;
+  }
+  .caracteristicas__Descripcion {
+    font-size: 1.4rem;
+  }
+  .caracteristicas__Grid {
+    padding: 0 5% 5% 5%;
+    box-sizing: border-box;
+  }
+  .nuestraHistoria__Section {
+    padding: 20% 0 30% 0;
+    overflow: hidden;
+  }
+  .historia__Grid {
+    padding: 0 7%;
+    box-sizing: border-box;
+  }
+  .historia__Grid--left {
+    margin-left: 0;
+  }
+  .historia__Grid--right {
+    margin-right: 0;
+    position: inherit;
+  }
+  .historiaGrid__Element {
+    width: 85%;
+    margin: 1em 0;
+  }
+  .historia__Titulo {
+    font-size: var(--TitulosGeneral--Movil);
+  }
+  .historia__Anios {
+    font-size: 1.7rem;
+  }
+  .historia__Contenido {
+    font-size: 1rem;
+  }
+  .equipo__Grid {
+    padding: 0 10%;
+  }
+  .equipo__Titulo {
+    margin-top: -45px;
+  }
+  .equipo__Person {
+    width: 85%;
+  }
+  .equipoModal__Image {
+    width: 65%;
+  }
+  .equipoModal_Bloque {
+    width: 95%;
+  }
+  .equipoModal {
+    padding: 8% 2% 3% 2%;
+  }
+  .equipoModal__Nombre {
+    font-size: 1.6rem;
+  }
+  .equipoModal__Puesto {
+    font-size: 1rem;
+  }
+  .equipoModal__Contenido {
+    font-size: .9rem;
+    padding: 0 10px;
+  }
+  .noticias__Titulo {
+    font-size: 1.3rem;
+  }
+  .noticias__Fecha {
+    font-size: .7rem;
+  }
+  .noticias__Descripcion {
+    font-size: .8rem;
+  }
+  .noticias__Boton {
+    width: 66%;
+    padding: .5em;
+    font-size: .8rem;
+  }
+  .footerBg {
+    background: no-repeat url("../assets/images/footerImg.svg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  .footer__Bloque {
+    width: 90%;
+  }
+  .footer__Logos {
+    width: 55%;
+  }
+  .footer__Redes {
+    margin: 1em 0;
+    width: 80%;
+  }
+  .redes__Iconos {
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .comoEmpezar__Seccion,
+  .pasoPaso__Seccion {
+    padding: 0 5%;
+  }
+  .comoEmpezar__Titulo,
+  .pasoPaso__Titulo {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .comoEmpezar__Contenido,
+  .comoEmpezar__Contenido {
+    text-align: center;
+  }
+  .pasoPaso__Descripcion {
+    font-family: var(--GExLight);
+  }
+  .pasoPaso__Boton {
+    font-family: var(--GExLight);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .documentacion__Bloque {
+    margin-right: 0rem;
+  }
+}
+
+
+
+/*Ajustes Responsive Mobile*/
+@media screen and (max-width: 480px) {
   .navVisor__link{
     line-height: 1em;
     font-family: var(--GExLight);
@@ -496,7 +738,7 @@ body {
     padding: 2em 0;
     background: right 0px bottom 0px / 10% no-repeat url("../assets/images/arboles.svg");
   }
-  .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo, .comoEmpezar__Titulo {
+  .somos__Titulo, .ciudades__Titulo, .porQue__Titulo, .caracteristicas__Titulo, .equipo__Titulo, .noticiasBloque__Titulo, .comoEmpezar__Titulo, .beneficios__Titulo{
     font-weight: 600;
     font-size: var(--TitulosGeneral--Movil);
   }
@@ -541,6 +783,10 @@ body {
   .porQue__Grid{
     padding: 5% 5%;
   }
+  .porQueBackground {
+    background-image: none;
+    background-color: var(--BlancoBase);
+  }
   .porQue__Botones{
     padding: 0 1% 5% 1%;
   }
@@ -560,6 +806,11 @@ body {
   .caracteristicas__Grid{
     padding: 0 5% 5% 5%;
     box-sizing: border-box;
+  }
+  .caracteristicas__Cards{
+    border-radius: 15px;
+    padding: 5%;
+    margin: 0 1%;
   }
   .nuestraHistoria__Section{
     padding: 40% 0 70% 0;
@@ -589,6 +840,11 @@ body {
   .historia__Contenido{
     font-size: 1rem;
   }
+  .beneficios__Block{
+  padding: 2 3%;
+  }
+
+
   .equipo__Grid {
     padding: 0 10%;
   }
@@ -632,16 +888,17 @@ body {
     font-size: .8rem;
   }
   .footerBg{
-    background: no-repeat url("../assets/images/footerImg.svg");
-    background-size: contain;
-    background-position: bottom;
-    padding-bottom: 1em;
+    background: no-repeat url("../assets/images/footerImg_M.svg");
+    background-size: cover;
+    background-position: center bottom;
+    padding: 3em 0 1em 0;
   }
   .footer__Bloque{
     width: 90%;
+    bottom: 0;
   }
   .footer__Logos{
-    width: 55%;
+    width: 45%;
   }
   .footer__Redes{
     margin: 1em 0;

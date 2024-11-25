@@ -14,8 +14,8 @@ const LayoutDocumentacion = ({ children }: LayoutDocumentacionProps) => {
   const pathname = usePathname();
 
   return (
-    <div className="mt-24 sm:mt-28 mb-6 grid grid-cols-7 gap-3 bg-[#F9F9FA]">
-      <div className="col-span-7 sm:col-span-2 bg-white pt-0 sm:pt-10 px-4 pl-6 gap-4">
+    <div className="mt-[18%] sm:mt-28 mb-6 grid grid-cols-7 gap-3 bg-[#F9F9FA]">
+      <div className="col-span-7 sm:col-span-2 bg-white pt-0 sm:pt-10 px-4 pl-6 gap-4 fixed sm:static w-full z-10">
         <Link href="/documentacion/diagnostico" className="text-VerdeTextos" >
           <div className={`flex flex-row gap-2 ${ pathname === "/documentacion/diagnostico" ? "activePath" : "my-6" }`} >
             <CheckIcon fill={ pathname === "/documentacion/diagnostico" ? "#FFF" : "#65c65e" } />
@@ -35,7 +35,7 @@ const LayoutDocumentacion = ({ children }: LayoutDocumentacionProps) => {
           </div>
         </Link>
       </div>
-      <div className="col-span-7 sm:col-span-5 ">{children}</div>
+      <div className="col-span-7 sm:col-span-5 mt-[45%] sm:mt-0">{children}</div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ export const QuienesSomos = () => {
   return (
     <section
       id="quienes_somos"
-      className="lg:h-screen sm:h-1/4 somosBackground"
+      className="somosBackground"
     >
       <h2 className="somos__Titulo text-center mb-8">{t("header")}</h2>
       <div className="flex justify-center">

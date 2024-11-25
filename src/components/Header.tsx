@@ -100,12 +100,12 @@ export const Header = () => {
   return (
     <>
       {domLoaded && (
-        <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 fullWidth z-10">
+        <header className="bg-gradient-to-t from-dark to-primary text-white fixed top-0 fullWidth z-20">
           <ModalContacto />
           <ModalSuccess />
           <Disclosure
             as="nav"
-            className="mx-auto flex justify-between p-2 sm:p-6 navVisor"
+            className="mx-auto flex justify-between p-2 sx:p-2 lx:p-6 navVisor"
           >
             <div className="flex items-center navVisor__Display">
               <div className="relative flex h-16 items-center justify-self-start">
@@ -120,7 +120,7 @@ export const Header = () => {
             </div>
             <div className="flex items-center ">
               <div className="flex h-16 items-center justify-start">
-                <div className="inset-y-0 items-center sm:hidden">
+                <div className="inset-y-0 items-center visible sm:visible xl:hidden">
                   {/* Mobile menu button*/}
                   <DisclosureButton className="group inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-verdeFondoIconos hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white navVisor__Control--nav">
                     <span />
@@ -136,7 +136,7 @@ export const Header = () => {
                   </DisclosureButton>
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="hidden sm:ml-6 sm:block">
+                  <div className="hidden sm:hidden xl:block sm:ml-6 ">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
                         <a
@@ -158,8 +158,8 @@ export const Header = () => {
                 </div>
               </div>
 
-              <DisclosurePanel className="sm:hidden">
-                <div className="space-y-1 px-6 sm:px-2 pb-3 pt-14 sm:pt-2">
+              <DisclosurePanel className="lx:hidden clase">
+                <div className="space-y-1 px-6 sm:px-2 pb-3 pt-14 sm:pt-16 lx:pt-2">
                   <Menu as="div" className="ml-3">
                     <div>
                       <MenuButton className="flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 navVisor__Control--idioma">
@@ -296,7 +296,7 @@ export const Header = () => {
 
               <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3 hidden sm:block">
+                <Menu as="div" className="ml-3 hidden sm:hidden xl:block">
                   <div>
                     <MenuButton className="flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 navVisor__Control--idioma">
                       <span className="" />

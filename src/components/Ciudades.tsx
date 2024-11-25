@@ -9,9 +9,9 @@ import gdl_logo from "../assets/images/ciudades/gdl_ico.svg";
 import tepa_logo from "../assets/images/ciudades/tepa_logo.png";
 import san_pedro_logo from "../assets/images/ciudades/san_pedro.svg";
 import hidalgo_logo from "../assets/images/ciudades/hidalgo.svg";
-import chihuahua_logo from "../assets/images/ciudades/chihuahua_logo.png";
-import cuernavaca_logo from "../assets/images/ciudades/cuernavaca_logo.png";
-import morelos_logo from "../assets/images/ciudades/morelos_logo.png";
+import chihuahua_logo from "../assets/images/ciudades/chihuahua_logo.svg";
+import cuernavaca_logo from "../assets/images/ciudades/cuernavaca_logo.svg";
+import morelos_logo from "../assets/images/ciudades/morelos_logo.svg";
 
 import { useTranslations } from "next-intl";
 

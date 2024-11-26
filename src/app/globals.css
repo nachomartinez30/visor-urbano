@@ -125,7 +125,7 @@ body {
   width: 70%;
   min-width: 1000px !important;
   border-radius: 45px;
-  background-image: url('../assets/images/youtubePortada.png')!important;
+  background-image: url('../assets/images/youtubePortada2.png')!important;
   background-position: center center;
   background-size: cover;
 }
@@ -442,7 +442,7 @@ body {
   min-width: 200px !important;
   height: auto;
   border-radius: 15px;
-  background-image: url('../assets/images/youtubePortada.png')!important;
+  background-image: url('../assets/images/youtubePortada2.png')!important;
   background-position: center center;
   background-size: cover;
 }
@@ -460,7 +460,7 @@ body {
 
 
 /*Ajustes Responsive Tablet*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1276px) {
   .navVisor__Display {
     display: none;
   }
@@ -483,6 +483,10 @@ body {
     position: absolute!important;
     right: 2%;
     top: 20px;
+  }
+  .navVisor__Control--logo {
+    position: fixed;
+    left: 5%;
   }
   .badgeBackground {
     background: no-repeat url("../assets/images/header.svg");

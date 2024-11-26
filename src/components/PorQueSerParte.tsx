@@ -1,4 +1,9 @@
 "use client";
+
+import { StaticImageData } from "next/image";
+import { ModalContext } from "./context/ContextModal";
+import { useContext } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import clock from "../assets/images/features/ico_licencias_negocio_2.svg";
 import list from "../assets/images/features/ico_licencias_negocio.svg";
@@ -6,6 +11,7 @@ import map from "../assets/images/features/ico_licencias_negocio_3.svg";
 import mail from "../assets/images/features/ico_licencias_negocio_4.svg";
 import like from "../assets/images/features/ico_licencias_negocio_5.svg";
 import speaker from "../assets/images/features/ico_licencias_negocio_6.svg";
+import Link from "next/link";
 
 export const PorQueSerParte = () => {
   const t = useTranslations("PorQueSerParte");
@@ -48,9 +54,12 @@ export const PorQueSerParte = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-col flex justify-center porQue__Botones">
-        <button className="mx-4 btn-primary justify-center porQue__Botones--Boton">
+        <Link
+          href="como_empezar"
+          className="mx-4 btn-primary justify-center porQue__Botones--Boton"
+        >
           {tGlobal("button1")}
-        </button>
+        </Link>
         <button
           className="mx-4 btn-primary justify-center porQue__Botones--Boton"
           onClick={() => modalCtx?.openModalContacto()}
@@ -61,11 +70,6 @@ export const PorQueSerParte = () => {
     </section>
   );
 };
-
-import { StaticImageData } from "next/image";
-import { ModalContext } from "./context/ContextModal";
-import { useContext } from "react";
-import { useTranslations } from "next-intl";
 
 const Item = ({
   content,

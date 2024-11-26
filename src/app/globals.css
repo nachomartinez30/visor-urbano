@@ -703,7 +703,7 @@ body {
   .navVisor__link{
     line-height: 1em;
     font-family: var(--GExLight);
-    margin: 15px 0;
+    margin: 15px 0 25px 0;
   }
   .navVisor__Control{
     position: relative!important;
